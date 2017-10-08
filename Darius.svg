@@ -2,7 +2,20 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.2" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 	 x="0px" y="0px" width="816px" height="109px" viewBox="0 0 816 109" xml:space="preserve">
-<g>
+<font horiz-adv-x="1024">
+<!-- Copyright (c) 2017, User -->
+<!-- Copyright: Copyright 2017 Adobe System Incorporated. All rights reserved. -->
+<font-face font-family="Darius" units-per-em="1024" underline-position="-178" underline-thickness="51"/>
+<missing-glyph horiz-adv-x="374" d="M34,0l0,682l272,0l0,-682M68,34l204,0l0,614l-204,0z"/>
+<glyph unicode="A" horiz-adv-x="964" d="M641,725l323,-725l-233,0l-98,220l-302,0l-98,-220l-233,0l323,725M394,363l176,0l-88,196z"/>
+<glyph unicode="D" horiz-adv-x="964" d="M858,725l106,-106l0,-512l-106,-107l-858,0l0,725M751,171l0,384l-29,28l-509,0l0,-441l509,0z"/>
+<glyph unicode="I" horiz-adv-x="540" d="M538,583l-163,0l0,-441l163,0l0,-142l-538,0l0,142l162,0l0,441l-162,0l0,142l538,0z"/>
+<glyph unicode="R" horiz-adv-x="964" d="M964,398l-106,-106l-64,0l169,-292l-246,0l-169,292l-335,0l0,-292l-213,0l0,725l858,0l106,-106M751,462l0,93l-29,28l-509,0l0,-149l509,0z"/>
+<glyph unicode="S" horiz-adv-x="964" d="M964,512l-213,0l0,43l-29,28l-480,0l-29,-28l0,-93l29,-28l616,0l106,-107l0,-220l-106,-107l-751,0l-107,107l0,106l213,0l0,-42l29,-29l480,0l29,29l0,92l-29,29l-615,0l-107,106l0,221l107,106l751,0l106,-106z"/>
+<glyph unicode="U" horiz-adv-x="964" d="M751,725l213,0l0,-725l-857,0l-107,106l0,619l213,0l0,-555l29,-28l480,0l29,28z"/>
+</font>
+
+	<g>
 	<text transform="matrix(1 0 0 1 4.4091797 105)" fill="#FFFFFF" font-family="'Darius'" font-size="142">D</text>
 	<text transform="matrix(1 0 0 1 145.1889648 105)" fill="#FFFFFF" font-family="'Darius'" font-size="142">A</text>
 	<text transform="matrix(1 0 0 1 293.0683594 105)" fill="#FFFFFF" font-family="'Darius'" font-size="142">R</text>
