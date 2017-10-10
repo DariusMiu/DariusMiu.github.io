@@ -10,21 +10,20 @@ A
 }
 A:link
 {
-	COLOR: #fbfbfb; /*The color of the link*/
+	COLOR: #fbfbfb;
 }
 A:visited
 {
-	COLOR: #fbfbfb; /*The color of the visited link*/
+	COLOR: #fbfbfb;
 }
 A:hover
 {
-	COLOR: #fbfbfb; /*The color of the mouseover or hover link*/
+	COLOR: #fbfbfb;
 	text-decoration: underline;
 }
 
 body
 {
-	font-size: 40px;
 	font-family: Arial;
 	background-image: url(bg.png);
 	background-repeat: no-repeat;
@@ -47,6 +46,12 @@ body
 	font-size: 25px;
 }
 
+.content
+{
+	width: 1200px;
+	position: absolute;
+}
+
 @media screen and (max-width:1300px)
 {
 	.centertext
@@ -56,6 +61,10 @@ body
 	.misctext
 	{
 		font-size: 20px;
+	}
+	.content
+	{
+		width: 750px;
 	}
 }
 
@@ -68,6 +77,10 @@ body
 	.misctext
 	{
 		font-size: 15px;
+	}
+	.content
+	{
+		width: 400px;
 	}
 }
 
