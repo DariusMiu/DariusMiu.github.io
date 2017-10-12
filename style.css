@@ -4,6 +4,12 @@
 	src: url('Darius.ttf');
 }
 
+@font-face
+{
+	font-family: 'Vera';
+	src: url('Vera.ttf');
+}
+
 A
 {
 	text-decoration: none;
@@ -24,7 +30,7 @@ A:hover
 
 body
 {
-	font-family: Arial;
+	font-family: Vera;
 	background-image: url(bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
