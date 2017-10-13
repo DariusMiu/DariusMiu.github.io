@@ -16,16 +16,27 @@ A
 }
 A:link
 {
-	COLOR: #fbfbfb;
+	color: #fbfbfb;
+	-webkit-transition: color 0.1s;
+	-moz-transition: color 0.1s;
+	-o-transition: color 0.1s;
 }
 A:visited
 {
-	COLOR: #fbfbfb;
+	color: #fbfbfb;
 }
 A:hover
 {
-	COLOR: #fbfbfb;
+	color: #99C1FF;
 	text-decoration: underline;
+	-webkit-transition: color 0.1s;
+	-moz-transition: color 0.1s;
+	-o-transition: color 0.1s;
+}
+
+svg
+{
+  fill: currentColor;
 }
 
 body
