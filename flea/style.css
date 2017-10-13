@@ -1,0 +1,113 @@
+A
+{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+}
+A:link
+{
+	opacity: 1;
+}
+A:visited
+{
+
+}
+A:hover
+{
+	opacity: 0.4;
+}
+
+svg
+{
+  fill: currentColor;
+}
+
+body
+{
+	font-family: Vera;
+	background: #000;
+}
+
+.centertext
+{
+	font-size: 80px;
+}
+
+.misctext
+{
+	font-size: 25px;
+}
+
+.content
+{
+	width: 1200px;
+	position: absolute;
+}
+
+@media screen and (max-width:1300px)
+{
+	.centertext
+	{
+		font-size: 50px;
+	}
+	.misctext
+	{
+		font-size: 20px;
+	}
+	.content
+	{
+		width: 750px;
+	}
+}
+
+@media screen and (max-width:800px)
+{
+	.centertext
+	{
+		font-size: 30px;
+	}
+	.misctext
+	{
+		font-size: 15px;
+	}
+	.content
+	{
+		width: 400px;
+	}
+}
+
+.shadowtext
+{
+	/*-webkit-text-stroke: 2px black;*/
+	text-shadow:
+		1px 1px 0 #000,
+		-1px 1px 0 #000,
+		1px -1px 0 #000,
+		-1px -1px 0 #000,
+		0px 1px 0 #000,
+		0px -1px 0 #000,
+		-1px 0px 0 #000,
+		1px 0px 0 #000,
+		2px 2px 0 #000,
+		-2px 2px 0 #000,
+		2px -2px 0 #000,
+		-2px -2px 0 #000,
+		0px 2px 0 #000,
+		0px -2px 0 #000,
+		-2px 0px 0 #000,
+		2px 0px 0 #000,
+		1px 2px 0 #000,
+		-1px 2px 0 #000,
+		1px -2px 0 #000,
+		-1px -2px 0 #000,
+		2px 1px 0 #000,
+		-2px 1px 0 #000,
+		2px -1px 0 #000,
+		-2px -1px 0 #000;
+}
