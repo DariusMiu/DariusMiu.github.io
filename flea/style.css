@@ -1,113 +1,99 @@
-A
+A:link, A:visited
 {
-	text-decoration: none;
-	color: white;
-	text-transform: uppercase;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
+	opacity: 1;
 	-webkit-transition: 0.2s;
 	-moz-transition: 0.2s;
 	-o-transition: 0.2s;
 	transition: 0.2s;
-}
-A:link
-{
-	opacity: 1;
-}
-A:visited
-{
-
+	color: white;
 }
 A:hover
 {
 	opacity: 0.4;
 }
 
-svg
-{
-  fill: currentColor;
-}
-
 body
 {
-	font-family: Vera;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
 	background: #000;
 }
 
-.centertext
+.header
 {
-	font-size: 80px;
+	font-size: 14px;
+	font-weight: bold;
+	position: relative;
+	text-align:center;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 578px;
+	height: 80px;
+	padding: auto;
 }
-
-.misctext
+.header-link
 {
-	font-size: 25px;
+	text-decoration: none;
+	padding: 10px;
 }
 
 .content
 {
-	width: 1200px;
-	position: absolute;
+	position: relative;
+	width: 100%;
+	height: 690px;
+	text-align: center;
+	display: inline-block;
+}
+.content-item
+{
+	padding: 32px;
+}
+.content-link
+{
+	font-size: 11px;
+	text-decoration: none;
 }
 
-@media screen and (max-width:1300px)
+.spacer
 {
-	.centertext
-	{
-		font-size: 50px;
-	}
-	.misctext
-	{
-		font-size: 20px;
-	}
-	.content
-	{
-		width: 750px;
-	}
+	height: 10px;
 }
 
-@media screen and (max-width:800px)
+.centerY
 {
-	.centertext
-	{
-		font-size: 30px;
-	}
-	.misctext
-	{
-		font-size: 15px;
-	}
-	.content
-	{
-		width: 400px;
-	}
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.centerX
+{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
-.shadowtext
+.footer
 {
-	/*-webkit-text-stroke: 2px black;*/
-	text-shadow:
-		1px 1px 0 #000,
-		-1px 1px 0 #000,
-		1px -1px 0 #000,
-		-1px -1px 0 #000,
-		0px 1px 0 #000,
-		0px -1px 0 #000,
-		-1px 0px 0 #000,
-		1px 0px 0 #000,
-		2px 2px 0 #000,
-		-2px 2px 0 #000,
-		2px -2px 0 #000,
-		-2px -2px 0 #000,
-		0px 2px 0 #000,
-		0px -2px 0 #000,
-		-2px 0px 0 #000,
-		2px 0px 0 #000,
-		1px 2px 0 #000,
-		-1px 2px 0 #000,
-		1px -2px 0 #000,
-		-1px -2px 0 #000,
-		2px 1px 0 #000,
-		-2px 1px 0 #000,
-		2px -1px 0 #000,
-		-2px -1px 0 #000;
+	opacity: 0.3;
+	color: white;
+	font-size: 13px;
+	font-family: Helvetica, Arial, sans-serif;
+	text-transform: none !important;
+	text-align:center;
+	border-top: 1px solid white;
+}
+.footer-link
+{
+	text-decoration: underline;
+}
+
+
+@media screen and (max-width:992)
+{
+	
 }
