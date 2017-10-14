@@ -1,15 +1,16 @@
 body
 {
 	background: #000;
-	-webkit-transition: 0.2s;
-	-moz-transition: 0.2s;
-	-o-transition: 0.2s;
-	transition: 0.2s;
 	margin: 0;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 13px;
-	line-height: 22.75px;
+	line-height: 25px;
 	color: #3f3f3f;
+}
+
+img
+{
+	max-width: 100%;
 }
 
 A:link, A:visited
@@ -195,22 +196,39 @@ input:checked ~ label{background:rgba(0,0,0,.3);}
 	transform: translateX(-50%);
 }
 
-H2
+H1
 {
 	font-weight: normal;
 	font-size: 32px;
 }
-
+H2
+{
+	font-weight: normal;
+	font-size: 24px;
+}
 H3
 {
 	font-weight: bold;
+	font-size: 18px;
+	color: #f60;
+	font-family: 'Montserrat', sans-serif;
+}
+H4
+{
+	font-weight: bold;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+H5
+{
+	font-weight: normal;
 	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
 }
 
 .last-updated
 {
-	color: rgb(255, 102, 0);
+	color: #f60;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
 	font-size: 12px;
@@ -222,25 +240,60 @@ H3
 	position: relative;
 }
 
-.col
+.three-cols
 {
 	float: left;
-	width: 217px;
+	width: 220px;
 	padding: 0 15px;
+	max-width: 100%;
+}
+
+.two-cols
+{
+	float: left;
+	max-width: 45%;
+	padding: 0 15px;
+}
+
+.one-col
+{
+	float: middle;
+	width: 100%;
+	max-width: 100%;
+	padding: 0;
 }
 
 .col-content
 {
-	margin: 0 15px;
+	margin: 0px;
 }
 
-@media screen and (max-width:676px)
+.indent
 {
-	.col
+	margin: 0 0 0 20px;
+}
+
+@media screen and (max-width:800px)
+{
+	.row
+	{
+		display: inline-block;
+		position: relative;
+		padding: 0 25px;
+	}
+	.three-cols
 	{
 		float: middle;
 		width: 100%;
-		padding: 0 15px;
+		max-width: 100%;
+		padding: 0;
+	}
+	.two-cols
+	{
+		float: middle;
+		width: 100%;
+		max-width: 100%;
+		padding: 0;
 	}
 
 }
