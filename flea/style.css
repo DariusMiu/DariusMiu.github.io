@@ -388,3 +388,21 @@ H5
 {
 	text-decoration: underline;
 }
+
+.heart
+{
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+	opacity: 0 !important;
+	max-width: 50px;
+}
+.heart:hover
+{
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
+	opacity: 0.5 !important;
+}
