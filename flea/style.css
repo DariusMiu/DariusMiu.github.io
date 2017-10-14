@@ -21,9 +21,9 @@ body
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	background: #000;
+	margin: 0;
 }
-
-.header
+/*.header
 {
 	font-size: 14px;
 	font-weight: bold;
@@ -31,23 +31,117 @@ body
 	text-align:center;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 578px;
-	height: 80px;
-	padding: auto;
+	width: 100%;
+	height: 120px;
+	background: #000;
 }
 .header-link
 {
 	text-decoration: none;
-	padding: 10px;
+	padding: 20px;
+}/**/
+
+
+/**/
+.header{
+	background: none;
+	height:120;
 }
 
+label{
+	display:none;
+}
+
+input{ display:none; }
+
+ul.header-link{
+	height:120px;
+	padding:0;
+	overflow:hidden;
+	list-style-type:none;
+	transition: 0.2s ease-out;
+	position:absolute;
+	min-width:100%;
+	font-size: 14px;
+	font-weight: bold;
+	text-align:center;
+	background: #000;
+	top: 40px;
+	/*transform: translateY(-50%);*/
+}
+
+ul.header-link li a{
+	text-decoration: none;
+	padding: 10px 20px;
+}
+
+ul.header-link li {
+	display: inline;
+}
+
+label:hover,
+input:checked ~ label{background:rgba(0,0,0,.3);}
+
+/**/
+@media screen and (max-width:1300px)
+{
+	.header{
+		position:fixed;
+		top:0;
+		left:0;
+		width:64px;
+		height:64px;
+	}
+
+	label{
+		position:relative;
+		display:block;
+		padding:0 0 0 0;
+		line-height:3em;
+		transition:background 0.2s;
+		cursor:pointer;
+		width: 100%;
+		height: 100%;
+	}
+
+	input{display:none}
+
+	input:checked ~ ul.header-link{
+		max-height:100vh;
+		transition: 0.2s ease-in;
+		position: fixed;
+		padding:64px 0 100% 0;
+	}
+
+	ul.header-link{
+		max-height:0;
+		padding:0;
+		overflow:hidden;
+		list-style-type:none;
+		transition: 0.2s ease-out;
+		position:fixed;
+		min-width:100%;
+		font-size: 14px;
+		font-weight: bold;
+		text-align:center;
+		background: #000;
+		top: 0;
+	}
+
+	ul.header-link li a{
+		display: block;
+		text-decoration: none;
+		padding: 10px 20px;
+	}
+	/**/
+}/**/
 .content
 {
 	position: relative;
 	width: 100%;
-	height: 690px;
 	text-align: center;
 	display: inline-block;
+	background: #fff;
 }
 .content-item
 {
@@ -57,6 +151,15 @@ body
 {
 	font-size: 12px;
 	text-decoration: none;
+}
+
+.front-page
+{
+	position: relative;
+	width: 100%;
+	height: 690px;
+	text-align: center;
+	display: inline-block;
 }
 
 .spacer
@@ -81,11 +184,13 @@ body
 {
 	opacity: 0.3;
 	color: white;
-	font-size: 13px;
+	font-size: 12px;
 	font-family: Helvetica, Arial, sans-serif;
 	text-transform: none !important;
 	text-align:center;
 	border-top: 1px solid white;
+	height: 120px;
+	background: #000;
 }
 .footer-link
 {
@@ -93,7 +198,4 @@ body
 }
 
 
-@media screen and (max-width:992)
-{
-	
-}
+/*Style for the first level menu bar*/
