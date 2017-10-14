@@ -39,6 +39,7 @@ A:hover
 	height: 0;
 	margin-bottom: 14px;
 	padding: 0;
+	text-align: left;
 }
 
 label
@@ -53,34 +54,36 @@ ul.header-link
 {
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
-	height:66px;
-	padding:0;
-	overflow:hidden;
-	list-style-type:none;
+	height: 66px;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
 	transition: 0.2s ease-out;
-	position:absolute;
-	min-width:100%;
+	position: absolute;
+	min-width: 100%;
 	font-size: 14px;
 	font-weight: bold;
-	text-align:center;
+	text-align: center;
 	background: #000;
 	top: 40px;
-	/*transform: translateY(-50%);*/
+	overflow: hidden;
 }
 
 ul.header-link li a
 {
 	text-decoration: none;
 	padding: 10px 20px;
+	overflow: hidden;
 }
 
 ul.header-link li
 {
 	display: inline;
+	overflow: hidden;
 }
 
-label:hover,
-input:checked ~ label{background:rgba(0,0,0,.3);}
+label:hover, input:checked ~ label
+{background:rgba(0,0,0,.3);}
 
 /**/
 @media screen and (max-width:992px)
@@ -89,30 +92,30 @@ input:checked ~ label{background:rgba(0,0,0,.3);}
 	{
 		position: relative;
 		background: none;
-		height: 128px;
+		height: 15mm;
 		padding: 0;
 	}
 	
 	.header
 	{
-		position:fixed;
-		top:0;
-		left:0;
-		width:128px;
-		height:128px;
-		background: #000;
-		padding-right: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 15mm;
+		background: none;
+		padding-right: 0;
 		margin-bottom: 0;
 	}
 
 	label
 	{
-		position:relative;
-		display:block;
-		padding:0 0 0 0;
-		line-height:3em;
-		transition:background 0.2s;
-		cursor:pointer;
+		position: relative;
+		display: block;
+		padding: 0;
+		line-height: 3em;
+		transition: background 0.2s;
+		cursor: pointer;
 		width: 100%;
 		height: 100%;
 	}
@@ -121,32 +124,38 @@ input:checked ~ label{background:rgba(0,0,0,.3);}
 
 	input:checked ~ ul.header-link
 	{
-		max-height:100vh;
+		max-height: 100%;
+		height: 100%;
 		transition: 0.2s ease-in;
-		position: fixed;
-		padding:64px 0 100vh 0;
+		position: absolute;
+		padding: 0 0 100vh 0;
+		overflow: hidden;
 	}
 
 	ul.header-link
 	{
-		max-height:0;
-		padding:0;
-		overflow:hidden;
-		list-style-type:none;
+		max-height: 0;
+		height: 0;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		list-style-type: none;
 		transition: 0.2s ease-out;
-		position:fixed;
-		min-width:100%;
+		position: absolute;
+		min-width: 100%;
 		font-weight: bold;
-		text-align:center;
+		text-align: center;
 		background: #000;
-		top: 60px;
+		top: 0;
+		overflow: hidden;
 	}
 
 	ul.header-link li a
 	{
 		display: block;
-		font-size: 65px;
+		font-size: 50px;
 		padding: 10% 0 ;
+		overflow: hidden;
 	}
 }
 .content
