@@ -136,7 +136,6 @@ input:checked ~ label{background:rgba(0,0,0,.3);}
 		transition: 0.2s ease-out;
 		position:fixed;
 		min-width:100%;
-		font-size: 50px;
 		font-weight: bold;
 		text-align:center;
 		background: #000;
@@ -146,9 +145,8 @@ input:checked ~ label{background:rgba(0,0,0,.3);}
 	ul.header-link li a
 	{
 		display: block;
-		text-decoration: none;
-		padding: 10px 30px;
-		line-height: 50px;
+		font-size: 65px;
+		padding: 10% 0 ;
 	}
 }
 .content
