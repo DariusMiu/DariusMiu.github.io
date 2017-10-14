@@ -9,9 +9,7 @@ body
 }
 
 img
-{
-	max-width: 100%;
-}
+{ max-width: 100%; }
 
 A:link, A:visited
 {
@@ -32,7 +30,6 @@ A:hover
 	position: relative;
 	background: none;
 	height:120px;
-	margin-bottom: 14px;
 	padding: 0;
 }
 
@@ -86,8 +83,7 @@ input:checked ~ label{background:rgba(0,0,0,.3);}
 	{
 		position: relative;
 		background: none;
-		height: 64px;
-		margin-bottom: 14px;
+		height: 128px;
 		padding: 0;
 	}
 	
@@ -95,10 +91,11 @@ input:checked ~ label{background:rgba(0,0,0,.3);}
 		position:fixed;
 		top:0;
 		left:0;
-		width:64px;
-		height:64px;
+		width:128px;
+		height:128px;
 		background: #000;
 		padding-right: 100%;
+		margin-bottom: 0;
 	}
 
 	label{
@@ -133,7 +130,7 @@ input:checked ~ label{background:rgba(0,0,0,.3);}
 		font-weight: bold;
 		text-align:center;
 		background: #000;
-		top: 0;
+		top: 60px;
 	}
 
 	ul.header-link li a{
@@ -141,8 +138,7 @@ input:checked ~ label{background:rgba(0,0,0,.3);}
 		text-decoration: none;
 		padding: 10px 20px;
 	}
-	/**/
-}/**/
+}
 .content
 {
 	position: relative;
