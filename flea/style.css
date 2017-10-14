@@ -33,20 +33,24 @@ A:hover
 	padding: 0;
 }
 
-.header{
+.header
+{
 	background: none;
-	height:120px;
+	height: 0;
 	margin-bottom: 14px;
 	padding: 0;
 }
 
-label{
+label
+{
 	display:none;
 }
 
-input{ display:none; }
+input
+{ display:none; }
 
-ul.header-link{
+ul.header-link
+{
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	height:66px;
@@ -64,12 +68,14 @@ ul.header-link{
 	/*transform: translateY(-50%);*/
 }
 
-ul.header-link li a{
+ul.header-link li a
+{
 	text-decoration: none;
 	padding: 10px 20px;
 }
 
-ul.header-link li {
+ul.header-link li
+{
 	display: inline;
 }
 
@@ -87,7 +93,8 @@ input:checked ~ label{background:rgba(0,0,0,.3);}
 		padding: 0;
 	}
 	
-	.header{
+	.header
+	{
 		position:fixed;
 		top:0;
 		left:0;
@@ -98,7 +105,8 @@ input:checked ~ label{background:rgba(0,0,0,.3);}
 		margin-bottom: 0;
 	}
 
-	label{
+	label
+	{
 		position:relative;
 		display:block;
 		padding:0 0 0 0;
@@ -111,14 +119,16 @@ input:checked ~ label{background:rgba(0,0,0,.3);}
 
 	input{display:none}
 
-	input:checked ~ ul.header-link{
+	input:checked ~ ul.header-link
+	{
 		max-height:100vh;
 		transition: 0.2s ease-in;
 		position: fixed;
 		padding:64px 0 100% 0;
 	}
 
-	ul.header-link{
+	ul.header-link
+	{
 		max-height:0;
 		padding:0;
 		overflow:hidden;
@@ -133,7 +143,8 @@ input:checked ~ label{background:rgba(0,0,0,.3);}
 		top: 60px;
 	}
 
-	ul.header-link li a{
+	ul.header-link li a
+	{
 		display: block;
 		text-decoration: none;
 		padding: 10px 20px;
@@ -308,18 +319,38 @@ H5
 	opacity: 0.5;
 }
 
-.button
+.button-black
 {
 	text-transform: uppercase;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
+	text-decoration: none;
 	background: #000;
-	
+	border-radius: 5px;
 	opacity: 1;
 	color: #fff !important;
 	padding: 10px 20px;
+	margin: 10px;
 }
-.button:hover
+.button-black:hover
+{
+	opacity: 0.5;
+}
+
+.button-white
+{
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	background: #fff;
+	border-radius: 5px;
+	opacity: 1;
+	color: #000 !important;
+	padding: 10px 20px;
+	margin: 10px;
+}
+.button-white:hover
 {
 	opacity: 0.5;
 }
