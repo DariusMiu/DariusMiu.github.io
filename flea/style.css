@@ -165,6 +165,13 @@ input:checked ~ label{background:rgba(0,0,0,.3);}
 	height: 690px;
 	text-align: center;
 	display: inline-block;
+	font-size: 12px;
+}
+.front-page a
+{
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
 }
 
 .spacer
