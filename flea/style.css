@@ -124,7 +124,7 @@ input:checked ~ label{background:rgba(0,0,0,.3);}
 		max-height:100vh;
 		transition: 0.2s ease-in;
 		position: fixed;
-		padding:64px 0 100% 0;
+		padding:64px 0 100vh 0;
 	}
 
 	ul.header-link
@@ -136,7 +136,7 @@ input:checked ~ label{background:rgba(0,0,0,.3);}
 		transition: 0.2s ease-out;
 		position:fixed;
 		min-width:100%;
-		font-size: 14px;
+		font-size: 50px;
 		font-weight: bold;
 		text-align:center;
 		background: #000;
@@ -147,7 +147,8 @@ input:checked ~ label{background:rgba(0,0,0,.3);}
 	{
 		display: block;
 		text-decoration: none;
-		padding: 10px 20px;
+		padding: 10px 30px;
+		line-height: 50px;
 	}
 }
 .content
