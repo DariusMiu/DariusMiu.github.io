@@ -4,13 +4,12 @@ body
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 13px;
-	line-height: 25px;
+	line-height: 2em;
 	color: #3f3f3f;
 }
 
 img
 { max-width: 100%; }
-
 A:link, A:visited
 {
 	opacity: 1;
@@ -40,6 +39,7 @@ A:hover
 	margin-bottom: 14px;
 	padding: 0;
 	text-align: left;
+	opacity: 0;
 }
 
 label
@@ -53,7 +53,6 @@ input
 ul.header-link
 {
 	text-transform: uppercase;
-	font-family: 'Montserrat', sans-serif;
 	height: 66px;
 	padding: 0;
 	overflow: hidden;
@@ -85,77 +84,11 @@ ul.header-link li
 label:hover, input:checked ~ label
 {background:rgba(0,0,0,.3);}
 
-/**/
-@media screen and (max-width:992px)
+.align-left
 {
-	.header-whitespace
-	{
-		position: relative;
-		background: none;
-		height: 15mm;
-		padding: 0;
-	}
-	
-	.header
-	{
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 15mm;
-		background: none;
-		padding-right: 0;
-		margin-bottom: 0;
-	}
-
-	label
-	{
-		position: relative;
-		display: block;
-		padding: 0;
-		line-height: 3em;
-		transition: background 0.2s;
-		cursor: pointer;
-		width: 100%;
-		height: 100%;
-	}
-
-	input{display:none}
-
-	input:checked ~ ul.header-link
-	{
-		max-height: 100vh;
-		transition: 0.2s ease-in;
-		position: absolute;
-		padding: 0 0 100% 0;
-		overflow: hidden;
-	}
-
-	ul.header-link
-	{
-		max-height: 0;
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
-		list-style-type: none;
-		transition: 0.2s ease-out;
-		position: absolute;
-		min-width: 100%;
-		font-weight: bold;
-		text-align: center;
-		background: #000;
-		top: 0;
-		overflow: hidden;
-	}
-
-	ul.header-link li a
-	{
-		display: block;
-		font-size: 50px;
-		padding: 10% 0 ;
-		overflow: hidden;
-	}
+	text-align: left;
 }
+
 .content
 {
 	position: relative;
@@ -224,18 +157,15 @@ H3
 	font-weight: bold;
 	font-size: 18px;
 	color: #f60;
-	font-family: 'Montserrat', sans-serif;
 }
 H4
 {
 	font-weight: bold;
 	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
 }
 H5
 {
 	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
 }
 
 .last-updated
@@ -269,7 +199,7 @@ H5
 
 .one-col
 {
-	float: middle;
+	float: none;
 	width: 100%;
 	max-width: 100%;
 	padding: 0;
@@ -294,31 +224,7 @@ H5
 .stickers img
 {
 	max-width: 400px;
-}
-
-@media screen and (max-width:800px)
-{
-	.row
-	{
-		display: inline-block;
-		position: relative;
-		padding: 0 25px;
-	}
-	.three-cols
-	{
-		float: middle;
-		width: 100%;
-		max-width: 100%;
-		padding: 0;
-	}
-	.two-cols
-	{
-		float: middle;
-		width: 100%;
-		max-width: 100%;
-		padding: 0;
-	}
-
+	width: 100%;
 }
 
 .paragraph
@@ -383,26 +289,191 @@ H5
 	border-top: 1px solid white;
 	height: 120px;
 	background: #000;
+	padding-top: 1em;
 }
 .footer-link
 {
-	text-decoration: underline;
+	text-decoration: none;
+}
+
+@media /*only screen*/ (max-width: 1000px)
+{
+	.header-whitespace
+	{
+		position: relative;
+		background: none;
+		height: 25mm;
+		padding: 0;
+	}
+	
+	.header
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 25mm;
+		background: none;
+		padding-right: 0;
+		margin-bottom: 0;
+	}
+
+	label
+	{
+		position: relative;
+		display: block;
+		padding: 0;
+		line-height: 3em;
+		transition: background 0.2s;
+		cursor: pointer;
+		width: 25mm;
+		height: 100%;
+		margin: 0;
+	}
+
+	input{display:none}
+
+	input:checked ~ ul.header-link
+	{
+		max-height: 100vh;
+		transition: 0.2s ease-in;
+		position: absolute;
+		padding: 0 0 100% 0;
+		overflow: hidden;
+	}
+	
+	li.header
+	{
+		width: 25mm;
+	}
+
+	ul.header-link
+	{
+		max-height: 0;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		list-style-type: none;
+		transition: 0.2s ease-out;
+		position: absolute;
+		min-width: 100%;
+		font-weight: bold;
+		text-align: center;
+		background: #000;
+		top: 0;
+		overflow: hidden;
+	}
+
+	ul.header-link li a
+	{
+		display: block;
+		font-size: 50px;
+		padding: 10% 0 ;
+		overflow: hidden;
+	}
+	
+	.row
+	{
+		display: inline-block;
+		position: relative;
+		padding: 0 25px;
+		text-align: center;
+	}
+	.three-cols
+	{
+		/*float: none;*/
+		width: 100%;
+		max-width: 100% !important;
+		padding: 0;
+		text-align: center;
+	}
+	.two-cols
+	{
+		/*float: none;*/
+		width: 100%;
+		max-width: 100% !important;
+		padding: 0;
+		text-align: center;
+	}
+	.align-left
+	{
+		text-align: center;
+	}
+
+	
+	body
+	{
+		font-size: 26px;
+	}
+
+	H1
+	{
+		font-size: 64px;
+	}
+	H2
+	{
+		font-size: 48px;
+	}
+	H3
+	{
+		font-size: 36px;
+	}
+	H4
+	{
+		font-size: 32px;
+	}
+	H5
+	{
+		font-size: 32px;
+	}
+	.paragraph
+	{
+		font-size: 32px;
+	}
+
+	.content-link
+	{
+		font-size: 24px;
+	}
+	.front-page
+	{
+		font-size: 24px;
+	}
+	.last-updated
+	{
+		font-size: 24px;
+	}
+	.footer
+	{
+		font-size: 24px;
+	}
+
+}
+
+.header
+{
+	opacity: 1 !important;
+	-webkit-transition: 2s;
+	-moz-transition: 2s;
+	-o-transition: 2s;
+	transition: 2s;
 }
 
 .heart
 {
-	-webkit-transition: 0.2s;
-	-moz-transition: 0.2s;
-	-o-transition: 0.2s;
-	transition: 0.2s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
 	opacity: 0 !important;
 	max-width: 50px;
+	padding-bottom: 10px;
 }
 .heart:hover
 {
-	-webkit-transition: 0.2s;
-	-moz-transition: 0.2s;
-	-o-transition: 0.2s;
-	transition: 0.2s;
-	opacity: 0.5 !important;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	opacity: 1 !important;
 }
