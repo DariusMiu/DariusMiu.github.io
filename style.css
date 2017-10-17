@@ -16,7 +16,6 @@ A
 }
 A:link
 {
-	color: #fbfbfb;
 	-webkit-transition: color 0.1s;
 	-moz-transition: color 0.1s;
 	-o-transition: color 0.1s;
@@ -34,13 +33,18 @@ A:hover
 	-o-transition: color 0.1s;
 }
 
-svg
+/*img
 {
-  fill: currentColor;
+	border-bottom: 1em solid #fbfbfb;
 }
+img:hover
+{
+	border-bottom: 1em solid #fbfbfb;
+}*/
 
 body
 {
+	color: #fbfbfb;
 	font-family: Vera;
 	background-image: url(bg.jpg);
 	background-repeat: no-repeat;
