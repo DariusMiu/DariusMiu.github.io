@@ -34,14 +34,16 @@ A:hover
 	-o-transition: color 0.1s;
 }
 
-/*img
+a span.noHoverText, a:hover span.hoverText
 {
-	border-bottom: 1em solid #fbfbfb;
+	display: inline-block;
+	width: 100%;
 }
-img:hover
+a:hover span.noHoverText, a span.hoverText
 {
-	border-bottom: 1em solid #fbfbfb;
-}*/
+	display: none;
+	width: 100%;
+}
 
 body
 {
@@ -56,6 +58,7 @@ body
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	margin: 0;
 }
 
 .centertext
@@ -68,10 +71,12 @@ body
 	font-size: 25px;
 }
 
-.content
+.svg
 {
-	width: 1200px;
+	width: 20%;
+	min-width: 200px;
 	position: absolute;
+	padding: 2%;
 }
 
 @media screen and (max-width:1300px)
@@ -84,10 +89,6 @@ body
 	{
 		font-size: 20px;
 	}
-	.content
-	{
-		width: 750px;
-	}
 }
 
 @media screen and (max-width:800px)
@@ -99,10 +100,6 @@ body
 	.misctext
 	{
 		font-size: 15px;
-	}
-	.content
-	{
-		width: 400px;
 	}
 }
 
