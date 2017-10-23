@@ -19,6 +19,7 @@ A:link
 	-webkit-transition: color 0.1s;
 	-moz-transition: color 0.1s;
 	-o-transition: color 0.1s;
+	color: #fbfbfb;
 }
 A:visited
 {
