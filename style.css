@@ -71,7 +71,7 @@ body
 
 .centertext
 {
-	font-size: 2.5em;
+	font-size: 5em;
 }
 
 .misctext
@@ -172,6 +172,7 @@ body
 	bottom: 10px;
 	font-weight: bold;
 	margin-top: 5px;
+	font-size: 1.2em;
 }
 
 .centerY
@@ -190,7 +191,7 @@ body
 {
 	.centertext
 	{
-		font-size: 2em;
+		font-size: 3em;
 	}
 	.content
 	{
