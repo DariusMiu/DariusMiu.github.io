@@ -108,7 +108,7 @@ body
 .contentcontainer
 {
 	position: relative;
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 
 .video
@@ -243,6 +243,9 @@ body
 	{
 		right: 0;
 		bottom: 0;
+	}
+	.contentcontainer
+	{
 	}
 }
 
