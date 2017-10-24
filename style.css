@@ -172,6 +172,12 @@ body
 	display: block;
 	width: 400px;
 }
+.video video
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
 .video:link
 {
 	margin: 5px;
@@ -197,6 +203,7 @@ body
 	margin: 0;
 	bottom: 0;
 	width: 100%;
+	text-shadow: 0 0 5px black;
 }
 
 .gametitle
@@ -242,9 +249,7 @@ body
 }
 .gamedownload:hover
 {
-	opacity: 0.5;
-	background: white;
-	color: #99C1FF !important;
+	background: #99C1FF;
 }
 
 .centerY
