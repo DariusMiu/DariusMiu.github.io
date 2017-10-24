@@ -17,6 +17,9 @@
 	src: url('VeraBd.ttf');
 }
 
+img
+{ max-width: 100%; }
+
 A
 {
 	text-decoration: none;
@@ -57,16 +60,32 @@ body
 {
 	color: #fbfbfb;
 	font-family: Vera;
+	margin: 0;
+	background-color: #000000;
+}
+
+.background
+{
 	background-image: url(bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	background-color: #000000;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	margin: 0;
+}
+
+.backgroundblur
+{
+	background-image: url(bgblur.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .centertext
@@ -87,8 +106,42 @@ body
 	min-width: 200px;
 	position: absolute;
 	padding: 2%;
+	margin: 0;
+	display: block;
 }
 
+.cardX
+{
+	position: absolute;
+	max-width: 152.8vh;
+	min-width: 500px;
+	width: 100%;
+	height: 100%;
+}
+.cardY
+{
+	position: absolute;
+	max-height: 65.4vw;
+	min-height: 327px;
+	width: 100%;
+	height: 100%;
+}
+.cardborder
+{
+	border: 2px solid black;
+	border-radius: 6vmin;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	/*background-image: url(bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: absolute;
+	background-color: #000000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;/**/
+}
 .homebutton
 {
 	top: 0;
@@ -180,6 +233,7 @@ body
 	top: 50%;
 	transform: translateY(-50%);
 }
+
 .centerX
 {
 	left: 50%;
