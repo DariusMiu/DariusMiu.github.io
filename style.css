@@ -7,7 +7,14 @@
 @font-face
 {
 	font-family: 'Vera';
+	font-weight: normal;
 	src: url('Vera.ttf');
+}
+@font-face
+{
+	font-family: 'Vera';
+	font-weight: bold;
+	src: url('VeraBd.ttf');
 }
 
 A
@@ -19,6 +26,7 @@ A:link
 	-webkit-transition: color 0.1s;
 	-moz-transition: color 0.1s;
 	-o-transition: color 0.1s;
+	transition: color 0.1s;
 	color: #fbfbfb;
 }
 A:visited
@@ -28,10 +36,10 @@ A:visited
 A:hover
 {
 	color: #99C1FF;
-	text-decoration: underline;
 	-webkit-transition: color 0.1s;
 	-moz-transition: color 0.1s;
 	-o-transition: color 0.1s;
+	transition: color 0.1s;
 }
 
 a span.noHoverText, a:hover span.hoverText
@@ -69,6 +77,8 @@ body
 .misctext
 {
 	font-size: 25px;
+	font-family: Darius;
+	letter-spacing: 2px;
 }
 
 .svg
@@ -79,7 +89,104 @@ body
 	padding: 2%;
 }
 
-@media screen and (max-width:1300px)
+.homebutton
+{
+	top: 0;
+	left: 0;
+	position: absolute;
+	padding: 1%;
+}
+
+.content
+{
+	margin: 20% 200px 100px;
+	background: rgba(0,0,0,0.5);
+	padding: 25px;
+	border-radius: 25px;
+}
+
+.contentcontainer
+{
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.video
+{
+	top: 0;
+	position: absolute;
+	display: block;
+	width: 20%;
+	margin: 5px;
+	border: 1px solid #fbfbfb;
+	-webkit-transition: 0.1s ease-out;
+	-moz-transition: 0.1s ease-out;
+	-o-transition: 0.1s ease-out;
+	transition: 0.1s ease-out;
+}
+.video:hover
+{
+	border: 5px solid #99C1FF;
+	margin: 1px;
+	-webkit-transition: 0.1s ease-out;
+	-moz-transition: 0.1s ease-out;
+	-o-transition: 0.1s ease-out;
+	transition: 0.1s ease-out;
+}
+.videooverlay
+{
+	position: absolute;
+	padding: 0 0 10px 0;
+	margin: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.gametitle
+{
+	font-family: Darius;
+	letter-spacing: 2px;
+	font-size: 25px;
+	margin: 10px;
+}
+.game
+{
+	display: inline-block;
+	/*position: absolute;*/
+	margin: 10px 0 10px 20%;
+	padding: 0  0 25px 20px;
+	width: 75%;
+	height: auto;
+}
+.gametext
+{
+	display: inline;
+	/*position: absolute;*/
+	height: auto;
+}
+.gamedownload
+{
+	display: inline-block;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+.centerY
+{
+	top: 50%;
+	transform: translateY(-50%);
+}
+.centerX
+{
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+@media screen and (max-width:1500px)
 {
 	.centertext
 	{
@@ -89,9 +196,22 @@ body
 	{
 		font-size: 20px;
 	}
+	.content
+	{
+		margin: 20% 5% 100px;
+	}
+	.video
+	{
+		width: 30%;
+	}
+	.game
+	{
+		width: 65%;
+		margin: 10px 0 10px 30%;
+	}
 }
 
-@media screen and (max-width:800px)
+@media screen and (max-width:1000px)
 {
 	.centertext
 	{
@@ -100,6 +220,29 @@ body
 	.misctext
 	{
 		font-size: 15px;
+	}
+	.content
+	{
+		margin: 20% 5px 100px;
+	}
+	.video
+	{
+		position: relative;
+		display: inline-block;
+		width: 100%;
+	}
+	.game
+	{
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		margin: 10px 0 0 0;
+		padding: 0  0 25px 0;
+	}
+	.gamedownload
+	{
+		right: 0;
+		bottom: 0;
 	}
 }
 
