@@ -98,6 +98,7 @@ body
 	font-size: 2em;
 	font-family: Darius;
 	letter-spacing: 0.1em;
+	text-transform: uppercase;
 }
 
 .svg
@@ -153,20 +154,19 @@ body
 .content
 {
 	margin: 20% 200px 100px;
-	background: rgba(0,0,0,0.5);
-	padding: 25px;
-	border-radius: 25px;
 }
 
 .contentcontainer
 {
 	position: relative;
-	margin-bottom: 100px;
+	margin: 25px 0 100px;
+	background: rgba(0,0,0,0.7);
+	padding: 25px;
+	border-radius: 25px;
 }
 
 .video
 {
-	top: 0;
 	text-align: center;
 	position: absolute;
 	display: block;
@@ -205,12 +205,13 @@ body
 	font-size: 2em;
 	letter-spacing: 0.1em;
 	margin: 10px;
+	text-transform: uppercase;
 }
 .game
 {
 	display: inline-block;
-	margin: 10px 0 10px 400px;
-	padding: 0  0 50px 20px;
+	margin: 0 0 10px 400px;
+	padding: 0  0 50px 35px;
 }
 .gametext
 {
@@ -257,7 +258,7 @@ body
 	}
 	.game
 	{
-		margin: 10px 0 10px 30%;
+		margin: 0 0 10px 30%;
 	}
 }
 
