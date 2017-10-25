@@ -136,6 +136,7 @@ body
 	box-sizing: border-box;
 	/*background-image: url(bg.jpg);
 	background-repeat: no-repeat;
+	background-position: center;
 	background-attachment: absolute;
 	background-color: #000000;
 	-webkit-background-size: cover;
