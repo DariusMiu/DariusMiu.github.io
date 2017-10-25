@@ -26,10 +26,10 @@ A
 }
 A:link
 {
-	-webkit-transition: color 0.1s;
-	-moz-transition: color 0.1s;
-	-o-transition: color 0.1s;
-	transition: color 0.1s;
+	-webkit-transition: color 0.15s;
+	-moz-transition: color 0.15s;
+	-o-transition: color 0.15s;
+	transition: color 0.15s;
 	color: #fbfbfb;
 }
 A:visited
@@ -38,11 +38,11 @@ A:visited
 }
 A:hover
 {
-	color: #99C1FF;
-	-webkit-transition: color 0.1s;
-	-moz-transition: color 0.1s;
-	-o-transition: color 0.1s;
-	transition: color 0.1s;
+	color: #9BF;
+	-webkit-transition: color 0.15s;
+	-moz-transition: color 0.15s;
+	-o-transition: color 0.15s;
+	transition: color 0.15s;
 }
 
 a span.noHoverText, a:hover span.hoverText
@@ -182,19 +182,19 @@ body
 {
 	margin: 5px;
 	border: 1px solid #fbfbfb;
-	-webkit-transition: 0.1s ease;
-	-moz-transition: 0.1s ease;
-	-o-transition: 0.1s ease;
-	transition: 0.1s ease;
+	-webkit-transition: 0.15s ease;
+	-moz-transition: 0.15s ease;
+	-o-transition: 0.15s ease;
+	transition: 0.15s ease;
 }
 .video:hover
 {
-	border: 5px solid #99C1FF;
+	border: 5px solid #9BF;
 	margin: 1px;
-	-webkit-transition: 0.1s ease;
-	-moz-transition: 0.1s ease;
-	-o-transition: 0.1s ease;
-	transition: 0.1s ease;
+	-webkit-transition: 0.15s ease;
+	-moz-transition: 0.15s ease;
+	-o-transition: 0.15s ease;
+	transition: 0.15s ease;
 }
 .videooverlay
 {
@@ -242,14 +242,14 @@ body
 }
 .gamedownload:link
 {
-	-webkit-transition: 0.2s;
-	-moz-transition: 0.2s;
-	-o-transition: 0.2s;
-	transition: 0.2s;
+	-webkit-transition: 0.15s;
+	-moz-transition: 0.15s;
+	-o-transition: 0.15s;
+	transition: 0.15s;
 }
 .gamedownload:hover
 {
-	background: #99C1FF;
+	background: #9BF;
 }
 
 .centerY
