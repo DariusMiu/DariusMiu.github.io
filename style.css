@@ -166,6 +166,7 @@ body
 {
 	font-family: Darius;
 	letter-spacing: 10px;
+	text-transform: uppercase;
 	background: rgba(0,0,0,0.7);
 	border-radius: 15px;
 	padding: 10px;
@@ -182,7 +183,7 @@ body
 
 .content
 {
-	margin: 20% 200px 100px;
+	margin: 15% 200px 100px;
 }
 
 .contentcontainer
