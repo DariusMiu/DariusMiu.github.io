@@ -354,6 +354,38 @@ H6
 	margin: 0;
 }
 
+.art
+{
+	display: inline-block;
+	position: relative;
+	max-width: 100%;
+	text-align: center;
+	max-width: 100%;
+	padding: 0 0 10em 0;
+}
+.art img
+{
+	max-width: 600px;
+	max-height: 500px;
+	width: 100%;
+	padding: 0.1em;
+}
+.art a
+{
+	-webkit-transition: 0.15s;
+	-moz-transition: 0.15s;
+	-o-transition: 0.15s;
+	transition: 0.15s;
+}
+.art a:link
+{
+	filter: brightness(100%);
+}.art a:hover
+{
+	filter: brightness(50%);
+}
+
+
 @media screen and (max-width:1500px)
 {
 	.centertext
