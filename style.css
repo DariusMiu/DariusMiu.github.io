@@ -386,7 +386,13 @@ H6
 	filter: brightness(50%);
 }
 
-
+@media screen and (max-height:925px)
+{
+	.centertext
+	{
+		font-size: 4em;
+	}
+}
 @media screen and (max-width:1500px)
 {
 	.centertext
@@ -404,6 +410,13 @@ H6
 	.game
 	{
 		margin: 0 0 0 30%;
+	}
+}
+@media screen and (max-height:825px)
+{
+	.centertext
+	{
+		font-size: 3em;
 	}
 }
 @media screen and (max-width:1200px)
@@ -436,6 +449,13 @@ H6
 	.gamedownload
 	{
 		font-size: 1.5em;
+	}
+}
+@media screen and (max-height:560px)
+{
+	.centertext
+	{
+		font-size: 2em;
 	}
 }
 @media screen and (max-width:850px)
