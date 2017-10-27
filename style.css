@@ -1,20 +1,20 @@
 @font-face
 {
 	font-family: 'Darius';
-	src: url('Darius.ttf');
+	src: url('fonts/Darius.ttf');
 }
 
 @font-face
 {
 	font-family: 'Vera';
 	font-weight: normal;
-	src: url('Vera.ttf');
+	src: url('fonts/Vera.ttf');
 }
 @font-face
 {
 	font-family: 'Vera';
 	font-weight: bold;
-	src: url('VeraBd.ttf');
+	src: url('fonts/VeraBd.ttf');
 }
 
 img
@@ -66,7 +66,7 @@ body
 
 .background
 {
-	background-image: url(bg.jpg);
+	background-image: url(images/bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
@@ -78,7 +78,7 @@ body
 
 .backgroundblur
 {
-	background-image: url(bgblur.jpg);
+	background-image: url(images/bgblur.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
@@ -151,7 +151,7 @@ body
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	/*background-image: url(bg.jpg);
+	/*background-image: url(images/bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: absolute;
@@ -391,7 +391,7 @@ H6
 {
 	.centertext
 	{
-		font-size: 3em;
+		font-size: 4em;
 	}
 	.content
 	{
@@ -406,7 +406,13 @@ H6
 		margin: 0 0 0 30%;
 	}
 }
-
+@media screen and (max-width:1200px)
+{
+	.centertext
+	{
+		font-size: 3em;
+	}
+}
 @media screen and (max-width:1000px)
 {
 	.content
@@ -432,7 +438,7 @@ H6
 		font-size: 1.5em;
 	}
 }
-@media screen and (max-width:725px)
+@media screen and (max-width:850px)
 {
 	.centertext
 	{
