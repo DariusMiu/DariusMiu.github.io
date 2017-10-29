@@ -151,15 +151,6 @@ body
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	/*background-image: url(images/bg.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: absolute;
-	background-color: #000000;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover; /*uncomment for background on card*/
 }
 
 .download
