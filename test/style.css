@@ -190,17 +190,22 @@ body
 
 .content
 {
-	margin: 25vh 200px 100px;
+	margin: 25vh 200px 0;
 }
 
 .contentcontainer
 {
 	position: relative;
 	margin: 0 0 2em;
-	background: #1F1D25; /*rgba(0,0,0,0.7);*/
+	background: #1E1D24; /*rgba(0,0,0,0.7);*/
 	box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.5);
 	padding: 25px;
 	border-radius: 1px;
+}
+
+.footerwhitespace
+{
+	height: 100px;
 }
 
 .video
@@ -365,17 +370,16 @@ H6
 
 .art
 {
-	line-height: 1em;
-	-webkit-column-count: 3;
-	-moz-column-count:    3;
-	column-count:         3;
-	-webkit-column-gap:   1em;
-	-moz-column-gap:      1em;
-	column-gap:           1em;  
+	display: inline-block;
+	position: relative;
+	max-width: 100%;
+	text-align: center;
+	padding: 0;
 }
 .art img
 {
-	margin: 0.5em 0;
+	width: 100%;
+	padding: 0.1em;
 }
 .art a
 {
@@ -393,11 +397,35 @@ H6
 	filter: brightness(50%);
 }
 
+.gallery
+{
+	line-height: 1em;
+	-webkit-column-count: 3;
+	-moz-column-count:    3;
+	column-count:         3;
+	-webkit-column-gap:   1em;
+	-moz-column-gap:      1em;
+	column-gap:           1em;  
+}
+.gallery img
+{
+	margin: 0.5em 0;
+}
+
 @media screen and (max-height:925px)
 {
 	.centertext
 	{
 		font-size: 4em;
+	}
+}
+@media screen and (min-width:2000px)
+{
+	.gallery
+	{
+		-webkit-column-count: 4;
+		-moz-column-count:    4;
+		column-count:         4;
 	}
 }
 @media screen and (max-width:1500px)
@@ -408,7 +436,7 @@ H6
 	}
 	.content
 	{
-		margin: 25vh 5% 100px;
+		margin: 25vh 5% 0;
 	}
 	.video
 	{
@@ -443,7 +471,7 @@ H6
 {
 	.content
 	{
-		margin: 25vh 5px 100px;
+		margin: 25vh 5px 0;
 	}
 	.video
 	{
