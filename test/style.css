@@ -455,6 +455,10 @@ H6
 	{
 		font-size: 1.5em;
 	}
+	.contentcontainer
+	{
+		margin: 25px 0 5em;
+	}
 }
 @media screen and (max-height:560px)
 {
