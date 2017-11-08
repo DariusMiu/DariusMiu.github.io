@@ -133,7 +133,7 @@ body
 	position: absolute;
 	max-width: 152.8vh; /* 3.30/2.16 - the dimentions of a Moo card */
 	min-width: 500px;
-	width: 100%;
+	width: 99%;
 	height: 100%;
 }
 .cardY
@@ -142,7 +142,7 @@ body
 	max-height: 65.4vw; /* 2.16/3.30 - the dimentions of a Moo card */
 	min-height: 327px;
 	width: 100%;
-	height: 100%;
+	height: 99%;
 }
 .cardborder
 {
