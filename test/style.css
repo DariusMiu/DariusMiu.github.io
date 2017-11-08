@@ -64,6 +64,11 @@ body
 	background-color: #000000;
 }
 
+.backgroundsolid
+{
+	background: #1B1C20;
+}
+
 .background
 {
 	background-image: url(images/bg.jpg);
@@ -181,7 +186,7 @@ body
 .contentcontainer
 {
 	position: relative;
-	margin: 25px 0 100px;
+	margin: 25px 0 10px;
 	background: #1F1D25; /*rgba(0,0,0,0.7);*/
 	padding: 25px;
 	border-radius: 1px;
