@@ -365,18 +365,17 @@ H6
 
 .art
 {
-	display: inline-block;
-	position: relative;
-	text-align: center;
-	max-width: 100%;
+	line-height: 1em;
+	-webkit-column-count: 3;
+	-moz-column-count:    3;
+	column-count:         3;
+	-webkit-column-gap:   1em;
+	-moz-column-gap:      1em;
+	column-gap:           1em;  
 }
 .art img
 {
-	max-width: 600px;
-	max-height: 500px;
-	width: 100%;
-	padding: 0;
-	margin: 0.1em;
+	margin: 0.5em 0;
 }
 .art a
 {
@@ -388,7 +387,8 @@ H6
 .art a:link
 {
 	filter: brightness(100%);
-}.art a:hover
+}
+.art a:hover
 {
 	filter: brightness(50%);
 }
@@ -428,6 +428,12 @@ H6
 }
 @media screen and (max-width:1200px)
 {
+	.art
+	{
+		-webkit-column-count: 2;
+		-moz-column-count:    2;
+		column-count:         2;
+	}
 	.centertext
 	{
 		font-size: 3em;
