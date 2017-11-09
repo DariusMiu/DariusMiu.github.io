@@ -110,7 +110,7 @@ body
 {
 	font-size: 2rem;
 	font-family: Darius;
-	letter-spacing: 0.1rem;
+	letter-spacing: 0.2rem;
 	text-transform: uppercase;
 }
 
@@ -253,7 +253,7 @@ body
 {
 	font-family: Darius;
 	font-size: 2rem;
-	letter-spacing: 0.1rem;
+	letter-spacing: 0.2rem;
 	margin: 10px;
 	text-transform: uppercase;
 	width: 100%;
