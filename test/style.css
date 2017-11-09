@@ -380,33 +380,26 @@ H6
 	display: inline-block;
 	position: relative;
 	padding: 0;
-	overflow: hidden;
+	margin: 10 0;
 }
-.resume a:link
+.resume div.resumeitem
 {
-	-webkit-transition: 0.15s;
-	-moz-transition: 0.15s;
-	-o-transition: 0.15s;
-	transition: 0.15s;
+	box-shadow: 1px 2px 6px 0px rgba(0255,0,0,0.5);
+	z-index: 10;
 }
-.resume a:hover
-{
-	
-}
+
 .resumeitem
 {
 	width: 100%;
 	height: auto;
 	max-width: 32%;
 	display: inline-block;
-	margin: 0;
-	padding: 0;
 	float: left;
 	text-align: center;
+	overflow: hidden;
 }
 .resumeitem a
 {
-	overflow: hidden;
 }
 .resumeitem div 
 {
@@ -425,10 +418,12 @@ H6
 	max-width: 32%;
 	height: 6vw;
 	background-color: #1E1D24;
+	overflow: hidden;
 }
 .resumeitem:hover div.overlay
 {
-	bottom: -6vw;
+	/*bottom: -6vw;*/
+	height: 0;
 }
 .resumeitem p
 {
