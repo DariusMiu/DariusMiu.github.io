@@ -64,6 +64,11 @@ body
 	background-color: #000000;
 }
 
+.backgroundsolid
+{
+	background: #1B1C20;
+}
+
 .background
 {
 	background-image: url(images/bg.jpg);
@@ -88,16 +93,24 @@ body
 	background-size: cover;
 }
 
+.headerimage
+{
+	height:50vh;
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
 .centertext
 {
-	font-size: 5em;
+	font-size: 5rem;
 }
 
 .misctext
 {
-	font-size: 2em;
+	font-size: 2rem;
 	font-family: Darius;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.2rem;
 	text-transform: uppercase;
 }
 
@@ -111,7 +124,7 @@ body
 	transform: translate(-50%, -50%);
 }
 
-.resume
+.resumelink
 {
 	position: absolute;
 	text-align: center;
@@ -159,10 +172,12 @@ body
 	font-family: Darius;
 	letter-spacing: 10px;
 	text-transform: uppercase;
-	background: rgba(0,0,0,0.7);
-	border-radius: 15px;
+	margin: 2rem 0 0;
+	width: auto;
+	/*background: rgba(31, 29, 37, 1);
+	border-radius: 1px;
 	padding: 10px;
-	margin-bottom: 3px;
+	margin-bottom: 3px;*/
 }
 
 .homebutton
@@ -175,16 +190,22 @@ body
 
 .content
 {
-	margin: 15% 200px 100px;
+	margin: 25vh 200px 0;
 }
 
 .contentcontainer
 {
 	position: relative;
-	margin: 25px 0 100px;
-	background: rgba(0,0,0,0.7);
+	margin: 0 0 2rem;
+	background: #1E1D24; /*rgba(0,0,0,0.7);*/
+	box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.5);
 	padding: 25px;
-	border-radius: 25px;
+	border-radius: 1px;
+}
+
+.footerwhitespace
+{
+	height: 100px;
 }
 
 .video
@@ -231,8 +252,8 @@ body
 .gametitle
 {
 	font-family: Darius;
-	font-size: 2em;
-	letter-spacing: 0.1em;
+	font-size: 2rem;
+	letter-spacing: 0.2rem;
 	margin: 10px;
 	text-transform: uppercase;
 	width: 100%;
@@ -248,7 +269,7 @@ body
 {
 	display: block;
 	height: auto;
-	padding: 0 0 0 1em;
+	padding: 0 0 0 1rem;
 	margin: 0;
 }
 .game a
@@ -258,18 +279,18 @@ body
 .game td
 {
 	border: none;
-	padding: 0 0.5em;
+	padding: 0 0.5rem;
 	margin: 0;
 }
 .game h5
 {
 	border-bottom: 1px solid #fbfbfb;
-	padding: 0.5em 0 0.2em 0.2em;
-	margin: 0 0 0.5em 0.3em;
+	padding: 0.5rem 0 0.2rem 0.2rem;
+	margin: 0 0 0.5rem 0.3rem;
 }
 .tiny
 {
-	font-size: 0.7em;
+	font-size: 0.7rem;
 }
 .gamedownload
 {
@@ -310,42 +331,129 @@ body
 	transform: translateX(-50%);
 }
 
+.center
+{
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 H1
 {
-	font-size: 3em;
+	font-size: 3rem;
 	font-weight: bold;
 	margin: 0;
 }
 H2
 {
-	font-size: 3em;
+	font-size: 3rem;
 	font-weight: normal;
 	margin: 0;
 }
 H3
 {
-	font-size: 2em;
+	font-size: 2rem;
 	font-weight: bold;
 	margin: 0;
 }
 H4
 {
-	font-size: 2em;
+	font-size: 2rem;
 	font-weight: normal;
 	margin: 0;
 }
 H5
 {
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	font-weight: bold;
 	margin: 0;
 }
 H6
 {
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	font-weight: normal;
 	margin: 0;
 }
+
+.resume
+{
+	display: inline-block;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.resumeitem
+{
+	width: 100%;
+	height: auto;
+	max-width: 32%;
+	display: inline-block;
+	float: left;
+	text-align: center;
+	box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.5);
+	overflow: hidden;
+}
+.resumeitem a
+{
+}
+.resumeitem div 
+{
+	width: 100%;
+	-webkit-transition: ease-in-out 0.15s;
+	-moz-transition: ease-in-out 0.15s;
+	-o-transition: ease-in-out 0.15s;
+	transition: ease-in-out 0.15s;
+}
+.resumeitem div.overlay
+{
+	position: absolute;
+	padding: 0 0;
+	margin: 0;
+	bottom: 0;
+	max-width: 32%;
+	height: 6vw;
+	background-color: #1E1D24;
+	overflow: hidden;
+}
+.resumeitem:hover div.overlay
+{
+	/*bottom: -6vw;*/
+	height: 0;
+}
+.resumeitem p
+{
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+.resumeitem img
+{
+	width: 100%;
+}
+.resumeitem div.image
+{
+	bottom: 3vw;
+	position: relative;
+	/*margin-top: -15%;
+	margin-bottom: 15%;*/
+	-webkit-transition: ease-in-out 0.15s;
+	-moz-transition: ease-in-out 0.15s;
+	-o-transition: ease-in-out 0.15s;
+	transition: ease-in-out 0.15s;
+}
+.resumeitem:hover div.image
+{
+	margin: 0;
+	bottom: 0;
+}
+.resumeitem div.image img
+{
+	max-width: none;
+}
+
 
 .art
 {
@@ -353,15 +461,13 @@ H6
 	position: relative;
 	max-width: 100%;
 	text-align: center;
-	max-width: 100%;
-	padding: 0 0 10em 0;
+	padding: 0;
 }
 .art img
 {
-	max-width: 600px;
-	max-height: 500px;
 	width: 100%;
-	padding: 0.1em;
+	margin: 0.1rem;
+	box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.5);
 }
 .art a
 {
@@ -373,27 +479,52 @@ H6
 .art a:link
 {
 	filter: brightness(100%);
-}.art a:hover
+}
+.art a:hover
 {
 	filter: brightness(50%);
 }
 
-@media screen and (max-height:925px)
+.gallery
+{
+	line-height: 1rem;
+	-webkit-column-count: 3;
+	-moz-column-count:    3;
+	column-count:         3;
+	-webkit-column-gap:   1rem;
+	-moz-column-gap:      1rem;
+	column-gap:           1rem;  
+}
+.gallery img
+{
+	margin: 0.5rem 0;
+}
+
+@media screen and (max-height:1000px)
 {
 	.centertext
 	{
-		font-size: 4em;
+		font-size: 4rem;
+	}
+}
+@media screen and (min-width:2000px)
+{
+	.gallery
+	{
+		-webkit-column-count: 4;
+		-moz-column-count:    4;
+		column-count:         4;
 	}
 }
 @media screen and (max-width:1500px)
 {
 	.centertext
 	{
-		font-size: 4em;
+		font-size: 4rem;
 	}
 	.content
 	{
-		margin: 20% 5% 100px;
+		margin: 25vh 5% 0;
 	}
 	.video
 	{
@@ -408,21 +539,27 @@ H6
 {
 	.centertext
 	{
-		font-size: 3em;
+		font-size: 3rem;
 	}
 }
 @media screen and (max-width:1200px)
 {
+	.art
+	{
+		-webkit-column-count: 2;
+		-moz-column-count:    2;
+		column-count:         2;
+	}
 	.centertext
 	{
-		font-size: 3em;
+		font-size: 3rem;
 	}
 }
 @media screen and (max-width:1000px)
 {
 	.content
 	{
-		margin: 20% 5px 100px;
+		margin: 25vh 5px 0;
 	}
 	.video
 	{
@@ -440,21 +577,25 @@ H6
 	}
 	.gamedownload
 	{
-		font-size: 1.5em;
+		font-size: 1.5rem;
+	}
+	.contentcontainer
+	{
+		margin: 25px 0 8rem;
 	}
 }
 @media screen and (max-height:560px)
 {
 	.centertext
 	{
-		font-size: 2em;
+		font-size: 2rem;
 	}
 }
 @media screen and (max-width:850px)
 {
 	.centertext
 	{
-		font-size: 2em;
+		font-size: 2rem;
 	}
 }
 
