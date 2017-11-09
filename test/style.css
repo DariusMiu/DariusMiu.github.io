@@ -382,11 +382,6 @@ H6
 	padding: 0;
 	margin: 10 0;
 }
-.resume div.resumeitem
-{
-	box-shadow: 1px 2px 6px 0px rgba(0255,0,0,0.5);
-	z-index: 10;
-}
 
 .resumeitem
 {
@@ -396,6 +391,7 @@ H6
 	display: inline-block;
 	float: left;
 	text-align: center;
+	box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.5);
 	overflow: hidden;
 }
 .resumeitem a
