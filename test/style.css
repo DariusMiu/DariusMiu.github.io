@@ -99,6 +99,8 @@ body
 	width: 100%;
 	position: absolute;
 	top: 0;
+	background-position: top;
+	background-size: 100%;
 }
 
 .centertext
