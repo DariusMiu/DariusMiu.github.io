@@ -138,7 +138,7 @@ body
 	width: 20%;
 	min-width: 200px;
 	position: absolute;
-	padding: 2%;
+	padding: 3vmin;
 	margin: 0;
 	display: block;
 }
@@ -175,11 +175,6 @@ body
 	letter-spacing: 10px;
 	text-transform: uppercase;
 	margin: 2rem 0 0;
-	width: auto;
-	/*background: rgba(31, 29, 37, 1);
-	border-radius: 1px;
-	padding: 10px;
-	margin-bottom: 3px;*/
 }
 
 .homebutton
@@ -187,7 +182,7 @@ body
 	top: 0;
 	left: 0;
 	position: absolute;
-	padding: 1%;
+	padding: 1vw;
 }
 
 .content
@@ -199,10 +194,9 @@ body
 {
 	position: relative;
 	margin: 0 0 2rem;
-	background: #1E1D24; /*rgba(0,0,0,0.7);*/
+	background: #1C1D25; /*rgba(0,0,0,0.7);*/
 	box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.5);
 	padding: 25px;
-	border-radius: 1px;
 }
 
 .footerwhitespace
@@ -416,7 +410,7 @@ H6
 	bottom: 0;
 	max-width: 32%;
 	height: 6vw;
-	background-color: #1E1D24;
+	background-color: #1C1D25;
 	overflow: hidden;
 }
 .resumeitem:hover div.overlay
@@ -502,14 +496,14 @@ H6
 	margin: 0.5rem 0;
 }
 
-@media screen and (max-height:1000px)
+@media screen and (max-height:62rem)
 {
 	.centertext
 	{
 		font-size: 4rem;
 	}
 }
-@media screen and (min-width:2000px)
+@media screen and (min-width:125rem)
 {
 	.gallery
 	{
@@ -518,7 +512,7 @@ H6
 		column-count:         4;
 	}
 }
-@media screen and (max-width:1500px)
+@media screen and (max-width:93rem)
 {
 	.centertext
 	{
@@ -537,14 +531,14 @@ H6
 		margin: 0 0 0 30%;
 	}
 }
-@media screen and (max-height:825px)
+@media screen and (max-height:51rem)
 {
 	.centertext
 	{
 		font-size: 3rem;
 	}
 }
-@media screen and (max-width:1200px)
+@media screen and (max-width:75rem)
 {
 	.art
 	{
@@ -557,11 +551,11 @@ H6
 		font-size: 3rem;
 	}
 }
-@media screen and (max-width:1000px)
+@media screen and (max-width:62rem)
 {
 	.content
 	{
-		margin: 25vh 5px 0;
+		margin: 25vh 0.5vw 0;
 	}
 	.video
 	{
@@ -583,17 +577,17 @@ H6
 	}
 	.contentcontainer
 	{
-		margin: 25px 0 8rem;
+		margin: 0 0 5rem;
 	}
 }
-@media screen and (max-height:560px)
+@media screen and (max-height:35rem)
 {
 	.centertext
 	{
 		font-size: 2rem;
 	}
 }
-@media screen and (max-width:850px)
+@media screen and (max-width:53rem)
 {
 	.centertext
 	{
