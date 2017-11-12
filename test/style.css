@@ -20,11 +20,11 @@
 img
 { max-width: 100%; }
 
-A
+a
 {
 	text-decoration: none;
 }
-A:link
+a:link
 {
 	-webkit-transition: color 0.15s;
 	-moz-transition: color 0.15s;
@@ -32,11 +32,11 @@ A:link
 	transition: color 0.15s;
 	color: #fbfbfb;
 }
-A:visited
+a:visited
 {
 	color: #fbfbfb;
 }
-A:hover
+a:hover
 {
 	color: #9BF;
 	-webkit-transition: color 0.15s;
@@ -195,7 +195,7 @@ body
 	position: relative;
 	margin: 0 0 2rem;
 	background: #1C1D25; /*rgba(0,0,0,0.7);*/
-	box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
 	padding: 25px;
 }
 
@@ -212,7 +212,7 @@ body
 	display: block;
 	margin: 4px;
 	border: 2px solid #fbfbfb;
-	box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
 	-webkit-transition: 0.15s ease;
 	-moz-transition: 0.15s ease;
 	-o-transition: 0.15s ease;
@@ -307,7 +307,7 @@ body
 	opacity: 1;
 	background: white;
 	color: black !important;
-	box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
 }
 .gamedownload:link
 {
@@ -395,7 +395,7 @@ H6
 	display: inline-block;
 	float: left;
 	text-align: center;
-	box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.5);
+	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
 	overflow: hidden;
 	-webkit-transition: ease-in-out 0.15s;
 	-moz-transition: ease-in-out 0.15s;
@@ -409,10 +409,10 @@ H6
 .resumeitem div 
 {
 	width: 100%;
-	-webkit-transition: ease-in-out 0.15s;
-	-moz-transition: ease-in-out 0.15s;
-	-o-transition: ease-in-out 0.15s;
-	transition: ease-in-out 0.15s;
+	-webkit-transition: ease 0.2s;
+	-moz-transition: ease 0.2s;
+	-o-transition: ease 0.2s;
+	transition: ease 0.2s;
 }
 .resumeitem div.overlay
 {
@@ -446,10 +446,10 @@ H6
 {
 	bottom: 3vw;
 	position: relative;
-	-webkit-transition: ease-in-out 0.15s;
-	-moz-transition: ease-in-out 0.15s;
-	-o-transition: ease-in-out 0.15s;
-	transition: ease-in-out 0.15s;
+	-webkit-transition: ease 0.2s;
+	-moz-transition: ease 0.2s;
+	-o-transition: ease 0.2s;
+	transition: ease 0.2s;
 }
 .resumeitem:hover div.image
 {
@@ -474,11 +474,11 @@ H6
 {
 	width: 100%;
 	margin: 0.1rem;
-	box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.5);
-	-webkit-transition: 0.15s;
-	-moz-transition: 0.15s;
-	-o-transition: 0.15s;
-	transition: 0.15s;
+	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
+	-webkit-transition: 0.15s ease;
+	-moz-transition: 0.15s ease;
+	-o-transition: 0.15s ease;
+	transition: 0.15s ease;
 }
 .art img:link
 {
@@ -632,4 +632,22 @@ H6
 		-2px 1px 0 #000,
 		2px -1px 0 #000,
 		-2px -1px 0 #000;
+}
+
+.test
+{
+}
+
+.test #border
+{
+	background: #fbfbfb;
+	border: 5px solid #fbfbfb;
+	-webkit-transition: 1s ease;
+	-moz-transition: 1s ease;
+	-o-transition: 1s ease;
+	transition: 1s ease;
+}
+.test:hover #border
+{
+	border: 50px solid #fbfbfb;
 }
