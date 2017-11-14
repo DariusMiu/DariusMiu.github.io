@@ -60,7 +60,7 @@ body, html
 }
 
 .backgroundsolid
-{ background: #151416; }
+{ }
 
 .background
 {
@@ -177,7 +177,10 @@ body, html
 }
 
 .content
-{ margin: 25vh 200px 0; }
+{
+	padding: 25vh 200px 50px;
+	background: #151416;
+}
 
 .contentcontainer
 {
@@ -190,11 +193,10 @@ body, html
 
 .footer
 {
-	top: 10;
 	padding: 0;
 	width: 100%;
 	height: 50px;
-	margin: 50px 0 0;
+	margin: 0;
 	font-size: 0.8rem;
 	position: relative;
 	text-align: center;
@@ -522,7 +524,7 @@ H6
 	.centertext
 	{ font-size: 4rem; }
 	.content
-	{ margin: 25vh 5% 0; }
+	{ padding: 25vh 5% 50px; }
 	.video
 	{ width: 30%; }
 	.game
@@ -548,7 +550,7 @@ H6
 @media screen and (max-width:62rem)
 {
 	.content
-	{ margin: 25vh 1vw 0; }
+	{ padding: 25vh 1vw 50px; }
 	.gamedownload
 	{ font-size: 1.5rem; }
 	.contentcontainer
