@@ -26,11 +26,11 @@ a
 }
 a:link
 {
+	color: #fbfbfb;
 	-webkit-transition: color 0.15s;
 	-moz-transition: color 0.15s;
 	-o-transition: color 0.15s;
 	transition: color 0.15s;
-	color: #fbfbfb;
 }
 a:visited
 {
@@ -47,20 +47,20 @@ a:hover
 
 a span.noHoverText, a:hover span.hoverText
 {
-	display: inline-block;
 	width: 100%;
+	display: inline-block;
 }
 a:hover span.noHoverText, a span.hoverText
 {
-	display: none;
 	width: 100%;
+	display: none;
 }
 
 body
 {
+	margin: 0;
 	color: #fbfbfb;
 	font-family: Vera;
-	margin: 0;
 	background-color: #000000;
 }
 
@@ -71,10 +71,10 @@ body
 
 .background
 {
-	background-image: url(images/bg.jpg);
-	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-image: url(images/bg.jpg);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -83,10 +83,10 @@ body
 
 .backgroundblur
 {
-	background-image: url(images/bgblur.jpg);
-	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-image: url(images/bgblur.jpg);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -95,12 +95,12 @@ body
 
 .headerimage
 {
+	top: 0;
 	height:50vh;
 	width: 100%;
 	position: absolute;
-	top: 0;
-	background-position: top;
 	background-size: 100%;
+	background-position: top;
 }
 
 .centertext
@@ -118,71 +118,71 @@ body
 
 .maindiv
 {
-	position: absolute;
-	width: 100%;
-	text-align: center;
 	top: 50%;
 	left: 50%;
+	width: 100%;
+	position: absolute;
+	text-align: center;
 	transform: translate(-50%, -50%);
 }
 
 .resumelink
 {
+	bottom: 1%;
 	position: absolute;
 	text-align: center;
-	bottom: 1%;
 }
 
 .svg
 {
+	margin: 0;
 	width: 20%;
+	padding: 3vmin;
+	display: block;
 	min-width: 200px;
 	position: absolute;
-	padding: 3vmin;
-	margin: 0;
-	display: block;
 }
 
 .cardX
 {
-	position: absolute;
-	max-width: 152.8vh; /* 3.30/2.16 - the dimentions of a Moo card */
-	min-width: 500px;
 	width: 99%;
 	height: 100%;
+	min-width: 500px;
+	position: absolute;
+	max-width: 152.8vh; /* 3.30/2.16 - the dimentions of a Moo card */
 }
 .cardY
 {
-	position: absolute;
-	max-height: 65.4vw; /* 2.16/3.30 - the dimentions of a Moo card */
-	min-height: 327px;
 	width: 100%;
 	height: 99%;
+	min-height: 327px;
+	position: absolute;
+	max-height: 65.4vw; /* 2.16/3.30 - the dimentions of a Moo card */
 }
 .cardborder
 {
-	border: 2px solid black;
 	border-radius: 6vmin;
+	border: 2px solid black;
+	background-attachment: initial;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	background-attachment: initial;
 }
 
 .download
 {
+	margin: 2rem 0 0;
 	font-family: Darius;
 	letter-spacing: 10px;
 	text-transform: uppercase;
-	margin: 2rem 0 0;
 }
 
 .homebutton
 {
 	top: 0;
 	left: 0;
-	position: absolute;
 	padding: 1vw;
+	position: absolute;
 }
 
 .content
@@ -192,11 +192,11 @@ body
 
 .contentcontainer
 {
-	position: relative;
+	padding: 25px;
 	margin: 0 0 2rem;
+	position: relative;
 	background: #1C1D25; /*rgba(0,0,0,0.7);*/
 	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
-	padding: 25px;
 }
 
 .footerwhitespace
@@ -207,10 +207,10 @@ body
 .video
 {
 	width: 25%;
+	margin: 4px;
+	display: block;
 	text-align: center;
 	position: absolute;
-	display: block;
-	margin: 4px;
 	border: 2px solid #fbfbfb;
 	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
 	-webkit-transition: 0.15s ease;
@@ -218,15 +218,12 @@ body
 	-o-transition: 0.15s ease;
 	transition: 0.15s ease;
 }
-.video a
-{
-}
 .video video
 {
-	width: 100%;
-	position: absolute;
 	top: 0;
 	left: 0;
+	width: 100%;
+	position: absolute;
 }
 .video:link
 {
@@ -242,36 +239,36 @@ body
 }
 .videooverlay
 {
-	position: absolute;
-	padding: 0 0 10px 0;
 	margin: 0;
 	bottom: 0;
 	width: 100%;
+	position: absolute;
+	padding: 0 0 10px 0;
 	text-shadow: 0 0 5px black;
 }
 
 .gametitle
 {
-	font-family: Darius;
-	font-size: 2rem;
-	letter-spacing: 0.2rem;
-	margin: 10px;
-	text-transform: uppercase;
 	width: 100%;
+	margin: 10px;
+	font-size: 2rem;
 	text-align: right;
+	font-family: Darius;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
 }
 .game
 {
-	display: inline-block;
 	margin: 0 0 0 25%;
 	padding: 0  0 0 35px;
+	display: inline-block;
 }
 .game p
 {
-	display: block;
-	height: auto;
-	padding: 0 0 0 1rem;
 	margin: 0;
+	height: auto;
+	display: block;
+	padding: 0 0 0 1rem;
 }
 .game a
 {
@@ -279,15 +276,15 @@ body
 }
 .game td
 {
+	margin: 0;
 	border: none;
 	padding: 0 0.5rem;
-	margin: 0;
 }
 .game h5
 {
-	border-bottom: 1px solid #fbfbfb;
-	padding: 0.5rem 0 0.2rem 0.2rem;
 	margin: 0 0 0.5rem 0.3rem;
+	padding: 0.5rem 0 0.2rem 0.2rem;
+	border-bottom: 1px solid #fbfbfb;
 }
 .tiny
 {
@@ -295,18 +292,18 @@ body
 }
 .gamedownload
 {
-	display: inline-block;
-	position: absolute;
-	right: 10px;
-	bottom: 10px;
-	font-weight: bold;
-	padding: 20px;
-	margin: 10px;
-	text-transform: uppercase;
-	border-radius: 5px;
 	opacity: 1;
+	right: 10px;
+	margin: 10px;
+	bottom: 10px;
+	padding: 20px;
+	font-weight: bold;
 	background: white;
+	border-radius: 5px;
+	position: absolute;
+	display: inline-block;
 	color: black !important;
+	text-transform: uppercase;
 	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
 }
 .gamedownload:link
@@ -343,60 +340,60 @@ body
 
 H1
 {
+	margin: 0;
 	font-size: 3rem;
 	font-weight: bold;
-	margin: 0;
 }
 H2
 {
+	margin: 0;
 	font-size: 3rem;
 	font-weight: normal;
-	margin: 0;
 }
 H3
 {
+	margin: 0;
 	font-size: 2rem;
 	font-weight: bold;
-	margin: 0;
 }
 H4
 {
+	margin: 0;
 	font-size: 2rem;
 	font-weight: normal;
-	margin: 0;
 }
 H5
 {
+	margin: 0;
 	font-size: 1.5rem;
 	font-weight: bold;
-	margin: 0;
 }
 H6
 {
+	margin: 0;
 	font-size: 1.5rem;
 	font-weight: normal;
-	margin: 0;
 }
 
 .resume
 {
-	display: inline-block;
-	position: relative;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 	width: 100%;
+	position: relative;
+	display: inline-block;
 }
 
 .resumeitem
 {
 	width: 100%;
+	float: left;
 	height: auto;
 	max-width: 32%;
-	display: inline-block;
-	float: left;
-	text-align: center;
-	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
 	overflow: hidden;
+	text-align: center;
+	display: inline-block;
+	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
 	-webkit-transition: ease-in-out 0.15s;
 	-moz-transition: ease-in-out 0.15s;
 	-o-transition: ease-in-out 0.15s;
@@ -416,14 +413,14 @@ H6
 }
 .resumeitem div.overlay
 {
-	position: relative;
-	padding: 0 0;
-	margin: 0 0 -6vw;
 	bottom: 6vw;
-	max-width: 100%;
 	height: 6vw;
-	background-color: #1C1D25;
+	padding: 0 0;
+	max-width: 100%;
 	overflow: hidden;
+	margin: 0 0 -6vw;
+	position: relative;
+	background-color: #1C1D25;
 }
 .resumeitem:hover div.overlay
 {
@@ -433,10 +430,10 @@ H6
 }
 .resumeitem p
 {
-	position: absolute;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 	width: 100%;
+	position: absolute;
 }
 .resumeitem img
 {
@@ -464,11 +461,11 @@ H6
 
 .art
 {
-	display: inline-block;
-	position: relative;
+	padding: 0;
 	max-width: 100%;
 	text-align: center;
-	padding: 0;
+	position: relative;
+	display: inline-block;
 }
 .art img
 {
@@ -494,11 +491,13 @@ H6
 {
 	line-height: 1rem;
 	-webkit-column-count: 3;
-	-moz-column-count:    3;
-	column-count:         3;
-	-webkit-column-gap:   1rem;
-	-moz-column-gap:      1rem;
-	column-gap:           1rem;  
+	-moz-column-count: 3;
+	-o-column-count: 3;
+	column-count: 3;
+	-webkit-column-gap: 1rem;
+	-moz-column-gap: 1rem;
+	-o-column-gap: 1rem;
+	column-gap: 1rem;  
 }
 .gallery img
 {
@@ -517,8 +516,9 @@ H6
 	.gallery
 	{
 		-webkit-column-count: 4;
-		-moz-column-count:    4;
-		column-count:         4;
+		-moz-column-count: 4;
+		-o-column-count: 4;
+		column-count: 4;
 	}
 }
 @media screen and (max-width:93rem)
@@ -552,8 +552,9 @@ H6
 	.art
 	{
 		-webkit-column-count: 2;
-		-moz-column-count:    2;
-		column-count:         2;
+		-moz-column-count: 2;
+		-o-column-count: 2;
+		column-count: 2;
 	}
 	.centertext
 	{
@@ -564,21 +565,21 @@ H6
 {
 	.content
 	{
-		margin: 25vh 0.5vw 0;
+		margin: 25vh 1vw 0;
 	}
 	.video
 	{
+		width: 100%;
 		position: relative;
 		display: inline-block;
-		width: 100%;
 	}
 	.game
 	{
-		position: relative;
-		display: inline-block;
+		padding: 0;
 		width: 100%;
 		margin: 10px 0 0 0;
-		padding: 0;
+		position: relative;
+		display: inline-block;
 	}
 	.gamedownload
 	{
