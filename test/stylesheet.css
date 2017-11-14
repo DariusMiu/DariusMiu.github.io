@@ -43,12 +43,10 @@ a:hover
 
 a span.noHoverText, a:hover span.hoverText
 {
-	width: 100%;
 	display: inline-block;
 }
 a:hover span.noHoverText, a span.hoverText
 {
-	width: 100%;
 	display: none;
 }
 
@@ -115,6 +113,8 @@ body, html
 	position: absolute;
 	text-align: center;
 }
+.maindiv span
+{ width: 100%; }
 
 .resumelink
 {
