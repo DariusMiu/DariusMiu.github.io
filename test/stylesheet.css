@@ -185,12 +185,26 @@ body, html
 
 .contentcontainer
 {
+	width: 98%;
+	width: calc(100% - 50px);
 	padding: 25px;
+	overflow: hidden;
 	margin: 0 0 25px;
 	position: relative;
 	background: #1E1F25;
+	display: inline-block;
 	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
 }
+.contentcontainerplain
+{
+	width: 100%;
+	overflow: hidden;
+	margin: 0 0 25px;
+	position: relative;
+	display: inline-block;
+	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
+}
+
 
 .footer
 {
@@ -471,26 +485,26 @@ H6
 	width: 100%;
 	position: relative;
 	display: inline-block;
-}
-.colors .item
-{
-	width: 15.83%;
-	width: calc(95%/6);
-	height: 0;
-	padding-top: 15.83%;
-	padding-top: calc(95%/6);
-	float: left;
-	overflow: hidden;
-	text-align: center;
-	display: inline-block;
 	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
 	-webkit-transition: ease-in-out 0.15s;
 	-moz-transition: ease-in-out 0.15s;
 	-o-transition: ease-in-out 0.15s;
 	transition: ease-in-out 0.15s;
 }
-.colors .item:hover
+.colors:hover
 { box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.5); }
+.colors .item
+{
+	width: 16.66%;
+	width: calc(100%/6);
+	height: 0;
+	padding-top: 16.66%;
+	padding-top: 40px;
+	float: left;
+	overflow: hidden;
+	text-align: center;
+	display: inline-block;
+}
 .colors .item div 
 {
 	width: 100%;
@@ -506,8 +520,8 @@ H6
 	height: 0;
 	margin: 0;
 	padding: 0;
-	width: 15.83%;
-	width: calc(95%/6);
+	width: 16.66%;
+	width: calc(100%/6);
 	overflow: hidden;
 	font-weight: bold;
 	position: absolute;
@@ -523,7 +537,7 @@ H6
 	padding: 12px 0;
 	margin: 0 0 -40px;
 }
-.colors .left
+/*.colors .left
 {
 	margin-right: 0.5%;
 }
@@ -535,7 +549,7 @@ H6
 .colors .right
 {
 	margin-left: 0.5%;
-}
+}*/
 .colors #C060606
 { background: #060606; }
 .colors #C060606 p
@@ -566,18 +580,6 @@ H6
 .colors #CFFF p
 { background: #1E1F25; color: #FFF; }
 
-.fonts
-{
-	text-align: center;
-	font-size: 1.5rem;
-}
-.fonts div
-{ margin: 0.5rem; }
-.fonts #vera
-{ font-family: Vera; }
-.fonts #darius
-{ font-family: Darius; letter-spacing: 0.1em; text-transform: uppercase; }
-
 .icons
 {
 	text-align: center;
@@ -597,8 +599,31 @@ H6
 .logos img
 { width: 50%; margin: 0; float: left;}
 
+.fonts
+{
+	text-align: center;
+	font-size: 1.5rem;
+	width: 49%;
+	width: calc(50% - 62.5px);
+	float: left;
+	display: inline-block;
+}
+.fonts div
+{ margin: 0.5rem; }
+.fonts #vera
+{ font-family: Vera; }
+.fonts #darius
+{ font-family: Darius; letter-spacing: 0.1em; text-transform: uppercase; }
+
 .guidelines
-{ text-align: center; font-size: 1.5rem; }
+{
+	text-align: center;
+	font-size: 1.5rem;
+	width: 49%;
+	width: calc(50% - 62.5px);
+	float: right;
+	display: inline-block;
+}
 
 .art
 {
