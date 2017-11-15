@@ -3,7 +3,6 @@
 	font-family: 'Darius';
 	src: url('fonts/Darius.ttf');
 }
-
 @font-face
 {
 	font-family: 'Vera';
@@ -101,6 +100,7 @@ body, html
 
 .misctext
 {
+	margin: 0 0 1em;
 	font-size: 2rem;
 	font-family: Darius;
 	letter-spacing: 0.2rem;
@@ -118,6 +118,7 @@ body, html
 
 .resumelink
 {
+	margin: 0;
 	bottom: 1%;
 	position: absolute;
 	text-align: center;
@@ -203,10 +204,7 @@ body, html
 	background: #060606;
 }
 .footer div
-{
-	margin: 18px;
-	display: inline-block;
-}
+{ margin: 18px; display: inline-block; }
 .footer p
 { margin: 0; }
 .footer span
@@ -305,28 +303,31 @@ body, html
 { font-size: 0.7rem; }
 .gamedownload
 {
-	opacity: 1;
 	right: 10px;
 	margin: 10px;
 	bottom: 10px;
+	position: absolute;
+	display: inline-block;
+
+}
+.button
+{
 	padding: 20px;
 	font-weight: bold;
 	background: white;
 	border-radius: 5px;
-	position: absolute;
-	display: inline-block;
 	color: black !important;
 	text-transform: uppercase;
 	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
 }
-.gamedownload:link
+.button:link
 {
 	-webkit-transition: 0.15s;
 	-moz-transition: 0.15s;
 	-o-transition: 0.15s;
 	transition: 0.15s;
 }
-.gamedownload:hover
+.button:hover
 {
 	background: #9BF;
 	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.5);
@@ -396,8 +397,7 @@ H6
 	position: relative;
 	display: inline-block;
 }
-
-.resumeitem
+.resume #item
 {
 	width: 100%;
 	float: left;
@@ -411,9 +411,9 @@ H6
 	-o-transition: ease-in-out 0.15s;
 	transition: ease-in-out 0.15s;
 }
-.resumeitem:hover
+.resume #item:hover
 { box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.5); }
-.resumeitem div 
+.resume #item div 
 {
 	width: 100%;
 	-webkit-transition: ease 0.2s;
@@ -421,7 +421,7 @@ H6
 	-o-transition: ease 0.2s;
 	transition: ease 0.2s;
 }
-.resumeitem div#overlay
+.resume #item div#overlay
 {
 	bottom: 6vw;
 	height: 6vw;
@@ -432,22 +432,22 @@ H6
 	position: relative;
 	background: #1E1F25;
 }
-.resumeitem:hover div#overlay
+.resume #item:hover div#overlay
 {
 	bottom: 0;
 	height: 0;
 	margin: 0;
 }
-.resumeitem p
+.resume #item p
 {
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	position: absolute;
 }
-.resumeitem img
+.resume #item img
 { width: 100%; }
-.resumeitem div#image
+.resume #item div#image
 {
 	bottom: 3vw;
 	position: relative;
@@ -456,14 +456,149 @@ H6
 	-o-transition: ease 0.2s;
 	transition: ease 0.2s;
 }
-.resumeitem:hover div#image
+.resume #item:hover div#image
 {
 	margin: 0;
 	bottom: 0;
 }
-.resumeitem div#image img
+.resume #item div#image img
 { max-width: none; }
 
+.colors
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	position: relative;
+	display: inline-block;
+}
+.colors .item
+{
+	width: 15.83%;
+	width: calc(95%/6);
+	height: 0;
+	padding-top: 15.83%;
+	padding-top: calc(95%/6);
+	float: left;
+	overflow: hidden;
+	text-align: center;
+	display: inline-block;
+	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
+	-webkit-transition: ease-in-out 0.15s;
+	-moz-transition: ease-in-out 0.15s;
+	-o-transition: ease-in-out 0.15s;
+	transition: ease-in-out 0.15s;
+}
+.colors .item:hover
+{ box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.5); }
+.colors .item div 
+{
+	width: 100%;
+	height: 100%;
+	-webkit-transition: ease 0.2s;
+	-moz-transition: ease 0.2s;
+	-o-transition: ease 0.2s;
+	transition: ease 0.2s;
+}
+.colors .item p
+{
+	bottom: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	width: 15.83%;
+	width: calc(95%/6);
+	overflow: hidden;
+	font-weight: bold;
+	position: absolute;
+	-webkit-transition: ease 0.2s;
+	-moz-transition: ease 0.2s;
+	-o-transition: ease 0.2s;
+	transition: ease 0.2s;
+}
+.colors .item:hover p
+{
+	bottom: 40px;
+	height: 16px;
+	padding: 12px 0;
+	margin: 0 0 -40px;
+}
+.colors .left
+{
+	margin-right: 0.5%;
+}
+.colors .middle
+{
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+}
+.colors .right
+{
+	margin-left: 0.5%;
+}
+.colors #C060606
+{ background: #060606; }
+.colors #C060606 p
+{ background: #333; color: #060606; }
+
+.colors #C151416
+{ background: #151416; }
+.colors #C151416 p
+{ background: #9BF; color: #151416; }
+
+.colors #C1E1F25
+{ background: #1E1F25; }
+.colors #C1E1F25 p
+{ background: #FFF; color: #1E1F25; }
+
+.colors #C333
+{ background: #333; }
+.colors #C333 p
+{ background: #060606; color: #333; }
+
+.colors #C9BF
+{ background: #9BF; }
+.colors #C9BF p
+{ background: #151416; color: #9BF; }
+
+.colors #CFFF
+{ background: #FFF; }
+.colors #CFFF p
+{ background: #1E1F25; color: #FFF; }
+
+.fonts
+{
+	text-align: center;
+	font-size: 1.5rem;
+}
+.fonts div
+{ margin: 0.5rem; }
+.fonts #vera
+{ font-family: Vera; }
+.fonts #darius
+{ font-family: Darius; letter-spacing: 0.1em; text-transform: uppercase; }
+
+.icons
+{
+	text-align: center;
+	display: inline-block;
+}
+.icons div
+{
+	width: 50%;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+.favicons
+{ float: left; }
+.logos
+{ float: right; }
+.logos img
+{ width: 50%; margin: 0; float: left;}
+
+.guidelines
+{ text-align: center; font-size: 1.5rem; }
 
 .art
 {
@@ -503,8 +638,14 @@ H6
 	-o-column-gap: 1rem;
 	column-gap: 1rem;  
 }
+.gallery div
+{
+	max-height: 25vw;
+	overflow: hidden;
+	margin: 0.5rem 0;
+}
 .gallery img
-{ margin: 0.5rem 0; }
+{  }
 
 @media screen and (max-height:62rem)
 {
@@ -587,34 +728,34 @@ H6
 .shadowtext
 {
 	text-shadow:
-		1px 1px 0 #000,
-		-1px 1px 0 #000,
-		1px -1px 0 #000,
-		-1px -1px 0 #000,
-		0px 1px 0 #000,
-		0px -1px 0 #000,
-		-1px 0px 0 #000,
-		1px 0px 0 #000,
-		2px 2px 0 #000,
-		-2px 2px 0 #000,
-		2px -2px 0 #000,
-		-2px -2px 0 #000,
-		0px 2px 0 #000,
-		0px -2px 0 #000,
-		-2px 0px 0 #000,
-		2px 0px 0 #000,
-		1px 2px 0 #000,
-		-1px 2px 0 #000,
-		1px -2px 0 #000,
-		-1px -2px 0 #000,
-		2px 1px 0 #000,
-		-2px 1px 0 #000,
-		2px -1px 0 #000,
-		-2px -1px 0 #000;
+		1px 1px 0 #060606,
+		-1px 1px 0 #060606,
+		1px -1px 0 #060606,
+		-1px -1px 0 #060606,
+		0px 1px 0 #060606,
+		0px -1px 0 #060606,
+		-1px 0px 0 #060606,
+		1px 0px 0 #060606,
+		2px 2px 0 #060606,
+		-2px 2px 0 #060606,
+		2px -2px 0 #060606,
+		-2px -2px 0 #060606,
+		0px 2px 0 #060606,
+		0px -2px 0 #060606,
+		-2px 0px 0 #060606,
+		2px 0px 0 #060606,
+		1px 2px 0 #060606,
+		-1px 2px 0 #060606,
+		1px -2px 0 #060606,
+		-1px -2px 0 #060606,
+		2px 1px 0 #060606,
+		-2px 1px 0 #060606,
+		2px -1px 0 #060606,
+		-2px -1px 0 #060606;
 }
 
 .test
-{}
+{  }
 .test #border
 {
 	background: #fff;
