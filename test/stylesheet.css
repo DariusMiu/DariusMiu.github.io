@@ -536,18 +536,11 @@ H6
 	margin: 0 0 -40px;
 }
 /*.colors .left
-{
-	margin-right: 0.5%;
-}
+{margin-right: 0.5%;}
 .colors .middle
-{
-	margin-left: 0.5%;
-	margin-right: 0.5%;
-}
+{ margin-left: 0.5%; margin-right: 0.5%; }
 .colors .right
-{
-	margin-left: 0.5%;
-}*/
+{ margin-left: 0.5%; }*/
 .colors #C060606
 { background: #060606; }
 .colors #C060606 p
@@ -592,10 +585,12 @@ H6
 }
 .favicons
 { float: left; }
+.favicons img
+{ margin: 10px; }
 .logos
 { float: right; }
 .logos img
-{ width: 50%; margin: 0; float: left;}
+{ width: 256px; margin: 10px; }
 
 .fonts
 {
@@ -622,6 +617,8 @@ H6
 	float: right;
 	display: inline-block;
 }
+.guidelines p
+{ margin: 0.5rem; }
 
 .art
 {
