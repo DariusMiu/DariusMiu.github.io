@@ -484,6 +484,10 @@ H6
 	position: relative;
 	display: inline-block;
 	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
+	-webkit-transition: ease 0.15s;
+	-moz-transition: ease 0.15s;
+	-o-transition: ease 0.15s;
+	transition: ease 0.15s;
 }
 .colors:hover
 { box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.5); }
@@ -505,10 +509,10 @@ H6
 {
 	width: 100%;
 	height: 100%;
-	-webkit-transition: ease 0.2s;
-	-moz-transition: ease 0.2s;
-	-o-transition: ease 0.2s;
-	transition: ease 0.2s;
+	-webkit-transition: ease 0.15s;
+	-moz-transition: ease 0.15s;
+	-o-transition: ease 0.15s;
+	transition: ease 0.15s;
 }
 .colors .item p
 {
@@ -543,9 +547,7 @@ input:checked ~ .colors .item p
 	margin: 0 0 0px;
 }
 input:checked ~ .colors .item
-{
-	height: 80px;
-}
+{ height: 80px; }
 /*.colors .left
 {margin-right: 0.5%;}
 .colors .middle
@@ -555,32 +557,32 @@ input:checked ~ .colors .item
 .colors #C060606
 { background: #060606; }
 .colors #C060606 p
-{ background: #333; color: #060606; }
+{ background: #1E1F25; color: #9BF; }
 
 .colors #C151416
 { background: #151416; }
 .colors #C151416 p
-{ background: #9BF; color: #151416; }
+{ background: #1E1F25; color: #9BF; }
 
 .colors #C1E1F25
 { background: #1E1F25; }
 .colors #C1E1F25 p
-{ background: #FFF; color: #1E1F25; }
+{ background: #1E1F25; color: #9BF; }
 
 .colors #C333
 { background: #333; }
 .colors #C333 p
-{ background: #060606; color: #333; }
+{ background: #1E1F25; color: #9BF; }
 
 .colors #C9BF
 { background: #9BF; }
 .colors #C9BF p
-{ background: #151416; color: #9BF; }
+{ background: #1E1F25; color: #9BF; }
 
 .colors #CFFF
 { background: #FFF; }
 .colors #CFFF p
-{ background: #1E1F25; color: #FFF; }
+{ background: #1E1F25; color: #9BF; }
 
 .icons
 {
