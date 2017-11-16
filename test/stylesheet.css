@@ -95,15 +95,6 @@ body, html
 .centertext
 { font-size: 5rem; }
 
-.misctext
-{
-	margin: 0 0 1em;
-	font-size: 2rem;
-	font-family: Darius;
-	letter-spacing: 0.2rem;
-	text-transform: uppercase;
-}
-
 .maindiv
 {
 	width: 100%;
@@ -112,14 +103,6 @@ body, html
 }
 .maindiv span
 { width: 100%; }
-
-.resumelink
-{
-	margin: 0;
-	bottom: 1%;
-	position: absolute;
-	text-align: center;
-}
 
 .svg
 {
@@ -160,7 +143,7 @@ body, html
 
 .download
 {
-	margin: 2rem 0 0;
+	position: relative;
 	font-family: Darius;
 	letter-spacing: 10px;
 	text-transform: uppercase;
@@ -191,26 +174,61 @@ body, html
 	position: relative;
 	background: #1E1F25;
 	display: inline-block;
-	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5);
+	box-shadow: 0 2px 3px 1px rgba(0,0,0,0.5);
 	-webkit-transition: 0.15s ease;
 	-moz-transition: 0.15s ease;
 	-o-transition: 0.15s ease;
 	transition: 0.15s ease;
 }
+.contentcontainer p
+{ margin: 1em 0 0; }
+.contentcontainer#right
+{
+	width: 49%;
+	width: calc(50% - 62.5px);
+	float: right;
+}
+.contentcontainer#left
+{
+	width: 49%;
+	width: calc(50% - 62.5px);
+	float: left;
+}
+.contentcontainer .contentcontainer
+{
+	width: calc(50% - 62.5px);
+	float: right;
+	background: #333;
+}
+.contentcontainer#hover p
+{ color: #FFF; }
+.contentcontainer:hover#hover span
+{ color: #9BF; }
 .contentcontainer:hover#hover
-{ box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.7); }
+{ box-shadow: 0 0 10px 3px rgba(0,0,0,0.7); }
 
+.misctext
+{
+	margin: 0 0 25px;
+	font-size: 2rem;
+	text-align: center;
+	font-family: Darius;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+}
+p.misctext
+{ margin: 0 0 25px; }
 
 .shadow
-{ box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5); }
+{ box-shadow: 0 2px 3px 1px rgba(0,0,0,0.5); }
 .shadow:hover#hover
-{ box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.7); }
+{ box-shadow: 0 0 10px 3px rgba(0,0,0,0.7); }
 .shadowdiv div
-{ box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.5); }
+{ box-shadow: 0 2px 3px 1px rgba(0,0,0,0.5); }
 .shadowdiv#hover div:hover
-{ box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.7); }
+{ box-shadow: 0 0 10px 3px rgba(0,0,0,0.7); }
 
-#hover
+#hover, #hover img, #hover div
 {
 	-webkit-transition: 0.15s ease;
 	-moz-transition: 0.15s ease;
@@ -417,6 +435,14 @@ H6
 	font-weight: normal;
 }
 
+.resumelink
+{
+	margin: 0;
+	bottom: 1%;
+	position: absolute;
+	text-align: center;
+}
+
 .resume
 {
 	margin: 0;
@@ -617,8 +643,6 @@ input:checked ~ .colors .item div
 	float: left;
 	display: inline-block;
 }
-.fonts div
-{ margin: 0.5rem; }
 .fonts .vera
 { font-family: Vera; }
 .fonts .darius
@@ -633,14 +657,39 @@ input:checked ~ .colors .item div
 	float: right;
 	display: inline-block;
 }
-.guidelines p
-{
-	margin: 0.5rem;
-	color: #FFF;
-}
-.guidelines:hover span
-{ color: #9BF; }
 
+.specifications
+{ text-align: center; }
+
+.cardexample
+{
+	width: 49%;
+	width: calc(50% - 12.5px);
+	float: left;
+	background: #151416;
+	border-radius: 2px;
+	overflow: hidden;
+	margin: 0 0 25px;
+	position: relative;
+	display: inline-block;
+	box-shadow: 0 2px 3px 1px rgba(0,0,0,0.5);
+}
+.cardexample .null
+{
+	margin: 3px 5px;
+	height: 0;
+	position: relative;
+}
+.cardexample p
+{ margin: 0 5px; }
+.cardexample p.misctext
+{ margin: 0 0 25px; padding: 0; }
+.cardexample p#left
+{ float: left; }
+.cardexample p#right
+{ float: right; }
+.cardexample div
+{ margin: 25px; background: #1E1F25; }
 
 .art
 {
@@ -650,18 +699,22 @@ input:checked ~ .colors .item div
 	position: relative;
 	display: inline-block;
 }
+.art #overlay
+{
+	
+	bottom: 0;
+	width: 100%;
+	padding: 0 0 10px 0;
+	text-shadow: 0 0 5px black;
+}
 .art img
 {
-	width: 100%;
 	margin: 0.1rem;
-	-webkit-transition: ease 0.15s;
-	-moz-transition: ease 0.15s;
-	-o-transition: ease 0.15s;
-	transition: ease 0.15s;
+	max-height: 25vw;
 }
-.art img:link
-{ filter: brightness(100%); }
 .art img:hover
+{ filter: brightness(50%); }
+.art.design:hover img
 { filter: brightness(50%); }
 
 .gallery
@@ -677,11 +730,7 @@ input:checked ~ .colors .item div
 	column-gap: 1rem;  
 }
 .gallery div
-{
-	max-height: 25vw;
-	overflow: hidden;
-	margin: 0.5rem 0;
-}
+{ margin: 1rem 0rem; }
 .gallery img
 {  }
 
