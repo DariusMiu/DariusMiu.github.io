@@ -521,10 +521,12 @@ H6
 	margin: 0;
 	padding: 0;
 	width: 16.66%;
+	line-height: 2rem;
 	width: calc(100%/6);
 	overflow: hidden;
 	font-weight: bold;
 	position: absolute;
+	text-transform: uppercase;
 	-webkit-transition: ease 0.15s;
 	-moz-transition: ease 0.15s;
 	-o-transition: ease 0.15s;
@@ -542,18 +544,13 @@ input
 input:checked ~ .colors .item p
 {
 	bottom: 0;
-	height: 16px;
+	height: 136px;
 	padding: 12px 0;
-	margin: 0 0 0px;
+	margin: 0;
 }
 input:checked ~ .colors .item
-{ height: 80px; }
-/*.colors .left
-{margin-right: 0.5%;}
-.colors .middle
-{ margin-left: 0.5%; margin-right: 0.5%; }
-.colors .right
-{ margin-left: 0.5%; }*/
+{ height: 200px; }
+
 .colors #C060606
 { background: #060606; }
 .colors #C060606 p
