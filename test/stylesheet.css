@@ -486,6 +486,10 @@ H6
 	margin: 0 0 -6vw;
 	position: relative;
 	background: #1E1F25;
+	-webkit-transition: ease 0.2s;
+	-moz-transition: ease 0.2s;
+	-o-transition: ease 0.2s;
+	transition: ease 0.2s;
 }
 .resume .item:hover div#overlay
 {
