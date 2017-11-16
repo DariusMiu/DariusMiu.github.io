@@ -694,7 +694,6 @@ input:checked ~ .colors .item div
 .art
 {
 	padding: 0;
-	max-width: 100%;
 	text-align: center;
 	position: relative;
 	display: inline-block;
@@ -709,9 +708,14 @@ input:checked ~ .colors .item div
 }
 .art img
 {
+	width: 100%;
 	margin: 0.1rem;
-	max-height: 25vw;
 }
+/*.art div
+{
+	max-height: 25vw;
+	overflow: hidden;
+}*/
 .art img:hover
 { filter: brightness(50%); }
 .art.design:hover img
