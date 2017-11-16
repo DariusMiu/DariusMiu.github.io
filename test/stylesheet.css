@@ -505,81 +505,77 @@ H6
 	-o-transition: ease 0.15s;
 	transition: ease 0.15s;
 }
-.colors .item div 
-{
-	width: 100%;
-	height: 100%;
-	-webkit-transition: ease 0.15s;
-	-moz-transition: ease 0.15s;
-	-o-transition: ease 0.15s;
-	transition: ease 0.15s;
-}
 .colors .item p
 {
 	bottom: 0;
-	height: 0;
-	margin: 0;
 	padding: 0;
-	width: 16.66%;
+	margin: 0;
+	width: 100%;
 	line-height: 2rem;
-	width: calc(100%/6);
 	overflow: hidden;
 	font-weight: bold;
-	position: absolute;
 	text-transform: uppercase;
-	-webkit-transition: ease 0.15s;
-	-moz-transition: ease 0.15s;
-	-o-transition: ease 0.15s;
-	transition: ease 0.15s;
-}
-.colors .item:hover p
-{
-	bottom: 40px;
-	height: 16px;
-	padding: 12px 0;
-	margin: 0 0 -40px;
 }
 input
 { display:none; }
 input:checked ~ .colors .item p
 {
 	bottom: 0;
-	height: 136px;
-	padding: 12px 0;
-	margin: 0;
 }
 input:checked ~ .colors .item
-{ height: 200px; }
+{ height: 160px; }
+
+.item p
+{ border-color: #333; border-style: solid; box-sizing: border-box; }
+.left p
+{ border-width: 0 1px 0 0; }
+.middle p
+{ border-width: 0 1px 0; }
+.right p
+{ border-width: 0 0 0 1px; }
+
+.item div
+{
+	padding: 0;
+	height: 0;
+	bottom: -40px;
+	position: relative;
+	background: #1E1F25; color: #9BF;
+	-webkit-transition: ease 0.15s;
+	-moz-transition: ease 0.15s;
+	-o-transition: ease 0.15s;
+	transition: ease 0.15s;
+}
+.item:hover div
+{
+	height: 28px;
+	bottom: 0;
+	padding: 12px 0;
+}
+input:checked ~ .colors .item div
+{
+	height: 96px;
+	padding: 12px 0;
+	bottom: -40px;
+}
 
 .colors #C060606
 { background: #060606; }
-.colors #C060606 p
-{ background: #1E1F25; color: #9BF; }
 
 .colors #C151416
 { background: #151416; }
-.colors #C151416 p
-{ background: #1E1F25; color: #9BF; }
 
 .colors #C1E1F25
 { background: #1E1F25; }
-.colors #C1E1F25 p
-{ background: #1E1F25; color: #9BF; }
 
 .colors #C333
 { background: #333; }
-.colors #C333 p
-{ background: #1E1F25; color: #9BF; }
 
 .colors #C9BF
 { background: #9BF; }
-.colors #C9BF p
-{ background: #1E1F25; color: #9BF; }
 
 .colors #CFFF
 { background: #FFF; }
-.colors #CFFF p
-{ background: #1E1F25; color: #9BF; }
 
 .icons
 {
