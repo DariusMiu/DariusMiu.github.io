@@ -700,9 +700,10 @@ input:checked ~ .colors .item div
 }
 .art #overlay
 {
-	
+	margin: 0;
 	bottom: 0;
 	width: 100%;
+	position: absolute;
 	padding: 0 0 10px 0;
 	text-shadow: 0 0 5px black;
 }
