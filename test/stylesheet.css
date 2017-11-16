@@ -155,7 +155,7 @@ body, html
 	background: #151416;
 }
 
-.contentcontainer
+.container
 {
 	width: 98%;
 	width: calc(100% - 50px);
@@ -172,31 +172,31 @@ body, html
 	-o-transition: ease 0.15s;
 	transition: ease 0.15s;
 }
-.contentcontainer p
+.container p
 { margin: 1em 0 0; }
-.contentcontainer#right
+.container#right
 {
 	width: 49%;
 	width: calc(50% - 62.5px);
 	float: right;
 }
-.contentcontainer#left
+.container#left
 {
 	width: 49%;
 	width: calc(50% - 62.5px);
 	float: left;
 }
-.contentcontainer .contentcontainer
+.container .container
 {
 	width: calc(50% - 62.5px);
 	float: right;
 	background: #333;
 }
-.contentcontainer#hover p
+.container#hover p
 { color: #FFF; }
-.contentcontainer:hover#hover span
+.container:hover#hover span
 { color: #9BF; }
-.contentcontainer:hover#hover
+.container:hover#hover
 { box-shadow: 0 0 10px 3px rgba(0,0,0,0.7); }
 
 .misctext
@@ -239,7 +239,7 @@ p.download
 	transition: ease 0.15s;	
 }
 
-.contentcontainerplain
+.containerplain
 {
 	width: 100%;
 	margin: 0 0 25px;
@@ -719,11 +719,6 @@ input:checked ~ .colors .item div
 	width: 100%;
 	margin: 0.1rem;
 }
-/*.art div
-{
-	max-height: 25vw;
-	overflow: hidden;
-}*/
 .art img:hover
 { filter: brightness(50%); }
 .art.design:hover img
@@ -795,8 +790,8 @@ input:checked ~ .colors .item div
 	{ padding: 25vh 1vw 50px; }
 	.gamedownload
 	{ font-size: 1.5rem; }
-	.contentcontainer
-	{ margin: 0 0 5rem; }
+	.container
+	{ margin: 0 0 25px; }
 	.video
 	{
 		margin: 0;
