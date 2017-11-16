@@ -512,6 +512,7 @@ H6
 	margin: 0;
 	width: 100%;
 	line-height: 2rem;
+	max-height: 3.5rem;
 	overflow: hidden;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -523,7 +524,7 @@ input:checked ~ .colors .item p
 	bottom: 0;
 }
 input:checked ~ .colors .item
-{ height: 160px; }
+{ height: 120px; }
 
 .item p
 { border-color: #333; border-style: solid; box-sizing: border-box; }
@@ -554,7 +555,7 @@ input:checked ~ .colors .item
 }
 input:checked ~ .colors .item div
 {
-	height: 96px;
+	height: 56px;
 	padding: 12px 0;
 	bottom: -40px;
 }
