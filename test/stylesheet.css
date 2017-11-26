@@ -90,6 +90,14 @@ body, html
 	position: absolute;
 	background-size: 100%;
 	background-position: top;
+	overflow: hidden;
+}
+.headerimage video
+{
+	min-width: 100vw;
+	min-height: 50vh;
+	bottom: 0;
+	position: absolute;
 }
 
 .centertext
