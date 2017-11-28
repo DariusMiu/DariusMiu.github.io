@@ -90,6 +90,14 @@ body, html
 	position: absolute;
 	background-size: 100%;
 	background-position: top;
+	overflow: hidden;
+}
+.headerimage video
+{
+	min-width: 100vw;
+	min-height: 50vh;
+	bottom: 0;
+	position: absolute;
 }
 
 .centertext
@@ -715,10 +723,7 @@ input:checked ~ .colors .item div
 	text-shadow: 0 0 5px black;
 }
 .art img
-{
-	width: 100%;
-	margin: 0.1rem;
-}
+{ width: 100%; }
 .art img:hover
 { filter: brightness(50%); }
 .art.design:hover img
