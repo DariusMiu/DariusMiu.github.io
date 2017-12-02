@@ -90,6 +90,14 @@ body, html
 	position: absolute;
 	background-size: 100%;
 	background-position: top;
+	overflow: hidden;
+}
+.headerimage video
+{
+	min-width: 100vw;
+	min-height: 50vh;
+	bottom: 0;
+	position: absolute;
 }
 
 .centertext
@@ -231,7 +239,7 @@ p.download
 .shadowdiv#hover div:hover
 { box-shadow: 0 0 10px 3px rgba(0,0,0,0.7); }
 
-#hover, #hover img, #hover div
+#hover, #hover img, #hover div, #hover span
 {
 	-webkit-transition: ease 0.15s;
 	-moz-transition: ease 0.15s;
