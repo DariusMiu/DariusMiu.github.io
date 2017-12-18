@@ -30,6 +30,7 @@
       function runMain () {
         // We can't invoke Main() since it disposes the Game immediately, breaking everything.
         var asm = JSIL.GetAssembly("Irbis", true);
+		console.log('assembly:' + asm);
         var game = new asm.Irbis.Irbis();
         game.Run();
       };
