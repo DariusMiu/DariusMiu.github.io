@@ -1,3 +1,4 @@
+﻿/* It is auto-generated file. Do not modify it. */
 "use strict";
 
 if (typeof (JSIL) === "undefined")
@@ -12,13 +13,13 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.Keyboard", function ($) {
     return new Microsoft.Xna.Framework.Input.KeyboardState(keys);
   };
 
-  $.Method({Static:true , Public:true }, "GetState", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.KeyboardState"), [], [])), 
+  $.Method({Static:true , Public:true }, "GetState",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.KeyboardState"), [], [])),
     getStateImpl
   );
 
-  $.Method({Static:true , Public:true }, "GetState", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.KeyboardState"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.PlayerIndex")], [])), 
+  $.Method({Static:true , Public:true }, "GetState",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.KeyboardState"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.PlayerIndex")], [])),
     getStateImpl
   );
 });
@@ -31,8 +32,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.KeyboardState", function 
       target.keys = [];
   });
 
-  $.Method({Static:false, Public:true }, ".ctor", 
-    (new JSIL.MethodSignature(null, [$jsilcore.TypeRef("System.Array", [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.Keys")])], [])), 
+  $.Method({Static:false, Public:true }, ".ctor",
+    (new JSIL.MethodSignature(null, [$jsilcore.TypeRef("System.Array", [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.Keys")])], [])),
     function _ctor (keys) {
       this.keys = [];
 
@@ -41,8 +42,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.KeyboardState", function 
     }
   );
 
-  $.Method({Static:false, Public:true }, "GetPressedKeys", 
-    (new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.Keys")]), [], [])), 
+  $.Method({Static:false, Public:true }, "GetPressedKeys",
+    (new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.Keys")]), [], [])),
     function GetPressedKeys () {
       if (!this.keys)
         return [];
@@ -57,8 +58,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.KeyboardState", function 
     }
   );
 
-  $.Method({Static:false, Public:true }, "IsKeyDown", 
-    (new JSIL.MethodSignature($.Boolean, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.Keys")], [])), 
+  $.Method({Static:false, Public:true }, "IsKeyDown",
+    (new JSIL.MethodSignature($.Boolean, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.Keys")], [])),
     function IsKeyDown (key) {
       if (!this.keys)
         return false;
@@ -67,8 +68,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.KeyboardState", function 
     }
   );
 
-  $.Method({Static:false, Public:true }, "IsKeyUp", 
-    (new JSIL.MethodSignature($.Boolean, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.Keys")], [])), 
+  $.Method({Static:false, Public:true }, "IsKeyUp",
+    (new JSIL.MethodSignature($.Boolean, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.Keys")], [])),
     function IsKeyUp (key) {
       if (!this.keys)
         return true;
@@ -96,21 +97,21 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.Mouse", function ($) {
     );
   };
 
-  $.Method({Static:true , Public:true }, "GetState", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.MouseState"), [], [])), 
+  $.Method({Static:true , Public:true }, "GetState",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.MouseState"), [], [])),
     getStateImpl
   );
 });
 
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.MouseState", function ($) {
 
-  $.Method({Static:false, Public:true }, ".ctor", 
+  $.Method({Static:false, Public:true }, ".ctor",
     (new JSIL.MethodSignature(null, [
-          $.Int32, $.Int32, 
-          $.Int32, $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), 
-          $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), 
+          $.Int32, $.Int32,
+          $.Int32, $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"),
+          $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"),
           $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState")
-        ], [])), 
+        ], [])),
     function _ctor (x, y, scrollWheel, leftButton, middleButton, rightButton, xButton1, xButton2) {
       // FIXME
       this.x = x;
@@ -121,36 +122,36 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.MouseState", function ($)
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_LeftButton", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), [], [])), 
+  $.Method({Static:false, Public:true }, "get_LeftButton",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), [], [])),
     function get_LeftButton () {
       return this.leftButton;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_MiddleButton", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), [], [])), 
+  $.Method({Static:false, Public:true }, "get_MiddleButton",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), [], [])),
     function get_MiddleButton () {
       return this.middleButton;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_RightButton", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), [], [])), 
+  $.Method({Static:false, Public:true }, "get_RightButton",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), [], [])),
     function get_RightButton () {
       return this.rightButton;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_X", 
-    (new JSIL.MethodSignature($.Int32, [], [])), 
+  $.Method({Static:false, Public:true }, "get_X",
+    (new JSIL.MethodSignature($.Int32, [], [])),
     function get_X () {
       return this.x;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_Y", 
-    (new JSIL.MethodSignature($.Int32, [], [])), 
+  $.Method({Static:false, Public:true }, "get_Y",
+    (new JSIL.MethodSignature($.Int32, [], [])),
     function get_Y () {
       return this.y;
     }
@@ -287,28 +288,28 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.GamePad", function ($) {
     return result;
   };
 
-  $.Method({Static:true , Public:true }, "GetState", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadState"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.PlayerIndex")], [])), 
+  $.Method({Static:true , Public:true }, "GetState",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadState"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.PlayerIndex")], [])),
     getStateImpl
   );
 
-  $.Method({Static:true , Public:true }, "GetState", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadState"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.PlayerIndex"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadDeadZone")], [])), 
+  $.Method({Static:true , Public:true }, "GetState",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadState"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.PlayerIndex"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadDeadZone")], [])),
     getStateImpl
   );
 
-  $.Method({Static:true , Public:true }, "SetVibration", 
+  $.Method({Static:true , Public:true }, "SetVibration",
     (new JSIL.MethodSignature($.Boolean, [
-          $xnaasms[0].TypeRef("Microsoft.Xna.Framework.PlayerIndex"), $.Single, 
+          $xnaasms[0].TypeRef("Microsoft.Xna.Framework.PlayerIndex"), $.Single,
           $.Single
-        ], [])), 
+        ], [])),
     function SetVibration (playerIndex, leftMotor, rightMotor) {
       // FIXME
     }
   );
 
-  $.Method({Static:true , Public:true }, "GetCapabilities", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadCapabilities"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.PlayerIndex")], [])), 
+  $.Method({Static:true , Public:true }, "GetCapabilities",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadCapabilities"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.PlayerIndex")], [])),
     function GetCapabilities (playerIndex) {
       var svc = JSIL.Host.getService("gamepad", true);
       var state = null;
@@ -326,20 +327,20 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.GamePad", function ($) {
 });
 
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.GamePadCapabilities", function ($) {
-  
+
   $.RawMethod(false, "$internalCtor", function (connected) {
     this._connected = connected;
   });
 
-  $.Method({Static:false, Public:false}, ".ctor", 
-    (new JSIL.MethodSignature(null, [$jsilcore.TypeRef("JSIL.Reference", [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.XINPUT_CAPABILITIES")]), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.ErrorCodes")], [])), 
+  $.Method({Static:false, Public:false}, ".ctor",
+    (new JSIL.MethodSignature(null, [$jsilcore.TypeRef("JSIL.Reference", [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.XINPUT_CAPABILITIES")]), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.ErrorCodes")], [])),
     function _ctor (/* ref */ caps, result) {
       this._connected = false;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_IsConnected", 
-    (new JSIL.MethodSignature($.Boolean, [], [])), 
+  $.Method({Static:false, Public:true }, "get_IsConnected",
+    (new JSIL.MethodSignature($.Boolean, [], [])),
     function get_IsConnected () {
       return this._connected;
     }
@@ -360,47 +361,47 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.GamePadState", function (
     this._dpad = dPad;
   });
 
-  $.Method({Static:false, Public:true }, ".ctor", 
+  $.Method({Static:false, Public:true }, ".ctor",
     (new JSIL.MethodSignature(null, [
-          $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadThumbSticks"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadTriggers"), 
+          $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadThumbSticks"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadTriggers"),
           $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadButtons"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadDPad")
-        ], [])), 
+        ], [])),
     function _ctor (thumbSticks, triggers, buttons, dPad) {
       this.$internalCtor(false, thumbSticks, triggers, buttons, dPad);
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_Buttons", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadButtons"), [], [])), 
+  $.Method({Static:false, Public:true }, "get_Buttons",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadButtons"), [], [])),
     function get_Buttons () {
       return this._buttons;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_DPad", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadDPad"), [], [])), 
+  $.Method({Static:false, Public:true }, "get_DPad",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadDPad"), [], [])),
     function get_DPad () {
       return this._dpad;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_IsConnected", 
-    (new JSIL.MethodSignature($.Boolean, [], [])), 
+  $.Method({Static:false, Public:true }, "get_IsConnected",
+    (new JSIL.MethodSignature($.Boolean, [], [])),
     function get_IsConnected () {
       // FIXME
       return this._connected;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_ThumbSticks", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadThumbSticks"), [], [])), 
+  $.Method({Static:false, Public:true }, "get_ThumbSticks",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadThumbSticks"), [], [])),
     function get_ThumbSticks () {
       return this._thumbs;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_Triggers", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadTriggers"), [], [])), 
+  $.Method({Static:false, Public:true }, "get_Triggers",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.GamePadTriggers"), [], [])),
     function get_Triggers () {
       return this._triggers;
     }
@@ -436,15 +437,15 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.GamePadState", function (
     return released;
   };
 
-  $.Method({Static:false, Public:true }, "IsButtonDown", 
-    (new JSIL.MethodSignature($.Boolean, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.Buttons")], [])), 
+  $.Method({Static:false, Public:true }, "IsButtonDown",
+    (new JSIL.MethodSignature($.Boolean, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.Buttons")], [])),
     function IsButtonDown (button) {
       return (getButtonState(this, button).valueOf() !== 0);
     }
   );
 
-  $.Method({Static:false, Public:true }, "IsButtonUp", 
-    (new JSIL.MethodSignature($.Boolean, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.Buttons")], [])), 
+  $.Method({Static:false, Public:true }, "IsButtonUp",
+    (new JSIL.MethodSignature($.Boolean, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.Buttons")], [])),
     function IsButtonUp (button) {
       return (getButtonState(this, button).valueOf() === 0);
     }
@@ -454,7 +455,7 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.GamePadState", function (
 
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.GamePadButtons", function ($) {
   var buttonNames = [
-    "A", "B", "Back", "BigButton", 
+    "A", "B", "Back", "BigButton",
     "LeftShoulder", "LeftStick", "RightShoulder", "RightStick",
     "Start", "X", "Y"
   ];
@@ -477,20 +478,20 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.GamePadButtons", function
   for (var i = 0; i < buttonNames.length; i++) {
     var buttonName = buttonNames[i];
 
-    $.Method({Static:false, Public:true }, "get_" + buttonName, 
-      (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), [], [])), 
+    $.Method({Static:false, Public:true }, "get_" + buttonName,
+      (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), [], [])),
       makeButtonGetter(buttonName)
     );
   }
 
-  $.Method({Static:false, Public:true }, ".ctor", 
-    (new JSIL.MethodSignature(null, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.Buttons")], [])), 
+  $.Method({Static:false, Public:true }, ".ctor",
+    (new JSIL.MethodSignature(null, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.Buttons")], [])),
     function _ctor (buttonState) {
       this._flags = buttonState;
     }
   );
 
-  $.RawMethod(false, "__CopyMembers__", 
+  $.RawMethod(false, "__CopyMembers__",
     function GamePadButtons_CopyMembers (source, target) {
       target._flags = source._flags;
     }
@@ -499,23 +500,23 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.GamePadButtons", function
 });
 
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.GamePadThumbSticks", function ($) {
-  $.Method({Static:false, Public:true }, ".ctor", 
-    (new JSIL.MethodSignature(null, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector2"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector2")], [])), 
+  $.Method({Static:false, Public:true }, ".ctor",
+    (new JSIL.MethodSignature(null, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector2"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector2")], [])),
     function _ctor (leftThumbstick, rightThumbstick) {
       this._left = leftThumbstick;
       this._right = rightThumbstick;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_Left", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector2"), [], [])), 
+  $.Method({Static:false, Public:true }, "get_Left",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector2"), [], [])),
     function get_Left () {
       return this._left;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_Right", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector2"), [], [])), 
+  $.Method({Static:false, Public:true }, "get_Right",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector2"), [], [])),
     function get_Right () {
       return this._right;
     }
@@ -524,11 +525,11 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.GamePadThumbSticks", func
 
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.GamePadDPad", function ($) {
 
-  $.Method({Static:false, Public:true }, ".ctor", 
+  $.Method({Static:false, Public:true }, ".ctor",
     (new JSIL.MethodSignature(null, [
-          $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), 
+          $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"),
           $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState")
-        ], [])), 
+        ], [])),
     function _ctor (upValue, downValue, leftValue, rightValue) {
       this._up = upValue;
       this._down = downValue;
@@ -537,29 +538,29 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.GamePadDPad", function ($
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_Down", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), [], [])), 
+  $.Method({Static:false, Public:true }, "get_Down",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), [], [])),
     function get_Down () {
       return this._down;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_Left", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), [], [])), 
+  $.Method({Static:false, Public:true }, "get_Left",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), [], [])),
     function get_Left () {
       return this._left;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_Right", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), [], [])), 
+  $.Method({Static:false, Public:true }, "get_Right",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), [], [])),
     function get_Right () {
       return this._right;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_Up", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), [], [])), 
+  $.Method({Static:false, Public:true }, "get_Up",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Input.ButtonState"), [], [])),
     function get_Up () {
       return this._up;
     }
@@ -568,23 +569,23 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.GamePadDPad", function ($
 });
 
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.GamePadTriggers", function ($) {
-  $.Method({Static:false, Public:true }, ".ctor", 
-    (new JSIL.MethodSignature(null, [$.Single, $.Single], [])), 
+  $.Method({Static:false, Public:true }, ".ctor",
+    (new JSIL.MethodSignature(null, [$.Single, $.Single], [])),
     function _ctor (leftTrigger, rightTrigger) {
       this._left = leftTrigger;
       this._right = rightTrigger;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_Left", 
-    (new JSIL.MethodSignature($.Single, [], [])), 
+  $.Method({Static:false, Public:true }, "get_Left",
+    (new JSIL.MethodSignature($.Single, [], [])),
     function get_Left () {
       return this._left;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_Right", 
-    (new JSIL.MethodSignature($.Single, [], [])), 
+  $.Method({Static:false, Public:true }, "get_Right",
+    (new JSIL.MethodSignature($.Single, [], [])),
     function get_Right () {
       return this._right;
     }
@@ -593,8 +594,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.GamePadTriggers", functio
 });
 
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.Touch.TouchPanel", function ($) {
-  $.Method({Static:true , Public:true }, "get_DisplayHeight", 
-    new JSIL.MethodSignature($.Int32, [], []), 
+  $.Method({Static:true , Public:true }, "get_DisplayHeight",
+    new JSIL.MethodSignature($.Int32, [], []),
     function get_DisplayHeight () {
       // FIXME
       var canvas = JSIL.Host.getCanvas();
@@ -602,8 +603,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.Touch.TouchPanel", functi
     }
   );
 
-  $.Method({Static:true , Public:true }, "get_DisplayWidth", 
-    new JSIL.MethodSignature($.Int32, [], []), 
+  $.Method({Static:true , Public:true }, "get_DisplayWidth",
+    new JSIL.MethodSignature($.Int32, [], []),
     function get_DisplayWidth () {
       // FIXME
       var canvas = JSIL.Host.getCanvas();
@@ -611,15 +612,15 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.Touch.TouchPanel", functi
     }
   );
 
-  $.Method({Static:true , Public:true }, "get_IsGestureAvailable", 
-    new JSIL.MethodSignature($.Boolean, [], []), 
+  $.Method({Static:true , Public:true }, "get_IsGestureAvailable",
+    new JSIL.MethodSignature($.Boolean, [], []),
     function get_IsGestureAvailable () {
       return false;
     }
   );
 
-  $.Method({Static:true , Public:true }, "GetState", 
-    (new JSIL.MethodSignature($xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchCollection"), [], [])), 
+  $.Method({Static:true , Public:true }, "GetState",
+    (new JSIL.MethodSignature($xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchCollection"), [], [])),
     function GetState () {
       var tCollection = Microsoft.Xna.Framework.Input.Touch.TouchCollection.__Type__;
       var result = JSIL.CreateInstanceOfType(tCollection, "$fromHostState", [this.prevState]);
@@ -628,8 +629,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.Touch.TouchPanel", functi
     }
   );
 
-  $.Method({Static:true , Public:true }, "ReadGesture", 
-    (new JSIL.MethodSignature($xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.GestureSample"), [], [])), 
+  $.Method({Static:true , Public:true }, "ReadGesture",
+    (new JSIL.MethodSignature($xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.GestureSample"), [], [])),
     function ReadGesture () {
       throw new Error('Not implemented');
     }
@@ -674,115 +675,115 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.Touch.TouchCollection", f
     return null;
   });
 
-  $.Method({Static:false, Public:true }, ".ctor", 
-    (new JSIL.MethodSignature(null, [$jsilcore.TypeRef("System.Array", [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")])], [])), 
+  $.Method({Static:false, Public:true }, ".ctor",
+    (new JSIL.MethodSignature(null, [$jsilcore.TypeRef("System.Array", [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")])], [])),
     function _ctor (touches) {
       throw new Error('Not implemented');
     }
   );
 
-  $.Method({Static:false, Public:true }, "Add", 
-    (new JSIL.MethodSignature(null, [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")], [])), 
+  $.Method({Static:false, Public:true }, "Add",
+    (new JSIL.MethodSignature(null, [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")], [])),
     function Add (item) {
       throw new Error('Not implemented');
     }
   );
 
-  $.Method({Static:false, Public:true }, "Clear", 
-    (JSIL.MethodSignature.Void), 
+  $.Method({Static:false, Public:true }, "Clear",
+    (JSIL.MethodSignature.Void),
     function Clear () {
       this.touches.length = 0;
     }
   );
 
-  $.Method({Static:false, Public:true }, "Contains", 
-    (new JSIL.MethodSignature($.Boolean, [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")], [])), 
+  $.Method({Static:false, Public:true }, "Contains",
+    (new JSIL.MethodSignature($.Boolean, [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")], [])),
     function Contains (item) {
       // FIXME
       return false;
     }
   );
 
-  $.Method({Static:false, Public:true }, "CopyTo", 
-    (new JSIL.MethodSignature(null, [$jsilcore.TypeRef("System.Array", [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")]), $.Int32], [])), 
+  $.Method({Static:false, Public:true }, "CopyTo",
+    (new JSIL.MethodSignature(null, [$jsilcore.TypeRef("System.Array", [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")]), $.Int32], [])),
     function CopyTo (array, arrayIndex) {
       throw new Error('Not implemented');
     }
   );
 
-  $.Method({Static:false, Public:true }, "FindById", 
-    (new JSIL.MethodSignature($.Boolean, [$.Int32, $jsilcore.TypeRef("JSIL.Reference", [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")])], [])), 
+  $.Method({Static:false, Public:true }, "FindById",
+    (new JSIL.MethodSignature($.Boolean, [$.Int32, $jsilcore.TypeRef("JSIL.Reference", [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")])], [])),
     function FindById (id, /* ref */ touchLocation) {
       throw new Error('Not implemented');
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_Count", 
-    (new JSIL.MethodSignature($.Int32, [], [])), 
+  $.Method({Static:false, Public:true }, "get_Count",
+    (new JSIL.MethodSignature($.Int32, [], [])),
     function get_Count () {
       return this.touches.length;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_IsConnected", 
-    (new JSIL.MethodSignature($.Boolean, [], [])), 
+  $.Method({Static:false, Public:true }, "get_IsConnected",
+    (new JSIL.MethodSignature($.Boolean, [], [])),
     function get_IsConnected () {
       return this.isConnected;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_IsReadOnly", 
-    (new JSIL.MethodSignature($.Boolean, [], [])), 
+  $.Method({Static:false, Public:true }, "get_IsReadOnly",
+    (new JSIL.MethodSignature($.Boolean, [], [])),
     function get_IsReadOnly () {
       return true;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_Item", 
-    (new JSIL.MethodSignature($xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation"), [$.Int32], [])), 
+  $.Method({Static:false, Public:true }, "get_Item",
+    (new JSIL.MethodSignature($xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation"), [$.Int32], [])),
     function get_Item (index) {
       return this.touches[index];
     }
   );
 
-  $.Method({Static:false, Public:true }, "GetEnumerator", 
-    (new JSIL.MethodSignature($xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchCollection+Enumerator"), [], [])), 
+  $.Method({Static:false, Public:true }, "GetEnumerator",
+    (new JSIL.MethodSignature($xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchCollection+Enumerator"), [], [])),
     function GetEnumerator () {
       var result = new $xnaasms[4].Microsoft.Xna.Framework.Input.Touch.TouchCollection_Enumerator(this);
       return result;
     }
   );
 
-  $.Method({Static:false, Public:true }, "IndexOf", 
-    (new JSIL.MethodSignature($.Int32, [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")], [])), 
+  $.Method({Static:false, Public:true }, "IndexOf",
+    (new JSIL.MethodSignature($.Int32, [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")], [])),
     function IndexOf (item) {
       throw new Error('Not implemented');
     }
   );
 
-  $.Method({Static:false, Public:true }, "Insert", 
-    (new JSIL.MethodSignature(null, [$.Int32, $xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")], [])), 
+  $.Method({Static:false, Public:true }, "Insert",
+    (new JSIL.MethodSignature(null, [$.Int32, $xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")], [])),
     function Insert (index, item) {
       throw new Error('Not implemented');
     }
   );
 
-  $.Method({Static:false, Public:true }, "Remove", 
-    (new JSIL.MethodSignature($.Boolean, [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")], [])), 
+  $.Method({Static:false, Public:true }, "Remove",
+    (new JSIL.MethodSignature($.Boolean, [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")], [])),
     function Remove (item) {
       throw new Error('Not implemented');
     }
   );
 
-  $.Method({Static:false, Public:true }, "RemoveAt", 
-    (new JSIL.MethodSignature(null, [$.Int32], [])), 
+  $.Method({Static:false, Public:true }, "RemoveAt",
+    (new JSIL.MethodSignature(null, [$.Int32], [])),
     function RemoveAt (index) {
       throw new Error('Not implemented');
     }
   );
 
-  $.Method({Static:false, Public:true }, "set_Item", 
-    (new JSIL.MethodSignature(null, [$.Int32, $xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")], [])), 
+  $.Method({Static:false, Public:true }, "set_Item",
+    (new JSIL.MethodSignature(null, [$.Int32, $xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")], [])),
     function set_Item (index, value) {
       throw new Error('Not implemented');
     }
@@ -792,46 +793,46 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.Touch.TouchCollection", f
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.Touch.TouchCollection+Enumerator", function ($interfaceBuilder) {
   var $ = $interfaceBuilder;
 
-  $.Method({Static:false, Public:false}, ".ctor", 
-    new JSIL.MethodSignature(null, [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchCollection")], []), 
+  $.Method({Static:false, Public:false}, ".ctor",
+    new JSIL.MethodSignature(null, [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchCollection")], []),
     function _ctor (collection) {
       this.collection = collection;
       this.position = -1;
     }
   );
 
-  $.Method({Static:false, Public:true , Virtual:true }, "Dispose", 
-    JSIL.MethodSignature.Void, 
+  $.Method({Static:false, Public:true , Virtual:true }, "Dispose",
+    JSIL.MethodSignature.Void,
     function Dispose () {
       this.position = -1;
     }
   );
 
-  $.Method({Static:false, Public:true , Virtual:true }, "get_Current", 
-    new JSIL.MethodSignature($xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation"), [], []), 
+  $.Method({Static:false, Public:true , Virtual:true }, "get_Current",
+    new JSIL.MethodSignature($xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation"), [], []),
     function get_Current () {
       return this.collection.touches[this.position];
     }
   );
 
-  $.Method({Static:false, Public:true , Virtual:true }, "MoveNext", 
-    new JSIL.MethodSignature($.Boolean, [], []), 
+  $.Method({Static:false, Public:true , Virtual:true }, "MoveNext",
+    new JSIL.MethodSignature($.Boolean, [], []),
     function MoveNext () {
       this.position += 1;
       return (this.position < this.collection.touches.length);
     }
   );
 
-  $.Method({Static:false, Public:false }, null, 
-    new JSIL.MethodSignature($.Object, [], []), 
+  $.Method({Static:false, Public:false }, null,
+    new JSIL.MethodSignature($.Object, [], []),
     function System_Collections_IEnumerator_get_Current () {
       return this.collection.touches[this.position];
     }
   )
     .Overrides("System.Collections.IEnumerator", "get_Current");
 
-  $.Method({Static:false, Public:false, Virtual:true }, "Reset", 
-    JSIL.MethodSignature.Void, 
+  $.Method({Static:false, Public:false, Virtual:true }, "Reset",
+    JSIL.MethodSignature.Void,
     function System_Collections_IEnumerator_Reset () {
       this.position = -1;
     }
@@ -872,71 +873,71 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.Touch.TouchLocation", fun
     }
   });
 
-  $.Method({Static:false, Public:true , Virtual:true }, "Equals", 
-    new JSIL.MethodSignature($.Boolean, [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")], []), 
+  $.Method({Static:false, Public:true , Virtual:true }, "Equals",
+    new JSIL.MethodSignature($.Boolean, [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")], []),
     function Equals (other) {
       throw new Error('Not implemented');
     }
   );
 
-  $.Method({Static:false, Public:true , Virtual:true }, "Object.Equals", 
-    new JSIL.MethodSignature($.Boolean, [$.Object], []), 
+  $.Method({Static:false, Public:true , Virtual:true }, "Object.Equals",
+    new JSIL.MethodSignature($.Boolean, [$.Object], []),
     function Object_Equals (obj) {
       throw new Error('Not implemented');
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_Id", 
-    new JSIL.MethodSignature($.Int32, [], []), 
+  $.Method({Static:false, Public:true }, "get_Id",
+    new JSIL.MethodSignature($.Int32, [], []),
     function get_Id () {
       return this.id;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_Position", 
-    new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector2"), [], []), 
+  $.Method({Static:false, Public:true }, "get_Position",
+    new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector2"), [], []),
     function get_Position () {
       return new $xnaasms[0].Microsoft.Xna.Framework.Vector2(this.x, this.y);
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_State", 
-    new JSIL.MethodSignature($xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocationState"), [], []), 
+  $.Method({Static:false, Public:true }, "get_State",
+    new JSIL.MethodSignature($xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocationState"), [], []),
     function get_State () {
       return this.state;
     }
   );
 
-  $.Method({Static:false, Public:true , Virtual:true }, "GetHashCode", 
-    new JSIL.MethodSignature($.Int32, [], []), 
+  $.Method({Static:false, Public:true , Virtual:true }, "GetHashCode",
+    new JSIL.MethodSignature($.Int32, [], []),
     function GetHashCode () {
       throw new Error('Not implemented');
     }
   );
 
-  $.Method({Static:true , Public:true }, "op_Equality", 
-    new JSIL.MethodSignature($.Boolean, [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation"), $xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")], []), 
+  $.Method({Static:true , Public:true }, "op_Equality",
+    new JSIL.MethodSignature($.Boolean, [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation"), $xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")], []),
     function op_Equality (value1, value2) {
       throw new Error('Not implemented');
     }
   );
 
-  $.Method({Static:true , Public:true }, "op_Inequality", 
-    new JSIL.MethodSignature($.Boolean, [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation"), $xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")], []), 
+  $.Method({Static:true , Public:true }, "op_Inequality",
+    new JSIL.MethodSignature($.Boolean, [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation"), $xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")], []),
     function op_Inequality (value1, value2) {
       throw new Error('Not implemented');
     }
   );
 
-  $.Method({Static:false, Public:true , Virtual:true }, "toString", 
-    new JSIL.MethodSignature($.String, [], []), 
+  $.Method({Static:false, Public:true , Virtual:true }, "toString",
+    new JSIL.MethodSignature($.String, [], []),
     function toString () {
       throw new Error('Not implemented');
     }
   );
 
-  $.Method({Static:false, Public:true }, "TryGetPreviousLocation", 
-    new JSIL.MethodSignature($.Boolean, [$jsilcore.TypeRef("JSIL.Reference", [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")])], []), 
+  $.Method({Static:false, Public:true }, "TryGetPreviousLocation",
+    new JSIL.MethodSignature($.Boolean, [$jsilcore.TypeRef("JSIL.Reference", [$xnaasms[4].TypeRef("Microsoft.Xna.Framework.Input.Touch.TouchLocation")])], []),
     function TryGetPreviousLocation (/* ref */ previousLocation) {
       if (!this.prevState)
         return false;
@@ -950,5 +951,5 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Input.Touch.TouchLocation", fun
     }
   );
 
-  ; 
+  ;
 });

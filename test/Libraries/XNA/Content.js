@@ -1,3 +1,4 @@
+﻿/* It is auto-generated file. Do not modify it. */
 "use strict";
 
 if (typeof (JSIL) === "undefined")
@@ -20,10 +21,10 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentManager", functi
     Static: false,
     Public: true
   }, ".ctor", new JSIL.MethodSignature(null, [$xnaasms.corlib.TypeRef("System.IServiceProvider")], []), function (serviceProvider) {
-    this._serviceProvider = serviceProvider;  
+    this._serviceProvider = serviceProvider;
     this._rootDirectory = "";
   });
-  
+
   $.Method({
     Static: false,
     Public: true
@@ -35,7 +36,7 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentManager", functi
   $.Method({
     Static: false,
     Public: true
-  }, "Load", new JSIL.MethodSignature("!!0", [$.String], ["T"]), 
+  }, "Load", new JSIL.MethodSignature("!!0", [$.String], ["T"]),
   function ContentManager_Load (T, assetName) {
     var asset;
 
@@ -57,7 +58,7 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentManager", functi
         result = asset.ReadAsset(T);
       } catch (exc) {
         var signature = new JSIL.ConstructorSignature(
-          Microsoft.Xna.Framework.Content.ContentLoadException.__Type__, 
+          Microsoft.Xna.Framework.Content.ContentLoadException.__Type__,
           ["System.String", "System.Exception"]
         );
 
@@ -68,7 +69,7 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentManager", functi
 
       if (result === null)
         JSIL.Host.warning("Asset '" + assetName + "' loader returned null.");
-      
+
       return result;
     }
 
@@ -112,46 +113,46 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentManager", functi
 
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentTypeReader", function ($) {
 
-  $.Method({Static:false, Public:false}, ".ctor", 
-    (new JSIL.MethodSignature(null, [$xnaasms[5].TypeRef("System.Type")], [])), 
+  $.Method({Static:false, Public:false}, ".ctor",
+    (new JSIL.MethodSignature(null, [$xnaasms[5].TypeRef("System.Type")], [])),
     function _ctor (targetType) {
       this.targetType = targetType;
       this.TargetIsValueType = !targetType.__IsReferenceType__;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_CanDeserializeIntoExistingObject", 
-    (new JSIL.MethodSignature($.Boolean, [], [])), 
+  $.Method({Static:false, Public:true }, "get_CanDeserializeIntoExistingObject",
+    (new JSIL.MethodSignature($.Boolean, [], [])),
     function get_CanDeserializeIntoExistingObject () {
       return false;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_TargetType", 
-    (new JSIL.MethodSignature($xnaasms[5].TypeRef("System.Type"), [], [])), 
+  $.Method({Static:false, Public:true }, "get_TargetType",
+    (new JSIL.MethodSignature($xnaasms[5].TypeRef("System.Type"), [], [])),
     function get_TargetType () {
       return this.targetType;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_TypeVersion", 
-    (new JSIL.MethodSignature($.Int32, [], [])), 
+  $.Method({Static:false, Public:true }, "get_TypeVersion",
+    (new JSIL.MethodSignature($.Int32, [], [])),
     function get_TypeVersion () {
       return 0;
     }
   );
 
-  $.Method({Static:false, Public:false}, "Initialize", 
-    (new JSIL.MethodSignature(null, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReaderManager")], [])), 
+  $.Method({Static:false, Public:false}, "Initialize",
+    (new JSIL.MethodSignature(null, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReaderManager")], [])),
     function Initialize (manager) {
-      
+
     }
   );
 });
 
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentTypeReader`1", function ($) {
-  $.Method({Static:false, Public:false}, ".ctor", 
-    (JSIL.MethodSignature.Void), 
+  $.Method({Static:false, Public:false}, ".ctor",
+    (JSIL.MethodSignature.Void),
     function _ctor () {
       var assembly = $xnaasms.xna;
 
@@ -165,8 +166,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentTypeReader`1", f
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.StringReader", function ($) {
   $.InheritDefaultConstructor();
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($.String, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.String], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($.String, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.String], [])),
     function Read (input, existingInstance) {
       return input.ReadString();
     }
@@ -176,8 +177,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.StringReader", function
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ByteReader", function ($) {
   $.InheritDefaultConstructor();
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($.Byte, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.Byte], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($.Byte, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.Byte], [])),
     function Read (input, existingInstance) {
       return input.ReadByte();
     }
@@ -187,8 +188,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ByteReader", function (
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.CharReader", function ($) {
   $.InheritDefaultConstructor();
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($.Char, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.Char], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($.Char, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.Char], [])),
     function Read (input, existingInstance) {
       return input.ReadChar();
     }
@@ -198,8 +199,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.CharReader", function (
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.Int16Reader", function ($) {
   $.InheritDefaultConstructor();
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($.Int16, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.Int16], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($.Int16, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.Int16], [])),
     function Read (input, existingInstance) {
       return input.ReadInt16();
     }
@@ -209,8 +210,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.Int16Reader", function 
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.Int32Reader", function ($) {
   $.InheritDefaultConstructor();
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($.Int32, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.Int32], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($.Int32, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.Int32], [])),
     function Read (input, existingInstance) {
       return input.ReadInt32();
     }
@@ -220,8 +221,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.Int32Reader", function 
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.Int64Reader", function ($) {
   $.InheritDefaultConstructor();
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($.Int64, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.Int64], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($.Int64, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.Int64], [])),
     function Read (input, existingInstance) {
       return input.ReadInt64();
     }
@@ -231,8 +232,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.Int64Reader", function 
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.UInt16Reader", function ($) {
   $.InheritDefaultConstructor();
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($.UInt16, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.UInt16], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($.UInt16, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.UInt16], [])),
     function Read (input, existingInstance) {
       return input.ReadUInt16();
     }
@@ -242,8 +243,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.UInt16Reader", function
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.UInt32Reader", function ($) {
   $.InheritDefaultConstructor();
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($.UInt32, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.UInt32], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($.UInt32, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.UInt32], [])),
     function Read (input, existingInstance) {
       return input.ReadUInt32();
     }
@@ -253,8 +254,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.UInt32Reader", function
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.UInt64Reader", function ($) {
   $.InheritDefaultConstructor();
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($.UInt64, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.UInt64], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($.UInt64, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.UInt64], [])),
     function Read (input, existingInstance) {
       return input.ReadUInt64();
     }
@@ -264,8 +265,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.UInt64Reader", function
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.SingleReader", function ($) {
   $.InheritDefaultConstructor();
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($.Single, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.Single], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($.Single, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.Single], [])),
     function Read (input, existingInstance) {
       return input.ReadSingle();
     }
@@ -275,8 +276,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.SingleReader", function
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.DoubleReader", function ($) {
   $.InheritDefaultConstructor();
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($.Double, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.Double], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($.Double, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.Double], [])),
     function Read (input, existingInstance) {
       return input.ReadDouble();
     }
@@ -286,8 +287,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.DoubleReader", function
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.PointReader", function ($) {
   $.InheritDefaultConstructor();
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Point"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Point")], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Point"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Point")], [])),
     function Read (input, existingInstance) {
       var x = input.ReadInt32();
       var y = input.ReadInt32();
@@ -301,8 +302,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.PointReader", function 
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.RectangleReader", function ($) {
   $.InheritDefaultConstructor();
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Rectangle"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Rectangle")], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Rectangle"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Rectangle")], [])),
     function Read (input, existingInstance) {
       var x = input.ReadInt32();
       var y = input.ReadInt32();
@@ -318,8 +319,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.RectangleReader", funct
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.Vector2Reader", function ($) {
   $.InheritDefaultConstructor();
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector2"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector2")], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector2"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector2")], [])),
     function Read (input, existingInstance) {
       return input.ReadVector2();
     }
@@ -329,8 +330,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.Vector2Reader", functio
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.Vector3Reader", function ($) {
   $.InheritDefaultConstructor();
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector3"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector3")], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector3"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector3")], [])),
     function Read (input, existingInstance) {
       return input.ReadVector3();
     }
@@ -340,8 +341,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.Vector3Reader", functio
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.Vector4Reader", function ($) {
   $.InheritDefaultConstructor();
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector4"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector4")], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector4"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector4")], [])),
     function Read (input, existingInstance) {
       return input.ReadVector4();
     }
@@ -349,8 +350,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.Vector4Reader", functio
 });
 
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ArrayReader`1", function ($) {
-  $.Method({Static:false, Public:true }, ".ctor", 
-    (JSIL.MethodSignature.Void), 
+  $.Method({Static:false, Public:true }, ".ctor",
+    (JSIL.MethodSignature.Void),
     function _ctor () {
       var assembly = $xnaasms.xna;
       assembly.Microsoft.Xna.Framework.Content.ContentTypeReader$b1.prototype._ctor.call(
@@ -361,15 +362,15 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ArrayReader`1", functio
     }
   );
 
-  $.Method({Static:false, Public:false}, "Initialize", 
-    (new JSIL.MethodSignature(null, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReaderManager")], [])), 
+  $.Method({Static:false, Public:false}, "Initialize",
+    (new JSIL.MethodSignature(null, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReaderManager")], [])),
     function Initialize (manager) {
       this.elementReader = manager.GetTypeReader(this.T);
     }
   );
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [new JSIL.GenericParameter("T", "Microsoft.Xna.Framework.Content.ArrayReader`1")]), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $jsilcore.TypeRef("System.Array", [new JSIL.GenericParameter("T", "Microsoft.Xna.Framework.Content.ArrayReader`1")])], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [new JSIL.GenericParameter("T", "Microsoft.Xna.Framework.Content.ArrayReader`1")]), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $jsilcore.TypeRef("System.Array", [new JSIL.GenericParameter("T", "Microsoft.Xna.Framework.Content.ArrayReader`1")])], [])),
     function Read (input, existingInstance) {
       var count = input.ReadInt32();
       if (existingInstance === null) {
@@ -386,8 +387,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ArrayReader`1", functio
 });
 
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ListReader`1", function ($) {
-  $.Method({Static:false, Public:true }, ".ctor", 
-    (JSIL.MethodSignature.Void), 
+  $.Method({Static:false, Public:true }, ".ctor",
+    (JSIL.MethodSignature.Void),
     function _ctor () {
       var assembly = $xnaasms.xna;
       assembly.Microsoft.Xna.Framework.Content.ContentTypeReader$b1.prototype._ctor.call(
@@ -398,15 +399,15 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ListReader`1", function
     }
   );
 
-  $.Method({Static:false, Public:false}, "Initialize", 
-    (new JSIL.MethodSignature(null, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReaderManager")], [])), 
+  $.Method({Static:false, Public:false}, "Initialize",
+    (new JSIL.MethodSignature(null, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReaderManager")], [])),
     function Initialize (manager) {
       this.elementReader = manager.GetTypeReader(this.T);
     }
   );
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($xnaasms[5].TypeRef("System.Collections.Generic.List`1", [new JSIL.GenericParameter("T", "Microsoft.Xna.Framework.Content.ListReader`1")]), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $xnaasms[5].TypeRef("System.Collections.Generic.List`1", [new JSIL.GenericParameter("T", "Microsoft.Xna.Framework.Content.ListReader`1")])], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($xnaasms[5].TypeRef("System.Collections.Generic.List`1", [new JSIL.GenericParameter("T", "Microsoft.Xna.Framework.Content.ListReader`1")]), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $xnaasms[5].TypeRef("System.Collections.Generic.List`1", [new JSIL.GenericParameter("T", "Microsoft.Xna.Framework.Content.ListReader`1")])], [])),
     function Read (input, existingInstance) {
       var count = input.ReadInt32();
       if (existingInstance === null) {
@@ -429,8 +430,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ListReader`1", function
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.Texture2DReader", function ($) {
   $.InheritDefaultConstructor();
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($jsilxna.graphicsRef("Microsoft.Xna.Framework.Graphics.Texture2D"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $jsilxna.graphicsRef("Microsoft.Xna.Framework.Graphics.Texture2D")], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($jsilxna.graphicsRef("Microsoft.Xna.Framework.Graphics.Texture2D"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $jsilxna.graphicsRef("Microsoft.Xna.Framework.Graphics.Texture2D")], [])),
     function Read (input, existingInstance) {
       var asmGraphics = $xnaasms.xnaGraphics || $xnaasms.xna;
       var tTexture2D = JSIL.GetTypeFromAssembly(asmGraphics, "Microsoft.Xna.Framework.Graphics.Texture2D", [], true);
@@ -448,7 +449,7 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.Texture2DReader", funct
         var mipSize = input.ReadInt32();
         var mipBytes = input.ReadBytes(mipSize);
 
-        if (i === 0) 
+        if (i === 0)
           result.SetData$b1(System.Byte)(i, null, mipBytes, 0, mipSize);
       }
 
@@ -460,8 +461,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.Texture2DReader", funct
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.SpriteFontReader", function ($) {
   $.InheritDefaultConstructor();
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($jsilxna.graphicsRef("Microsoft.Xna.Framework.Graphics.SpriteFont"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $jsilxna.graphicsRef("Microsoft.Xna.Framework.Graphics.SpriteFont")], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($jsilxna.graphicsRef("Microsoft.Xna.Framework.Graphics.SpriteFont"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $jsilxna.graphicsRef("Microsoft.Xna.Framework.Graphics.SpriteFont")], [])),
     function Read (input, existingInstance) {
       var asmXna = $xnaasms.xna;
       var asmGraphics = $xnaasms.xnaGraphics || $xnaasms.xna;
@@ -502,8 +503,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.SpriteFontReader", func
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.EffectReader", function ($) {
   $.InheritDefaultConstructor();
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature(getXnaGraphics().TypeRef("Microsoft.Xna.Framework.Graphics.Effect"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), getXnaGraphics().TypeRef("Microsoft.Xna.Framework.Graphics.Effect")], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature(getXnaGraphics().TypeRef("Microsoft.Xna.Framework.Graphics.Effect"), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), getXnaGraphics().TypeRef("Microsoft.Xna.Framework.Graphics.Effect")], [])),
     function Read (input, existingInstance) {
       var count = input.ReadInt32();
       var effectCode = input.ReadBytes(count);
@@ -516,7 +517,7 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.EffectReader", function
 });
 
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentTypeReaderManager", function ($) {
-  $.RawMethod(true, ".cctor2",  
+  $.RawMethod(true, ".cctor2",
     function () {
       var assembly = $xnaasms.xna;
       var thisType = assembly.Microsoft.Xna.Framework.Content.ContentTypeReaderManager;
@@ -527,11 +528,11 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentTypeReaderManage
     }
   );
 
-  $.Method({Static:true , Public:false}, "AddTypeReader", 
+  $.Method({Static:true , Public:false}, "AddTypeReader",
     (new JSIL.MethodSignature(null, [
-          $.String, $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), 
+          $.String, $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"),
           $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReader")
-        ], [])), 
+        ], [])),
     function AddTypeReader (readerTypeName, contentReader, reader) {
       var assembly = $xnaasms.xna;
       var thisType = assembly.Microsoft.Xna.Framework.Content.ContentTypeReaderManager;
@@ -543,8 +544,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentTypeReaderManage
     }
   );
 
-  $.Method({Static:true , Public:false}, "GetTypeReader", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReader"), [$xnaasms[5].TypeRef("System.Type"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader")], [])), 
+  $.Method({Static:true , Public:false}, "GetTypeReader",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReader"), [$xnaasms[5].TypeRef("System.Type"), $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader")], [])),
     function GetTypeReader (targetType, contentReader) {
       var assembly = $xnaasms.xna;
       var thisType = assembly.Microsoft.Xna.Framework.Content.ContentTypeReaderManager;
@@ -560,8 +561,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentTypeReaderManage
     }
   );
 
-  $.Method({Static:true , Public:false}, "ReadTypeManifest", 
-    (new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReader")]), [$.Int32, $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader")], [])), 
+  $.Method({Static:true , Public:false}, "ReadTypeManifest",
+    (new JSIL.MethodSignature($jsilcore.TypeRef("System.Array", [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReader")]), [$.Int32, $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader")], [])),
     function ReadTypeManifest (typeCount, contentReader) {
       var assembly = $xnaasms.xna;
       var thisType = assembly.Microsoft.Xna.Framework.Content.ContentTypeReaderManager;
@@ -606,20 +607,20 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentTypeReaderManage
     }
   );
 
-  $.Method({Static:false, Public:false}, ".ctor", 
-    (new JSIL.MethodSignature(null, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader")], [])), 
+  $.Method({Static:false, Public:false}, ".ctor",
+    (new JSIL.MethodSignature(null, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader")], [])),
     function _ctor (contentReader) {
       this.contentReader = contentReader;
       this.knownReaders = {};
     }
   );
 
-  $.Method({Static:false, Public:true }, "GetTypeReader", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReader"), [$xnaasms[5].TypeRef("System.Type")], [])), 
+  $.Method({Static:false, Public:true }, "GetTypeReader",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReader"), [$xnaasms[5].TypeRef("System.Type")], [])),
     function GetTypeReader (targetType) {
       var typeName = targetType.toString();
       var reader = this.knownReaders[typeName];
-      if (typeof (reader) === "object") 
+      if (typeof (reader) === "object")
         return reader;
 
       var assembly = $xnaasms.xna;
@@ -637,12 +638,12 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentTypeReaderManage
 });
 
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentReader", function ($) {
-  $.Method({Static:false, Public:false}, ".ctor", 
+  $.Method({Static:false, Public:false}, ".ctor",
     new JSIL.MethodSignature(null, [
-        $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentManager"), $xnaasms[5].TypeRef("System.IO.Stream"), 
-        $.String, $xnaasms[5].TypeRef("System.Action`1", [$xnaasms[5].TypeRef("System.IDisposable")]), 
+        $xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentManager"), $xnaasms[5].TypeRef("System.IO.Stream"),
+        $.String, $xnaasms[5].TypeRef("System.Action`1", [$xnaasms[5].TypeRef("System.IDisposable")]),
         $.Int32
-      ], []), 
+      ], []),
     function _ctor (contentManager, input, assetName, recordDisposableObject, graphicsProfile) {
       var signature = new JSIL.MethodSignature(null, [$xnaasms[5].TypeRef("System.IO.Stream")], []);
       signature.Call(System.IO.BinaryReader.prototype, "_ctor", null, this, input);
@@ -656,8 +657,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentReader", functio
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_AssetName", 
-    (new JSIL.MethodSignature($.String, [], [])), 
+  $.Method({Static:false, Public:true }, "get_AssetName",
+    (new JSIL.MethodSignature($.String, [], [])),
     function get_AssetName () {
       // XNA ContentReader.AssetName always has backslashes, so we need to preserve that
       //  because some content readers do stuff with AssetName
@@ -665,8 +666,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentReader", functio
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_ContentManager", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentManager"), [], [])), 
+  $.Method({Static:false, Public:true }, "get_ContentManager",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentManager"), [], [])),
     function get_ContentManager () {
       return this.contentManager;
     }
@@ -676,11 +677,11 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentReader", functio
     return new Microsoft.Xna.Framework.Content.ContentLoadException(text);
   });
 
-  $.Method({Static:false, Public:false}, "ReadHeader", 
-    (new JSIL.MethodSignature($.Int32, [], [])), 
+  $.Method({Static:false, Public:false}, "ReadHeader",
+    (new JSIL.MethodSignature($.Int32, [], [])),
     function ReadHeader () {
       var formatHeader = String.fromCharCode.apply(String, this.ReadBytes(3));
-      if (formatHeader != "XNB") 
+      if (formatHeader != "XNB")
         throw this.makeError("Invalid XNB format");
 
       var platformId = String.fromCharCode(this.ReadByte());
@@ -705,7 +706,7 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentReader", functio
       var isHiDef = (formatFlags & 0x01) != 0;
       var isCompressed = (formatFlags & 0x80) != 0;
 
-      if (isCompressed) 
+      if (isCompressed)
         throw this.makeError("Compressed XNBs are not supported");
 
       var uncompressedSize = this.ReadUInt32();
@@ -718,8 +719,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentReader", functio
     }
   );
 
-  $.Method({Static:false, Public:true }, "ReadVector2", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector2"), [], [])), 
+  $.Method({Static:false, Public:true }, "ReadVector2",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector2"), [], [])),
     function ReadVector2 () {
       var x = this.ReadSingle();
       var y = this.ReadSingle();
@@ -727,8 +728,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentReader", functio
     }
   );
 
-  $.Method({Static:false, Public:true }, "ReadVector3", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector3"), [], [])), 
+  $.Method({Static:false, Public:true }, "ReadVector3",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector3"), [], [])),
     function ReadVector3 () {
       var x = this.ReadSingle();
       var y = this.ReadSingle();
@@ -737,8 +738,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentReader", functio
     }
   );
 
-  $.Method({Static:false, Public:true }, "ReadVector4", 
-    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector4"), [], [])), 
+  $.Method({Static:false, Public:true }, "ReadVector4",
+    (new JSIL.MethodSignature($xnaasms[0].TypeRef("Microsoft.Xna.Framework.Vector4"), [], [])),
     function ReadVector4 () {
       var x = this.ReadSingle();
       var y = this.ReadSingle();
@@ -769,36 +770,36 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentReader", functio
     return typeReader.Read(self, existingInstance);
   };
 
-  $.Method({Static:false, Public:true }, "ReadObject", 
-    (new JSIL.MethodSignature("!!0", [], ["T"])), 
+  $.Method({Static:false, Public:true }, "ReadObject",
+    (new JSIL.MethodSignature("!!0", [], ["T"])),
     function ReadObject$b1 (T) {
       return readObjectImpl(this, T, null, JSIL.DefaultValue(T));
     }
   );
 
-  $.Method({Static:false, Public:true }, "ReadObject", 
-    (new JSIL.MethodSignature("!!0", ["!!0"], ["T"])), 
+  $.Method({Static:false, Public:true }, "ReadObject",
+    (new JSIL.MethodSignature("!!0", ["!!0"], ["T"])),
     function ReadObject$b1 (T, existingInstance) {
       return readObjectImpl(this, T, null, existingInstance);
     }
   );
 
-  $.Method({Static:false, Public:true }, "ReadObject", 
-    (new JSIL.MethodSignature("!!0", [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReader"), "!!0"], ["T"])), 
+  $.Method({Static:false, Public:true }, "ReadObject",
+    (new JSIL.MethodSignature("!!0", [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReader"), "!!0"], ["T"])),
     function ReadObject$b1 (T, typeReader, existingInstance) {
       return readObjectImpl(this, T, typeReader, existingInstance);
     }
   );
 
-  $.Method({Static:false, Public:false}, "ReadObjectInternal", 
-    (new JSIL.MethodSignature("!!0", [$.Object], ["T"])), 
+  $.Method({Static:false, Public:false}, "ReadObjectInternal",
+    (new JSIL.MethodSignature("!!0", [$.Object], ["T"])),
     function ReadObjectInternal$b1 (T, existingInstance) {
       return readObjectImpl(this, T, null, existingInstance);
     }
   );
 
-  $.Method({Static:false, Public:false}, "ReadObjectInternal", 
-    (new JSIL.MethodSignature("!!0", [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReader"), $.Object], ["T"])), 
+  $.Method({Static:false, Public:false}, "ReadObjectInternal",
+    (new JSIL.MethodSignature("!!0", [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReader"), $.Object], ["T"])),
     function ReadObjectInternal$b1 (T, typeReader, existingInstance) {
       return readObjectImpl(this, T, typeReader, existingInstance);
     }
@@ -812,15 +813,15 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentReader", functio
     return typeReader.Read(self, existingInstance);
   };
 
-  $.Method({Static:false, Public:true }, "ReadRawObject", 
-    (new JSIL.MethodSignature("!!0", [], ["T"])), 
+  $.Method({Static:false, Public:true }, "ReadRawObject",
+    (new JSIL.MethodSignature("!!0", [], ["T"])),
     function ReadRawObject$b1 (T) {
       return readRawObjectImpl(this, T, JSIL.DefaultValue(T));
     }
   );
 
-  $.Method({Static:false, Public:true }, "ReadRawObject", 
-    (new JSIL.MethodSignature("!!0", ["!!0"], ["T"])), 
+  $.Method({Static:false, Public:true }, "ReadRawObject",
+    (new JSIL.MethodSignature("!!0", ["!!0"], ["T"])),
     function ReadRawObject$b1 (T, existingInstance) {
       return readRawObjectImpl(this, T, existingInstance);
     }
@@ -829,8 +830,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ContentReader", functio
 });
 
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.DictionaryReader`2", function ($) {
-  $.Method({Static:false, Public:true }, ".ctor", 
-    (JSIL.MethodSignature.Void), 
+  $.Method({Static:false, Public:true }, ".ctor",
+    (JSIL.MethodSignature.Void),
     function _ctor () {
       var assembly = $xnaasms.xna;
 
@@ -845,16 +846,16 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.DictionaryReader`2", fu
     }
   );
 
-  $.Method({Static:false, Public:false}, "Initialize", 
-    (new JSIL.MethodSignature(null, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReaderManager")], [])), 
+  $.Method({Static:false, Public:false}, "Initialize",
+    (new JSIL.MethodSignature(null, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReaderManager")], [])),
     function Initialize (manager) {
       this.keyReader = manager.GetTypeReader(this.TKey);
       this.valueReader = manager.GetTypeReader(this.TValue);
     }
   );
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($xnaasms[5].TypeRef("System.Collections.Generic.List`1", [new JSIL.GenericParameter("T", "Microsoft.Xna.Framework.Content.ListReader`1")]), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $xnaasms[5].TypeRef("System.Collections.Generic.List`1", [new JSIL.GenericParameter("T", "Microsoft.Xna.Framework.Content.ListReader`1")])], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($xnaasms[5].TypeRef("System.Collections.Generic.List`1", [new JSIL.GenericParameter("T", "Microsoft.Xna.Framework.Content.ListReader`1")]), [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $xnaasms[5].TypeRef("System.Collections.Generic.List`1", [new JSIL.GenericParameter("T", "Microsoft.Xna.Framework.Content.ListReader`1")])], [])),
     function Read (input, existingInstance) {
       var count = input.ReadInt32();
       if (existingInstance === null)
@@ -876,8 +877,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.DictionaryReader`2", fu
 });
 
 JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ReflectiveReader`1", function ($) {
-  $.Method({Static:false, Public:true }, ".ctor", 
-    (JSIL.MethodSignature.Void), 
+  $.Method({Static:false, Public:true }, ".ctor",
+    (JSIL.MethodSignature.Void),
     function _ctor () {
       var assembly = $xnaasms.xna;
 
@@ -887,15 +888,15 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ReflectiveReader`1", fu
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_CanDeserializeIntoExistingObject", 
-    (new JSIL.MethodSignature($.Boolean, [], [])), 
+  $.Method({Static:false, Public:true }, "get_CanDeserializeIntoExistingObject",
+    (new JSIL.MethodSignature($.Boolean, [], [])),
     function get_CanDeserializeIntoExistingObject () {
       return !this.TargetIsValueType;
     }
   );
 
-  $.Method({Static:false, Public:true }, "get_TypeVersion", 
-    (new JSIL.MethodSignature($.Int32, [], [])), 
+  $.Method({Static:false, Public:true }, "get_TypeVersion",
+    (new JSIL.MethodSignature($.Int32, [], [])),
     function get_TypeVersion () {
       return this.typeVersion;
     }
@@ -1002,12 +1003,12 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ReflectiveReader`1", fu
     }
   });
 
-  $.Method({Static:false, Public:false}, "Initialize", 
-    (new JSIL.MethodSignature(null, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReaderManager")], [])), 
+  $.Method({Static:false, Public:false}, "Initialize",
+    (new JSIL.MethodSignature(null, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentTypeReaderManager")], [])),
     function Initialize (manager) {
       var baseType = this.targetType.__BaseType__;
       if (
-        baseType && 
+        baseType &&
         baseType.get_FullName &&
         (baseType.get_FullName() !== "System.Object") &&
         (baseType.get_FullName() !== "System.ValueType")
@@ -1027,8 +1028,8 @@ JSIL.ImplementExternals("Microsoft.Xna.Framework.Content.ReflectiveReader`1", fu
     }
   );
 
-  $.Method({Static:false, Public:false}, "Read", 
-    (new JSIL.MethodSignature($.Object, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.Object], [])), 
+  $.Method({Static:false, Public:false}, "Read",
+    (new JSIL.MethodSignature($.Object, [$xnaasms[0].TypeRef("Microsoft.Xna.Framework.Content.ContentReader"), $.Object], [])),
     function Read (input, existingInstance) {
       if (!existingInstance)
         existingInstance = JSIL.CreateInstanceOfType(this.targetType);

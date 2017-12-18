@@ -1,3 +1,4 @@
+﻿/* It is auto-generated file. Do not modify it. */
 "use strict";
 
 //
@@ -31,7 +32,7 @@
     globalNamespace.jsilConfig = {};
 
   if (typeof (globalNamespace.contentManifest) !== "object")
-    globalNamespace.contentManifest = {}; 
+    globalNamespace.contentManifest = {};
 })(this);
 
 contentManifest["JSIL"] = [];
@@ -78,7 +79,7 @@ var $jsilloaderstate = {
 
     contentManifest["JSIL"].push(["Library", "JSIL.Storage.js"]);
     contentManifest["JSIL"].push(["Library", libraryPrefix + "JSIL.IO.js"]);
-    contentManifest["JSIL"].push(["Library", "JSIL.JSON.js"]);  
+    contentManifest["JSIL"].push(["Library", "JSIL.JSON.js"]);
     contentManifest["JSIL"].push(["Library", libraryPrefix + "JSIL.XML.js"]);
   };
 
@@ -226,7 +227,7 @@ var $jsilloaderstate = {
 
   if (typeof (config.libraryRoot) === "undefined")
     config.libraryRoot = "../Libraries/";
-  
+
   var libraryRoot = config.libraryRoot;
   var manifestRoot = (config.manifestRoot = config.manifestRoot || "");
   config.scriptRoot = config.scriptRoot || "";
@@ -260,7 +261,7 @@ var $jsilloaderstate = {
   environment.loadScript(libraryRoot + "JSIL.Host.js");
 
   environment.loadEnvironmentScripts();
-  
+
   environment.loadScript(libraryRoot + "JSIL.Core.Types.js");
   environment.loadScript(libraryRoot + "JSIL.Core.Reflection.js");
   environment.loadScript(libraryRoot + "JSIL.References.js");
@@ -278,7 +279,7 @@ var $jsilloaderstate = {
   } else {
     environment.loadScript(libraryRoot + "IgnoredBCL/JSIL.Bootstrap.js");
   }
-  
+
   environment.loadScript(libraryRoot + "JSIL.mscorlib.js");
   environment.loadScript(libraryRoot + "JSIL.Bootstrap.Int64.js");
   environment.loadScript(libraryRoot + "JSIL.Bootstrap.DateTime.js");
@@ -292,9 +293,9 @@ var $jsilloaderstate = {
 
   if (config.xml || environment.getUserSetting("xml"))
     environment.loadScript(libraryRoot + "JSIL.XML.js");
-  
+
   if (config.interpreter || environment.getUserSetting("interpreter"))
-    environment.loadScript(libraryRoot + "JSIL.ExpressionInterpreter.js");  
+    environment.loadScript(libraryRoot + "JSIL.ExpressionInterpreter.js");
 
   if (config.testFixture || environment.getUserSetting("testFixture"))
     environment.loadScript(libraryRoot + "JSIL.TestFixture.js");
@@ -306,7 +307,7 @@ var $jsilloaderstate = {
   config.autoPlay = config.autoPlay || environment.getUserSetting("autoPlay") || config.replayURI || config.replayName || false;
 
   if (
-    config.record || 
+    config.record ||
     config.replayURI ||
     config.replayName
   ) {

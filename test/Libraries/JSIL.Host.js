@@ -1,3 +1,4 @@
+﻿/* It is auto-generated file. Do not modify it. */
 "use strict";
 
 if (typeof (JSIL) === "undefined")
@@ -77,7 +78,7 @@ JSIL.Host.getCanvas = function (desiredWidth, desiredHeight) {
   if (
     (typeof (desiredWidth) !== "undefined") &&
     (typeof (desiredHeight) !== "undefined")
-  )  
+  )
     return svc.get(desiredWidth, desiredHeight);
   else
     return svc.get();

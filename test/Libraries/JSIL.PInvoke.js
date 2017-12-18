@@ -1,3 +1,4 @@
+﻿/* It is auto-generated file. Do not modify it. */
 "use strict";
 
 if (typeof (JSIL) === "undefined")
@@ -203,15 +204,15 @@ JSIL.MakeClass("System.Object", "JSIL.Runtime.NativePackedArray`1", true, ["T"],
     }
   );
 
-  $.Method({Static:false, Public:true }, "AllocHandle", 
-    new JSIL.MethodSignature($jsilcore.TypeRef("System.Runtime.InteropServices.GCHandle"), [], []), 
+  $.Method({Static:false, Public:true }, "AllocHandle",
+    new JSIL.MethodSignature($jsilcore.TypeRef("System.Runtime.InteropServices.GCHandle"), [], []),
     function AllocHandle () {
       return System.Runtime.InteropServices.GCHandle.Alloc(this._Array);
     }
   );
 
-  $.Method({Static:false, Public:true }, "AllocHandle", 
-    new JSIL.MethodSignature($jsilcore.TypeRef("System.Runtime.InteropServices.GCHandle"), [$jsilcore.TypeRef("System.Runtime.InteropServices.GCHandleType")], []), 
+  $.Method({Static:false, Public:true }, "AllocHandle",
+    new JSIL.MethodSignature($jsilcore.TypeRef("System.Runtime.InteropServices.GCHandle"), [$jsilcore.TypeRef("System.Runtime.InteropServices.GCHandleType")], []),
     function AllocHandle (type) {
       // FIXME: type
       return System.Runtime.InteropServices.GCHandle.Alloc(
@@ -348,7 +349,7 @@ JSIL.PInvoke.EnumMarshaller.prototype.GetSignatureToken = function () {
   // FIXME: Does the emscripten ABI do anything special here?
   return "i";
 
-  /*  
+  /*
   var storageType = this.type.__StorageType__;
   switch (storageType.__FullName__) {
     case "System.Int32":
@@ -489,7 +490,7 @@ JSIL.PInvoke.IntPtrMarshaller.prototype.ManagedToNative = function (managedValue
       //  is aimed at as the length of the region being marshalled.
       // Best we can do. Will be correct for trivial cases (pinned an array)
       return JSIL.PInvoke.ArrayMarshaller.CreateTemporaryNativeCopy(
-        managedValue.pointer, managedValue.pointer.memoryRange.length, callContext, 
+        managedValue.pointer, managedValue.pointer.memoryRange.length, callContext,
         // HACK: no way to infer isOut reliably here
         true
       );
@@ -595,7 +596,7 @@ JSIL.PInvoke.ByRefStringMarshaller.prototype.ManagedToNative = function (managed
 JSIL.PInvoke.ByRefStringMarshaller.prototype.NativeToManaged = function (nativeValue, callContext) {
   // FIXME: Is this right?
   var resultString = innerMarshaller.NativeToManaged(nativeValue, callContext);
-  return new JSIL.BoxedValue(resultString);  
+  return new JSIL.BoxedValue(resultString);
 };
 
 

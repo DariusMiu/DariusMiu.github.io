@@ -1,3 +1,4 @@
+﻿/* It is auto-generated file. Do not modify it. */
 JSIL.Audio = {};
 
 JSIL.Audio.$WarnedAboutPan = false;
@@ -162,7 +163,7 @@ JSIL.Audio.HTML5Instance.prototype.$bindEvents = function () {
 JSIL.Audio.HTML5Instance.prototype.$unbindEvents = function () {
   if (this.$onEndedListener)
     this.$onEndedListener.unregister();
-  
+
   this.$onEndedListener = null;
 };
 
@@ -187,7 +188,7 @@ JSIL.Audio.HTML5Instance.prototype.$set_volume = function (value) {
     value = 0;
   else if (value > 1)
     value = 1;
-  
+
   return this.node.volume = value;
 }
 
@@ -203,11 +204,11 @@ JSIL.Audio.HTML5Instance.prototype.on_ended = function () {
 JSIL.Audio.HTML5Instance.prototype.$dispose = function () {
   this.node.pause();
 
-  // Manually unregister the event listener because apparently it's 1996 and 
+  // Manually unregister the event listener because apparently it's 1996 and
   //  browser GCs still can't actually collect cycles
   this.$unbindEvents();
-  
-  // HACK: This forces Gecko-based browsers to free the resources previously 
+
+  // HACK: This forces Gecko-based browsers to free the resources previously
   //  used for audio playback.
   try {
     this.node.removeAttribute("src");
@@ -313,7 +314,7 @@ JSIL.Audio.WebKitInstance.prototype.$set_volume = function (value) {
 JSIL.Audio.WebKitInstance.prototype.$set_pan = function (value) {
   if (value < 0) {
     this.gainNodeLeft.gain.value = 1;
-    this.gainNodeRight.gain.value = 1 + value;    
+    this.gainNodeRight.gain.value = 1 + value;
   } else if (value > 0) {
     this.gainNodeLeft.gain.value = 1 - value;
     this.gainNodeRight.gain.value = 1;
@@ -354,7 +355,7 @@ JSIL.Audio.WebKitInstance.prototype.$get_isPlaying = function () {
   return (elapsed <= this.bufferSource.buffer.duration);
 }
 
-JSIL.Audio.NullInstance = function (audioInfo, loop) {  
+JSIL.Audio.NullInstance = function (audioInfo, loop) {
   this._volume = 1.0;
   this._volumeMultiplier = 1.0;
   this._pan = 0;
@@ -391,13 +392,13 @@ function loadWebkitSound (audioInfo, filename, data, onError, onDoneLoading) {
 
   loadBinaryFileAsync(uri, function decodeWebkitSound (result, error) {
     if ((result !== null) && (!error)) {
-      var decodeCompleteCallback = function (buffer) {        
+      var decodeCompleteCallback = function (buffer) {
         var finisher = finishLoadingSound.bind(
           null, filename, function createWebKitSoundInstance (loop) {
             return new JSIL.Audio.WebKitInstance(audioInfo, buffer, loop);
           }
         );
-        
+
         onDoneLoading(finisher);
       };
 
@@ -609,11 +610,11 @@ function initSoundLoader () {
   };
 
   if (audioInfo.hasAudioContext) {
-    audioInfo.audioContext = new audioContextCtor();  
+    audioInfo.audioContext = new audioContextCtor();
 
     // Firefox exposes the AudioContext ctor without actually implementing the API
     audioInfo.hasAudioContext =
-      audioInfo.audioContext.decodeAudioData && 
+      audioInfo.audioContext.decodeAudioData &&
       audioInfo.audioContext.createBufferSource &&
       audioInfo.audioContext.createGain &&
       audioInfo.audioContext.createChannelSplitter &&
