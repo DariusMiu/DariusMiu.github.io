@@ -59,9 +59,13 @@
 	margin:0;
 }
 
-body
+body, html
 {
-	color:white;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: Vera;
+	background-color: #060606;
 }
 
 .centertext
