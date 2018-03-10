@@ -1,19 +1,19 @@
 @font-face
 {
 	font-family: 'Darius';
-	src: url('fonts/Darius.ttf');
+	src: url('https://ln2.co/fonts/Darius.ttf');
 }
 @font-face
 {
 	font-family: 'Vera';
 	font-weight: normal;
-	src: url('fonts/Vera.ttf');
+	src: url('https://ln2.co/fonts/Vera.ttf');
 }
 @font-face
 {
 	font-family: 'Vera';
 	font-weight: bold;
-	src: url('fonts/VeraBd.ttf');
+	src: url('https://ln2.co/fonts/VeraBd.ttf');
 }
 
 .slide
