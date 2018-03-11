@@ -13,22 +13,21 @@ ga('send', 'pageview');
 		<link rel='icon' type='image/png' href='favicons/favicon64.png'  sizes='64x64'>
 		<link rel='icon' type='image/png' href='favicons/favicon128.png' sizes='128x128'>
 		<link rel='icon' type='image/png' href='favicons/favicon256.png' sizes='256x256'>
-		<link rel='stylesheet' href='stylesheet.css'>
+		<link rel='stylesheet' href='styles.css'>
 		<meta property='og:title' content='AI'/>
 		<meta  name='description' content='~~'/>
 		<meta property='og:description' content='~~'/>
 		<meta property='og:image' content='images/preview.png'/>
 		<title>AI</title>
 
-
-		<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-		<script type="text/javascript" src="jquery.fullPage.js"></script>
-		<script type="text/javascript">
+		<link rel='stylesheet' type='text/css' href='jquery.fullPage.css' />
+		<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+		<script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js'></script>
+		<script type='text/javascript' src='jquery.fullPage.js'></script>
+		<script type='text/javascript'>
 			$(document).ready(function() {
 				$('#fullpage').fullpage({
-				  anchors: ['title', 'slide1', 'slide2', 'slide3', 'slide4'],
+				  anchors: ['title', 'slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7', 'slide8'],
 				  menu: '#menu',
 				});
 			});
@@ -37,32 +36,80 @@ ga('send', 'pageview');
 	
 	
 	<body style='background-color:black'>
-	<ul id="menu">
-		<li data-menuanchor="title" class="active"><a href="#title">Title</a></li>
-		<li data-menuanchor="slide1"><a href="#slide1">Slide 1</a></li>
-		<li data-menuanchor="slide2"><a href="#slide2">Slide 2</a></li>
+	<ul id='menu'>
+		<li data-menuanchor='title' class='active'><a href='#title'>Title</a></li>
+		<li data-menuanchor='slide1'><a href='#slide1'>Slide 1</a></li>
+		<li data-menuanchor='slide2'><a href='#slide2'>Slide 2</a></li>
+		<li data-menuanchor='slide3'><a href='#slide3'>Slide 3</a></li>
+		<li data-menuanchor='slide4'><a href='#slide4'>Slide 4</a></li>
+		<li data-menuanchor='slide5'><a href='#slide5'>Slide 5</a></li>
+		<li data-menuanchor='slide6'><a href='#slide6'>Slide 6</a></li>
+		<li data-menuanchor='slide7'><a href='#slide7'>Slide 7</a></li>
+		<li data-menuanchor='slide8'><a href='#slide8'>Slide 8</a></li>
 	</ul>
 
-	<div id="fullpage">
+	<div id='fullpage'>
 		<div class='section' style='background-color:black'>
 			<div class='maindiv center'>
 				<p class='centertext'>AI</p>
-				<p>contributors: someone, someone, someone, someone</p>
+				<p>Contributors: Jonathan Miu, someone, someone, someone</p>
 			</div>
-			<div style='bottom: 0; position: absolute; text-align: center; width: 100%'>
+			<a href='#slide1' style='bottom: 0; position: absolute; text-align: center; width: 100%'>
 				<p>scroll down</p>
-				<img class='jiggle arrow' src='downarrow.svg'>
-			</div>
+				<img class='jiggle arrow' src='images/downarrow.svg'>
+			</a>
 		</div>
 
 		<div class='section'>
-			<div class='slide' style='background-image:url(tesla1.jpg)'>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class='slide right' style='background-image:url(images/humansneednotapply.jpg)'>
+				<p>
+				It is a very real possibility that, one day, robots and artificial intelligence will make humans obsolete. In fact, for many jobs that fleshy organisms once held, like pulling carriages and assembly lines, are now performed by robots. We once believed that robots could only handle simple, repetitive tasks, those that can be defined with math. But the truth is, robots have us beat in many situations already. Self-driving cars and trucks will soon take many transportation jobs, screens and self-checkouts take more service jobs every year, and even music is being written by robots now.
+				</p>
+				<a href='http://www.aymax.fr/wp-content/uploads/2016/12/china_robot_automation_pbu178204_16_50286135.jpg'>image source</a>
 			</div>
 		</div>
 		
 		<div class='section'>
-			<div class='slide' style='background-image:url(tesla2.jpg)'>
+			<div class='slide' style='background-image:url(images/tesla1.jpg)'>
+				<p>
+				Now that self-driving cars are becoming a part of our everyday lives, there are a few questions that need answering. One of the biggest is reminiscent of the trolley problem. Do you change the tracks to kill five people, or let the trolley continue and kill only one? Everything the AI controlling a self-driving car has to be programmed. If the car is on a collision course that would kill the driver, does the car change directions, killing a pedestrian? It’s a rare situation, but with so many cars on the road, it is one that will happen eventually, along with countless others. Whose safety does the AI prioritize?
+				</p>
+			</div>
+		</div>
+
+		<div class='section'>
+			<div class='slide right' style='background-image:url(images/flippy.jpg)'>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<a href='http://wapbbs.org/upload/news/image_1520465403_67320611.jpg'>image source</a>
+			</div>
+		</div>
+
+		<div class='section'>
+			<div class='slide' style='background-image:url(images/robot.jpg)'>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+
+		<div class='section'>
+			<div class='slide right' style='background-image:url(images/bg.jpg)'>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+
+		<div class='section'>
+			<div class='slide' style='background-image:url(images/bg.jpg)'>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+
+		<div class='section'>
+			<div class='slide right' style='background-image:url(images/bg.jpg)'>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+
+		<div class='section'>
+			<div class='slide' style='background-image:url(images/bg.jpg)'>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
 		</div>
