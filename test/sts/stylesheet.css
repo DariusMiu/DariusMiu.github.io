@@ -16,6 +16,31 @@
 	src: url('https://ln2.co/fonts/VeraBd.ttf');
 }
 
+/*@keyframes jiggle
+{
+    000% { transform:rotate( 0deg); }
+    025% { transform:rotate(-3deg); }
+    050% { transform:rotate( 0deg); }
+    075% { transform:rotate( 3deg); }
+    100% { transform:rotate( 0deg); }
+}/**/
+@keyframes jiggle
+{
+    000% { transform: translate( 0px, 0px) rotate( 0deg); }
+    008% { transform: translate( 1px,-1px) rotate( 3deg); }
+    017% { transform: translate(-1px,-2px) rotate( 0deg); }
+    025% { transform: translate(-2px, 1px) rotate(-3deg); }
+    033% { transform: translate( 0px, 0px) rotate( 0deg); }
+    042% { transform: translate( 1px, 2px) rotate( 3deg); }
+    050% { transform: translate(-1px, 1px) rotate( 0deg); }
+    058% { transform: translate(-2px,-1px) rotate(-3deg); }
+    067% { transform: translate(-1px,-2px) rotate( 0deg); }
+    075% { transform: translate( 1px, 1px) rotate( 3deg); }
+    083% { transform: translate(-1px, 0px) rotate( 0deg); }
+    092% { transform: translate(-2px, 1px) rotate(-3deg); }
+	100% { transform: translate( 0px, 0px) rotate( 0deg); }
+}/**/
+
 body, html
 {
 	margin: 0;
@@ -108,6 +133,17 @@ a:hover
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.jiggle
+{
+	animation: jiggle 1.5s linear infinite;
+}
+
+.arrow
+{
+	height: 3vh;
+	margin: 0 0 10px;
 }
 
 .slide
