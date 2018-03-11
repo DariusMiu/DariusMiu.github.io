@@ -28,9 +28,8 @@ ga('send', 'pageview');
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('#fullpage').fullpage({
-				  anchors: ['slide1', 'slide2', 'slide3', 'slide4', 'slide5'],
+				  anchors: ['title', 'slide1', 'slide2', 'slide3', 'slide4'],
 				  menu: '#menu',
-				  dragAndMove: true,
 				});
 			});
 		</script>
@@ -39,9 +38,9 @@ ga('send', 'pageview');
 	
 	<body style='background-color:black'>
 	<ul id="menu">
-		<li data-menuanchor="firstPage" class="active"><a href="#slide1">First slide</a></li>
-		<li data-menuanchor="secondPage"><a href="#slide2">Second slide</a></li>
-		<li data-menuanchor="3rdPage"><a href="#slide3">Third slide</a></li>
+		<li data-menuanchor="title" class="active"><a href="#title">Title</a></li>
+		<li data-menuanchor="slide1"><a href="#slide1">Slide 1</a></li>
+		<li data-menuanchor="slide2"><a href="#slide2">Slide 2</a></li>
 	</ul>
 
 	<div id="fullpage">

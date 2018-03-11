@@ -16,39 +16,68 @@
 	src: url('https://ln2.co/fonts/VeraBd.ttf');
 }
 
-#menu li {
-	display:inline-block;
-	margin: 10px;
-	color: #000;
-	background:#fff;
-	background: rgba(255,255,255, 0.5);
-	-webkit-border-radius: 10px;
-            border-radius: 10px;
-}
-#menu li.active{
-	background:#666;
-	background: rgba(0,0,0, 0.5);
+body, html
+{
+	margin: 0;
+	padding: 0;
 	color: #fff;
+	font-family: Vera;
+	background-color: #060606;
 }
-#menu li a{
-	text-decoration:none;
-	color: #000;
+
+a
+{ text-decoration: none; }
+a:link
+{
+	color: #fff;
+	-webkit-transition: ease 0.15s;
+	-moz-transition: ease 0.15s;
+	-o-transition: ease 0.15s;
+	transition: ease 0.15s;
 }
-#menu li.active a:hover{
-	color: #000;
+a:visited
+{ color: inherit; }
+a:hover
+{
+	color: #2676d5;
+	-webkit-transition: ease 0.15s;
+	-moz-transition: ease 0.15s;
+	-o-transition: ease 0.15s;
+	transition: ease 0.15s;
 }
-#menu li:hover{
-	background: rgba(255,255,255, 0.8);
+
+
+#menu li
+{
+	background: #1E1F25;
+	color: #FFF;
+	overflow: hidden;
+	padding:0;
+	margin: 25px -5px 25px 25px;
+	position: relative;
+	background: #1E1F25;
+	display: inline-block;
+	border-radius: 2px;
+	box-shadow: 0 2px 3px 1px rgba(0,0,0,0.5);
+	-webkit-transition: ease 0.15s;
+	-moz-transition: ease 0.15s;
+	-o-transition: ease 0.15s;
+	transition: ease 0.15s;
 }
+#menu li.active a:hover
+{ color: #fff; }
+#menu li:hover
+{ box-shadow: 0 0 10px 3px rgba(0,0,0,0.7); }
 #menu li a,
-#menu li.active a{
-	padding: 9px 18px;
+#menu li.active a
+{
+	padding: 10px 15px;
 	display:block;
 }
-#menu li.active a{
-	color: #fff;
-}
-#menu{
+#menu li.active a
+{ color: #2676d5; }
+#menu
+{
 	position:fixed;
 	top:0;
 	left:0;
@@ -57,15 +86,6 @@
 	width: 100%;
 	padding: 0;
 	margin:0;
-}
-
-body, html
-{
-	margin: 0;
-	padding: 0;
-	color: #fff;
-	font-family: Vera;
-	background-color: #060606;
 }
 
 .centertext
