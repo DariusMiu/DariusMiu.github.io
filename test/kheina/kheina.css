@@ -58,40 +58,33 @@ body, html
 	background-color: #060606;
 }
 
-.cf
-{
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: repeat;
-	background-image: url(images/cf.png);
-	z-index: 100;
-	position: absolute;
-}
-
 .background
 {
+	background: #060606;
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-image: url(images/bg.jpg);
+	background-image: url(omg.png);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
-
-.backgroundblur
+.icon
 {
-	background-position: center;
-	background-attachment: fixed;
+	margin: -25px 25px -25px -25px;
+	overflow: hidden;
+	height:25vw;
+	width: 25vw;
+	float: left;
+	background-position: top;
 	background-repeat: no-repeat;
-	background-image: url(images/bgblur.jpg);
+	background-image: url(omg.png);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
-
 .headerimage
 {
 	top: 0;
@@ -108,28 +101,6 @@ body, html
 	min-height: 50vh;
 	bottom: 0;
 	position: absolute;
-}
-
-.fullscreenheader
-{
-	margin: 0;
-	background-attachment: fixed;
-	min-height:100%;
-	min-width: 100%;
-	overflow: hidden;
-}
-.fullscreenheader video, .fullscreenheader img
-{
-	margin: 0;
-	padding: 0;
-	min-height:100vh;
-	min-width: 100vw;
-	background-attachment: scroll;
-	position: relative;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	overflow: hidden;
 }
 
 .centertext
@@ -251,7 +222,7 @@ body, html
 p.misctext
 { margin: 0 0 25px; }
 
-.download
+.titles
 {
 	margin: 0.2em 0 0;
 	position: relative;
@@ -259,8 +230,8 @@ p.misctext
 	letter-spacing: 10px;
 	text-transform: uppercase;
 }
-p.download
-{ margin: 0.2em 0 0; }
+p.titles
+{ margin: 0; }
 
 .shadow
 { box-shadow: 0 2px 3px 1px rgba(0,0,0,0.5); }
@@ -576,8 +547,8 @@ H6
 }
 .colors .item, .colorbar .item
 {
-	width: 16.6667%;
-	width: calc(100%/6);
+	width: 14.2857%;
+	width: calc(100%/7);
 	float: left;
 	text-align: center;
 	display: inline-block;
@@ -649,22 +620,25 @@ input:checked ~ .colors .item div
 	bottom: -40px;
 }/**/
 
-.colorbar #C060606
-{ background: #060606; }
+.colorbar #C2676D5
+{ background: #2676D5; }
 
-.colorbar #C151416
-{ background: #151416; }
+.colorbar #CF29B17
+{ background: #F29B17; }
 
-.colorbar #C1E1F25
-{ background: #1E1F25; }
+.colorbar #C2C1C0C
+{ background: #2C1C0C; }
 
-.colorbar #C333
-{ background: #333; }
+.colorbar #CFF589B
+{ background: #FF589B; }
 
-.colorbar #C2676d5
-{ background: #2676d5; }
+.colorbar #CFF739A
+{ background: #FF739A; }
 
-.colorbar #CFFF
+.colorbar #C141318
+{ background: #141318; }
+
+.colorbar #CFFFFFF
 { background: #FFF; }
 
 .icons

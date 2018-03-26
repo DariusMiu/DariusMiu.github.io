@@ -1,4 +1,4 @@
-<html class='backgroundblur'>
+<html>
 	<head>
 <!-- Google Analytics -->
 <script>
@@ -56,22 +56,122 @@ ga('send', 'pageview');
 				 └─────┐##############################│############│
 					   └──────────────────────────────┴────────────┘
 	-->
-	<body class='backgroundblur'>
-		<div class='cardX centerX'>
-			<div class='background cardY centerY cardborder '>
-				<a href='https://twitter.com/DarMiu' class='svg' style='top: 0; left: 0;'><img src='images/Darius.svg'></a>
-				<a href='https://ln2.co' class='svg' style='width: 5%; min-width: 50px; top: 0; right: 0;'><img src='images/Ln2.svg'></a>
-			
-				<div class='shadowtext centertext maindiv center'>
-					<a href='portfolio'><span class='noHoverText'>Game Programming & Design</span><span class='hoverText'>Game Portfolio</span></a>
-					<br><br>
-					<a href='https://www.behance.net/DariusMiu'><span class='noHoverText'>Graphic Design</span><span class='hoverText'>Behance Portfolio</span></a>
+	<body>
+		<div class='fullscreenheader cf'>
+		</div>
+		<div class='fullscreenheader background'>
+			<video autoplay loop muted>
+				<source src='sts/videos/title.webm' type='video/webm'>
+				<source src='sts/videos/title.mp4' type='video/mp4'>
+			</video><!--
+			<img src='images/center-test.png'><!---->
+		</div>
+		<img class='center' style='position: absolute; height: 10%; max-width: 10%; z-index: 101;' src='images/ln2.svg'>
+			<!--<p class='centertext download'>Ln2</p>
+		</div><!---->
+		<div class='content' style='padding-top: 50px'>
+			<div class='containerplain shadow' id='hover'>
+				<input id='check' type='checkbox'>				
+				<label for='check' class='colorbar'>
+					<div class='item left'   id='C060606'><div><p>footer</p></div></div>
+					<div class='item middle' id='C151416'><div><p>background</p></div></div>
+					<div class='item middle' id='C1E1F25'><div><p>cards</p></div></div>
+					<div class='item middle' id='C333'><div><p>accents</p></div></div>
+					<div class='item middle' id='C2676d5'><div><p>hover text</p></div></div>
+					<div class='item right'  id='CFFF'><div><p>text</p></div></div>
+				</label>
+				<div for='check' class='colors'>
+					<div class='item left'   id='C060606'><div><p>#060606<br>rgb(6,6,6)<!--<br>hsv(0°,0%,2%)<!--<br>L*ab(1.645, 0.000, 0.000)--></p></div></div>
+					<div class='item middle' id='C151416'><div><p>#151416<br>rgb(21,20,22)<!--<br>hsv(270°,9%,9%)<!--<br>L*ab(6.483, 0.905, -1.129)--></p></div></div>
+					<div class='item middle' id='C1E1F25'><div><p>#1E1F25<br>rgb(30,31,37)<!--<br>hsv(231°,19%,15%)<!--<br>L*ab(11.888, 1.158, -4.213)--></p></div></div>
+					<div class='item middle' id='C333'><div><p>#333333<br>rgb(51,51,51)<!--<br>hsv(0°,0%,20%)<!--<br>L*ab(21.247, 0.000, -0.000)--></p></div></div>
+					<div class='item middle' id='C2676d5'><div><p>#2676d5<br>rgb(153,187,255)<!--<br>hsv(220°,40%,100%)<!--<br>L*ab(75.780, 5.182, -37.176)--></p></div></div>
+					<div class='item right'  id='CFFF'><div><p>#FFFFFF<br>rgb(255,255,255)<!--<br>hsv(0°,0%,100%)<!--<br>L*ab(100.000, 0.000, 0.000)--></p></div></div>
 				</div>
-				
-				<a href='https://github.com/DariusMiu' class='svg' style='bottom: 0;  left: 0;'><img src='images/GitHub.svg'></a>
-				<a href='resume' class='shadowtext misctext resumelink centerX'>Résumés</a>
-				<a href='irbis' class='svg' style='bottom: 0; right: 0;'><img src='images/Irbis.svg'></a>
 			</div>
+			<div class='container fonts'>
+				<p class='misctext'>Fonts</p>
+				<div class=''>
+					<div class='vera'  ><a href='https://www.gnome.org/fonts/' target='_blank'>Body text: Bitstream Vera</a></div>
+					<div class='darius'><a href='font' target='_blank'>Titles: Darius</a></div>
+				</div>
+			</div>
+			<a href='https://material.io/guidelines/components/cards.html' class='container guidelines' id='hover'>
+				<p class='misctext'>Guidelines</p>
+				<div >
+					<p>Everything on this website follows Google's <span id='hover'>Material Design</span> philosophy</p>
+				</div>
+			</a>
+			<div class='container icons'>
+				<p class='misctext'>Icons</p>
+				<div class='favicons'>
+					<p class='misctext'>Favicons</p>
+					<img src='favicons/favicon.png'    id='S16'>
+					<img src='favicons/favicon32.png'  id='S32'>
+					<img src='favicons/favicon64.png'  id='S64'>
+					<img src='favicons/favicon128.png' id='S128'>
+					<img src='favicons/favicon256.png' id='S256'>
+				</div>
+				<div class='logos'>
+					<p class='misctext'>Logo</p>
+					<img src='images/Ln2.svg'>
+					<img src='images/Ln2 black.svg'>
+				</div>
+			</div>
+			<div class='container specifications'>
+				<p class='misctext'>Specifications</p>
+				<div class='cardexample'>
+				<!--don't use this class, it's been created as a visual guide. if you want my card code, use class='container'-->
+					<p class='null' id='left'>padding: 25px;</p>
+					<p class='null' id='right'>border-radius: 2px;</p>
+					<div style='background: #333;'>
+						<p class='misctext'>Standard Card</p>
+						<p style='text-align: left;'>
+							background: #1E1F25;<br>
+							<!-- Now, I know what you're thinking. "This doesn't look anything like #1E1F25!" Well, these are nested cards. These really don't happen on my site, but this is the color they use. -->
+							color: #FFF;<br>
+							overflow: hidden;<br>
+							margin: 0 0 25px;<br>
+							position: relative;<br>
+							background: #1E1F25;<br>
+							display: inline-block;<br>
+							box-shadow: 0 2px 3px 1px rgba(0,0,0,0.5);
+						</p>
+					</div>
+				</div>
+				<a class='container' id='hover' href='#'>
+					<p class='misctext'>Sample Card Link</p>
+					<p>Sample descriptive text describing what this what go towards. Sample <span id='hover'>key phrase</span> indicating exactly where the link leads.</p>
+					<p style='text-align: left;'>
+						class='container' id='hover'<br><br>
+						On hover:<br>
+						span color: <span id='hover'>#2676D5</span>;<br>
+						box-shadow: 0 0 10px 3px rgba(0,0,0,0.7);
+					</p>
+				</a>
+				<p style='display: inline-block; margin: 0; width: 100%;'>Notice, as well, that the spacing between the cards is always 25px, regardless of direction</p>
+			</div>
+			<div class='resume'>
+				<div class='item shadow' id='hover'>
+					<a href='#'>
+						<div id='image'  ><img src='images/Darius Winter Icon.png'></div>
+						<div id='overlay'><p class='centerY'>Sample Image Card</p></div>
+					</a>
+				</div>
+				<a href='#' class='item art design shadow' id='hover' style='margin: 0 2%; width: 100%; height: 0; padding-bottom: 32%; max-width: 32%; float: left;'>
+					<img src='images/GDresume.png'>
+					<p id='overlay'>Sample Image</p>
+				</a>
+				<a href='#' class='item art design' id='hover' style='width: 100%; max-width: 32%; float: left;'>
+					<img src='images/Ln2 black.svg'>
+					<p id='overlay'>Sample Image<br>/w Transparency</p>
+				</a>
+			</div>			
 		</div>
 	</body>
+	<div class='footer'>
+		<div id='left' ><p>Design by <a href='design'><span class='noHoverText'><img src='images/logo.png'>Ln2</span><span class='hoverText'><img src='images/logo.gif'>Ln2</span></a>.</p></div>
+		<div><p>Built by <a href='https://www.google.com/search?tbm=isch&amp;q=snow+leopard'>sneps</a>.</p></div>
+		<div id='right'><p>Hosted on <a href='https://github.com/DariusMiu/DariusMiu.github.io'>GitHub</a>.</p></div>
+	</div>
 </html>
