@@ -19,6 +19,9 @@
 img
 { max-width: 100%; }
 
+div, a
+{ z-index: 10; }
+
 a
 { text-decoration: none; }
 a:link
@@ -64,8 +67,7 @@ body, html
 	background-attachment: fixed;
 	background-repeat: repeat;
 	background-image: url(images/cf.png);
-	z-index: 100;
-	position: absolute;
+	position: fixed;
 }
 
 .background
@@ -101,6 +103,7 @@ body, html
 	background-size: 100%;
 	background-position: top;
 	overflow: hidden;
+	z-index: 0;
 }
 .headerimage video
 {
@@ -110,13 +113,29 @@ body, html
 	position: absolute;
 }
 
+.spacer
+{
+	margin:0;
+	height:25vh;
+	width: 100%;
+	background-color: #151416;
+	z-index: 10;
+}
+.fullscreen
+{
+	margin: 0;
+	min-height:90vh;
+	width: 100%;
+	background-color: #151416;
+}
 .fullscreenheader
 {
 	margin: 0;
 	background-attachment: fixed;
-	min-height:100%;
-	min-width: 100%;
+	height:100%;
+	width: 100%;
 	overflow: hidden;
+	z-index: 0;
 }
 .fullscreenheader video, .fullscreenheader img
 {
@@ -193,7 +212,6 @@ body, html
 .content
 {
 	padding: 25vh 200px 25px;
-	background: #151416;
 }
 
 .container
@@ -362,7 +380,6 @@ p.download
 	width: 100%;
 	margin: 10px;
 	font-size: 2rem;
-	text-align: right;
 	font-family: Darius;
 	letter-spacing: 0.2rem;
 	text-transform: uppercase;
@@ -393,6 +410,42 @@ p.download
 	border-bottom: 1px solid #fff;
 	padding: 0.5rem 0 0.2rem 0.2rem;
 }
+
+.irbisgame
+{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+.irbisgame img
+{
+	padding: 0 25px 25px;
+	width: 30%;
+	left:50%;
+	transform: translateX(-50%);
+	position: relative;
+}
+.irbisgame p
+{
+	margin: 0;
+	display: block;
+	padding: 0 0 0 1rem;
+}
+.irbisgame a
+{ font-weight: bold; }
+.irbisgame td
+{
+	margin: 0;
+	border: none;
+	padding: 0 0.5rem;
+}
+.irbisgame h5
+{
+	margin: 0 0 0.5rem 0.3rem;
+	border-bottom: 1px solid #fff;
+	padding: 0.5rem 0 0.2rem 0.2rem;
+}
+
 .tiny
 { font-size: 0.7rem; }
 .gamedownload

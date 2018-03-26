@@ -57,115 +57,77 @@ ga('send', 'pageview');
 					   └──────────────────────────────┴────────────┘
 	-->
 	<body>
-		<div class='fullscreenheader cf'></div>
-		<div class='fullscreenheader background'>
-			<video autoplay loop muted>
-				<source src='sts/videos/title.webm' type='video/webm'>
-				<source src='sts/videos/title.mp4' type='video/mp4'>
-			</video><!--
-			<img src='images/center-test.png'><!---->
+	<div class='fullscreenheader cf' style='z-index: 1;'></div>
+		<div>
+			<div class='fullscreenheader background'>
+				<video autoplay loop muted>
+					<source src='video/irbis sample.webm' type='video/webm'>
+					<source src='video/irbis sample.mp4' type='video/mp4'>
+					<img src='video/irbis default.jpg' title='Your browser does not support the <video> tag'>
+				</video>
+			</div>
+			<img class='center' style='position: absolute; max-height: 10%; max-width: 10%; z-index: 101;' src='images/Ln2.svg'>
 		</div>
-		<img class='center' style='position: absolute; height: 10%; max-width: 10%; z-index: 101;' src='images/Ln2.svg'>
-			<!--<p class='centertext download'>Ln2</p>
-		</div><!---->
-		<div class='content' style='padding-top: 50px'>
-			<div class='containerplain shadow' id='hover'>
-				<input id='check' type='checkbox'>				
-				<label for='check' class='colorbar'>
-					<div class='item left'   id='C060606'><div><p>footer</p></div></div>
-					<div class='item middle' id='C151416'><div><p>background</p></div></div>
-					<div class='item middle' id='C1E1F25'><div><p>cards</p></div></div>
-					<div class='item middle' id='C333'><div><p>accents</p></div></div>
-					<div class='item middle' id='C2676d5'><div><p>hover text</p></div></div>
-					<div class='item right'  id='CFFF'><div><p>text</p></div></div>
-				</label>
-				<div for='check' class='colors'>
-					<div class='item left'   id='C060606'><div><p>#060606<br>rgb(6,6,6)<!--<br>hsv(0°,0%,2%)<!--<br>L*ab(1.645, 0.000, 0.000)--></p></div></div>
-					<div class='item middle' id='C151416'><div><p>#151416<br>rgb(21,20,22)<!--<br>hsv(270°,9%,9%)<!--<br>L*ab(6.483, 0.905, -1.129)--></p></div></div>
-					<div class='item middle' id='C1E1F25'><div><p>#1E1F25<br>rgb(30,31,37)<!--<br>hsv(231°,19%,15%)<!--<br>L*ab(11.888, 1.158, -4.213)--></p></div></div>
-					<div class='item middle' id='C333'><div><p>#333333<br>rgb(51,51,51)<!--<br>hsv(0°,0%,20%)<!--<br>L*ab(21.247, 0.000, -0.000)--></p></div></div>
-					<div class='item middle' id='C2676d5'><div><p>#2676d5<br>rgb(153,187,255)<!--<br>hsv(220°,40%,100%)<!--<br>L*ab(75.780, 5.182, -37.176)--></p></div></div>
-					<div class='item right'  id='CFFF'><div><p>#FFFFFF<br>rgb(255,255,255)<!--<br>hsv(0°,0%,100%)<!--<br>L*ab(100.000, 0.000, 0.000)--></p></div></div>
-				</div>
-			</div>
-			<div class='container fonts'>
-				<p class='misctext'>Fonts</p>
-				<div class=''>
-					<div class='vera'  ><a href='https://www.gnome.org/fonts/' target='_blank'>Body text: Bitstream Vera</a></div>
-					<div class='darius'><a href='font' target='_blank'>Titles: Darius</a></div>
-				</div>
-			</div>
-			<a href='https://material.io/guidelines/components/cards.html' class='container guidelines' id='hover'>
-				<p class='misctext'>Guidelines</p>
-				<div >
-					<p>Everything on this website follows Google's <span id='hover'>Material Design</span> philosophy</p>
-				</div>
-			</a>
-			<div class='container icons'>
-				<p class='misctext'>Icons</p>
-				<div class='favicons'>
-					<p class='misctext'>Favicons</p>
-					<img src='favicons/favicon.png'    id='S16'>
-					<img src='favicons/favicon32.png'  id='S32'>
-					<img src='favicons/favicon64.png'  id='S64'>
-					<img src='favicons/favicon128.png' id='S128'>
-					<img src='favicons/favicon256.png' id='S256'>
-				</div>
-				<div class='logos'>
-					<p class='misctext'>Logo</p>
-					<img src='images/Ln2.svg'>
-					<img src='images/Ln2 black.svg'>
-				</div>
-			</div>
-			<div class='container specifications'>
-				<p class='misctext'>Specifications</p>
-				<div class='cardexample'>
-				<!--don't use this class, it's been created as a visual guide. if you want my card code, use class='container'-->
-					<p class='null' id='left'>padding: 25px;</p>
-					<p class='null' id='right'>border-radius: 2px;</p>
-					<div style='background: #333;'>
-						<p class='misctext'>Standard Card</p>
-						<p style='text-align: left;'>
-							background: #1E1F25;<br>
-							<!-- Now, I know what you're thinking. "This doesn't look anything like #1E1F25!" Well, these are nested cards. These really don't happen on my site, but this is the color they use. -->
-							color: #FFF;<br>
-							overflow: hidden;<br>
-							margin: 0 0 25px;<br>
-							position: relative;<br>
-							background: #1E1F25;<br>
-							display: inline-block;<br>
-							box-shadow: 0 2px 3px 1px rgba(0,0,0,0.5);
-						</p>
-					</div>
-				</div>
-				<a class='container' id='hover' href='#'>
-					<p class='misctext'>Sample Card Link</p>
-					<p>Sample descriptive text describing what this what go towards. Sample <span id='hover'>key phrase</span> indicating exactly where the link leads.</p>
-					<p style='text-align: left;'>
-						class='container' id='hover'<br><br>
-						On hover:<br>
-						span color: <span id='hover'>#2676D5</span>;<br>
-						box-shadow: 0 0 10px 3px rgba(0,0,0,0.7);
+		<div class='spacer'></div>
+		<div class='fullscreen background' style='background-image: url(images/bg.jpg)'>
+			<div class='content'>
+			<div class='container'>
+				<div class='irbisgame' style='margin:0; padding:0'>
+					<a href='irbis' class='gametitle'>What is Irbis</a>
+					<h5>Description</h5>
+					<p >
+Irbis is a 2D boss rush style game based upon the older Metroid games. With very minimal story elements, the purpose of the game is simply to defeat all the bosses. There are no platforming and no ‘run&gun’ style levels, though there is a survival mode in the works. A total of five bosses are planned, each with their own unique stages (starting with the cave, then plains, hill, mountaintop, and finally The Keep) and ability sets.
+<br><br>
+The first boss, the lizard (technical name: “Lizard Guy Boss (rawr)” it’s a working title) is mechanically complete, though completely untested, riddled with bugs, and lacking animations. The lizard has a combination of doodles, concept art, and arrows in place of where animations would be to show that the animation system is fully functional.
+<br><br>
+While multiple difficulties are planned (easy, medium, hard, and insane - being unlocked after beating hard), the game is being built to be hard. The intention is to have to fight the boss four or five times to try and learn its mechanics before being able to beat it. This is very much inspired by Metroid and Witcher 3 bosses.
 					</p>
-				</a>
-				<p style='display: inline-block; margin: 0; width: 100%;'>Notice, as well, that the spacing between the cards is always 25px, regardless of direction</p>
-			</div>
-			<div class='resume'>
-				<div class='item shadow' id='hover'>
-					<a href='#'>
-						<div id='image'  ><img src='images/Darius Winter Icon.png'></div>
-						<div id='overlay'><p class='centerY'>Sample Image Card</p></div>
-					</a>
+					<br>
+					<h5>Team</h5>
+					<table>
+					<tr>
+					<td style='text-align: right;'>
+					<a href='https://twitter.com/DarMiu'>Darius</a><br>
+					<a href='https://twitter.com/LordPulex'>Pulex</a><br>
+					<a href='https://twitter.com/KrampusParty'>Krampus Party</a>
+					</td>
+					<td style='text-align: left; border-left: 1px dashed #fbfbfb;'>
+					Designed, coded, and otherwise built everything<br>
+					Concept art & awesome friend<br>
+					Animations & most patient person ever
+					</td>
+					</tr>
+					</table>
 				</div>
-				<a href='#' class='item art design shadow' id='hover' style='margin: 0 2%; width: 100%; height: 0; padding-bottom: 32%; max-width: 32%; float: left;'>
-					<img src='images/GDresume.png'>
-					<p id='overlay'>Sample Image</p>
+			</div>
+			</div>
+		</div>
+		<div class='spacer'></div>
+		<div class='fullscreen background' style='background-image: url(images/bg.jpg)'>
+			<div class='content'>
+			<div class='container'>
+				<div class='irbisgame' style='margin:0; padding:0'>
+					<a href='https://github.com/DariusMiu/Irbis'><img src='images/GitHub-logo.svg'>
+					<br>
+					<h5 class='gametitle'>Open Source</h5></a>
+					<p >
+All of the code for Irbis is open source and available on GitHub.
+<br><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class='spacer'></div>
+		<div class='fullscreen background' style='background-image: url(images/snep.png)'>
+			<div class='content'>
+				<a href='games/Irbis v0.2.0.10 windows.zip' class='container' id='hover' style='text-align: center;'>
+					<img src='images/Irbis.svg' style='width: 50%;'>
+					<br><br><br><br>
+					<span class='centertext download'>DOWNLOAD AN<br>EARLY BUILD</span>
 				</a>
-				<a href='#' class='item art design' id='hover' style='width: 100%; max-width: 32%; float: left;'>
-					<img src='images/Ln2 black.svg'>
-					<p id='overlay'>Sample Image<br>/w Transparency</p>
-				</a>
-			</div>			
+			</div>
 		</div>
 	</body>
 	<div class='footer'>
