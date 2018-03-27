@@ -130,6 +130,10 @@ body, html
 	width: 25vw;
 	height: 25vw;
 	float: left;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: -webkit-crisp-edges;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
 	image-rendering: pixelated;
 	background-position: top;
 	background-repeat: no-repeat;
