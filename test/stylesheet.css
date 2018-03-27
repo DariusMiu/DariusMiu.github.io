@@ -150,9 +150,10 @@ body, html
 	width: calc(50% - 12.5px);
 	margin: 0;
 	padding: 0;
+	color: #060606;
 	border-radius: 2px;
 	display: inline-block;
-	height: 30vw;
+	height: 40vh;
 }
 
 .spacer
@@ -594,8 +595,8 @@ H6
 .resume .item
 {
 	width: 100%;
+	height:100%;
 	float: left;
-	max-width: 32%;
 	overflow: hidden;
 	border-radius: 2px;
 	text-align: center;
@@ -645,6 +646,8 @@ H6
 { width: 100%; }
 .resume .item div#image
 {
+	width: 100%;
+	height:100%;
 	bottom: 3vw;
 	position: relative;
 	-webkit-transition: ease 0.2s;
@@ -658,7 +661,11 @@ H6
 	bottom: 0;
 }
 .resume .item div#image img
-{ max-width: none; }
+{
+	min-width: 100%;
+	object-fit: cover;
+	min-height:100%;
+}
 
 .colors, .colorbar
 {
