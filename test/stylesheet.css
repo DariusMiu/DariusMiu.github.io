@@ -81,6 +81,16 @@ body, html
 	-o-background-size: cover;
 	background-size: cover;
 }
+.backgroundscroll
+{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(images/bg.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 
 .backgroundblur
 {
@@ -111,6 +121,34 @@ body, html
 	min-height: 50vh;
 	bottom: 0;
 	position: absolute;
+}
+
+.reficon
+{
+	margin: -25px 25px -25px -25px;
+	overflow: hidden;
+	width: 25vw;
+	height: 25vw;
+	float: left;
+	image-rendering: pixelated;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-image: url(images/jamie.gif);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.refart .item
+{
+	width: 49%;
+	width: calc(50% - 12.5px);
+	margin: 0;
+	padding: 0;
+	border-radius: 2px;
+	display: inline-block;
+	height: 30vw;
 }
 
 .spacer
@@ -221,8 +259,8 @@ body, html
 	padding: 25px;
 	overflow: hidden;
 	margin: 0 0 25px;
-	border-radius: 2px;
 	position: relative;
+	border-radius: 2px;
 	background: #1E1F25;
 	display: inline-block;
 	box-shadow: 0 2px 3px 1px rgba(0,0,0,0.5);
