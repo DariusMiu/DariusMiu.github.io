@@ -68,6 +68,9 @@ body, html
 	background-repeat: repeat;
 	background-image: url(images/cf.png);
 	position: fixed;
+	overflow: visible;
+	height: 200vh;
+	z-index: 1 !important;
 }
 
 .background
