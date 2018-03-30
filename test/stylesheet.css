@@ -171,8 +171,24 @@ body, html
 	border: 1px solid #333;
 	border-radius: 2px;
 }
-/*.chart iframe:hover
-{ border-color: #2676d5; }/**/
+.chart a
+{
+	position: absolute;
+	bottom: 0;
+	left: 40%;
+	left: calc(50% - 290px);
+	z-index: 10;
+	background-color: #151416BB;
+	border-radius: 2px;
+	padding: 5px;
+	border: 1px solid #333;
+	margin: 0 0 35px;
+}
+.chart a:hover
+{
+	border-color: #2676d5;
+	background-color: #151416;
+}
 
 .spacer
 {
