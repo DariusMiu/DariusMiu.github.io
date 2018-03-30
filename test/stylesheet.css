@@ -19,8 +19,8 @@
 img
 { max-width: 100%; }
 
-div, a
-{ z-index: 10; }
+div, a, iframe, iframe document
+{ z-index: 10 !important; }
 
 a
 { text-decoration: none; }
@@ -160,6 +160,19 @@ body, html
 	display: inline-block;
 	height: 40vh;
 }
+
+.chart
+{
+	text-align: center;
+	margin-top: 25px;
+}
+.chart iframe
+{
+	border: 1px solid #333;
+	border-radius: 2px;
+}
+/*.chart iframe:hover
+{ border-color: #2676d5; }/**/
 
 .spacer
 {
