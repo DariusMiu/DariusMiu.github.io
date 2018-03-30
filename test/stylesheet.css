@@ -650,12 +650,12 @@ H6
 }
 .resume .item div#overlay
 {
-	bottom: 6vw;
-	height: 6vw;
+	bottom: 10vh;
+	height: 10vh;
 	padding: 0 0;
 	max-width: 100%;
 	overflow: hidden;
-	margin: 0 0 -6vw;
+	margin: 0 0 -10vh;
 	position: relative;
 	background: #1E1F25;
 	-webkit-transition: ease 0.2s;
@@ -682,7 +682,7 @@ H6
 {
 	width: 100%;
 	height:100%;
-	bottom: 3vw;
+	bottom: 5vh;
 	position: relative;
 	-webkit-transition: ease 0.2s;
 	-moz-transition: ease 0.2s;

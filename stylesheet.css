@@ -19,6 +19,9 @@
 img
 { max-width: 100%; }
 
+div, a, iframe, iframe document
+{ z-index: 10 !important; }
+
 a
 { text-decoration: none; }
 a:link
@@ -33,7 +36,7 @@ a:visited
 { color: inherit; }
 a:hover
 {
-	color: #9BF;
+	color: #2676D5;
 	-webkit-transition: ease 0.15s;
 	-moz-transition: ease 0.15s;
 	-o-transition: ease 0.15s;
@@ -58,10 +61,34 @@ body, html
 	background-color: #060606;
 }
 
+.cf
+{
+	margin: 0;
+	z-index: 1;
+	width: 100%;
+	height: 200vh;
+	position: fixed;
+	overflow: visible;
+	background-repeat: repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-image: url(images/cf.png);
+}
+
 .background
 {
 	background-position: center;
 	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-image: url(images/bg.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.backgroundscroll
+{
+	background-position: center;
 	background-repeat: no-repeat;
 	background-image: url(images/bg.jpg);
 	-webkit-background-size: cover;
@@ -91,6 +118,7 @@ body, html
 	background-size: 100%;
 	background-position: top;
 	overflow: hidden;
+	z-index: 0;
 }
 .headerimage video
 {
@@ -98,6 +126,107 @@ body, html
 	min-height: 50vh;
 	bottom: 0;
 	position: absolute;
+}
+
+.reficon
+{
+	margin: -25px 25px -25px -25px;
+	overflow: hidden;
+	width: 25vw;
+	height: 25vw;
+	float: left;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: -webkit-crisp-edges;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: pixelated;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-image: url(images/jamie.gif);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.refart .item
+{
+	width: 49%;
+	width: calc(50% - 12.5px);
+	margin: 0;
+	padding: 0;
+	color: #060606;
+	border-radius: 2px;
+	display: inline-block;
+	height: 40vh;
+}
+
+.chart
+{
+	text-align: center;
+	margin-top: 25px;
+}
+.chart iframe
+{
+	border: 1px solid #333;
+	border-radius: 2px;
+}
+.chart a
+{
+	position: absolute;
+	bottom: 0;
+	left: 40%;
+	left: calc(50% - 290px);
+	z-index: 10;
+	background-color: #151416BB;
+	border-radius: 2px;
+	padding: 5px;
+	border: 1px solid #333;
+	margin: 0 0 35px;
+}
+.chart a:hover
+{
+	border-color: #2676d5;
+	background-color: #151416;
+}
+
+.spacer
+{
+	margin:0;
+	height:20vh;
+	width: 100%;
+	background: #151416;
+	position: relative;
+}
+.fullscreen
+{
+	margin: 0;
+	min-height:90vh;
+	width: 100%;
+	background-color: #060606;
+}
+.fullscreenheader
+{
+	margin: 0;
+	background-attachment: fixed;
+	height:100%;
+	width: 100%;
+	overflow: hidden;
+	z-index: 0;
+}
+.fullscreenheader video, .fullscreenheader img
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	min-height:100vh;
+	min-width: 100vw;
+	background-attachment: fixed;
+	top: 50vh;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+	background-color: #060606;
 }
 
 .centertext
@@ -160,7 +289,6 @@ body, html
 .content
 {
 	padding: 25vh 200px 25px;
-	background: #151416;
 }
 
 .container
@@ -170,8 +298,8 @@ body, html
 	padding: 25px;
 	overflow: hidden;
 	margin: 0 0 25px;
-	border-radius: 2px;
 	position: relative;
+	border-radius: 2px;
 	background: #1E1F25;
 	display: inline-block;
 	box-shadow: 0 2px 3px 1px rgba(0,0,0,0.5);
@@ -203,7 +331,7 @@ body, html
 .container#hover p
 { color: #FFF; }
 .container:hover#hover span
-{ color: #9BF; }
+{ color: #2676D5; }
 .container:hover#hover
 { box-shadow: 0 0 10px 3px rgba(0,0,0,0.7); }
 
@@ -259,17 +387,18 @@ p.download
 
 .footer
 {
+	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 50px;
-	margin: 0;
+	height:50px;
 	font-size: 0.8rem;
 	position: relative;
 	text-align: center;
 	background: #060606;
+	overflow: hidden;
 }
 .footer div
-{ margin: 18px; display: inline-block; }
+{ margin: 18px 18px 0; display: inline-block; }
 .footer p
 { margin: 0; }
 .footer span
@@ -283,7 +412,7 @@ p.download
 .footer p, .footer a, .footer a:visited
 { color: #333; }
 .footer a:hover
-{ color: #9BF; }
+{ color: #2676D5; }
 
 .video
 {
@@ -313,7 +442,7 @@ p.download
 	transition: ease 0.15s;
 }
 .video:hover
-{ border: 2px solid #9BF; }
+{ border: 2px solid #2676D5; }
 .video #overlay
 {
 	margin: 0;
@@ -329,7 +458,6 @@ p.download
 	width: 100%;
 	margin: 10px;
 	font-size: 2rem;
-	text-align: right;
 	font-family: Darius;
 	letter-spacing: 0.2rem;
 	text-transform: uppercase;
@@ -360,6 +488,42 @@ p.download
 	border-bottom: 1px solid #fff;
 	padding: 0.5rem 0 0.2rem 0.2rem;
 }
+
+.irbisgame
+{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+.irbisgame img
+{
+	padding: 0 25px 25px;
+	width: 30%;
+	left:50%;
+	transform: translateX(-50%);
+	position: relative;
+}
+.irbisgame p
+{
+	margin: 0;
+	display: block;
+	padding: 0 0 0 1rem;
+}
+.irbisgame a
+{ font-weight: bold; }
+.irbisgame td
+{
+	margin: 0;
+	border: none;
+	padding: 0 0.5rem;
+}
+.irbisgame h5
+{
+	margin: 0 0 0.5rem 0.3rem;
+	border-bottom: 1px solid #fff;
+	padding: 0.5rem 0 0.2rem 0.2rem;
+}
+
 .tiny
 { font-size: 0.7rem; }
 .gamedownload
@@ -388,7 +552,7 @@ p.download
 	transition: ease 0.15s;
 }
 .button:hover
-{ background: #9BF; }
+{ background: #2676D5; }
 
 .centerY
 {
@@ -465,8 +629,8 @@ H6
 .resume .item
 {
 	width: 100%;
+	height:100%;
 	float: left;
-	max-width: 32%;
 	overflow: hidden;
 	border-radius: 2px;
 	text-align: center;
@@ -486,12 +650,12 @@ H6
 }
 .resume .item div#overlay
 {
-	bottom: 6vw;
-	height: 6vw;
+	bottom: 10vh;
+	height: 10vh;
 	padding: 0 0;
 	max-width: 100%;
 	overflow: hidden;
-	margin: 0 0 -6vw;
+	margin: 0 0 -10vh;
 	position: relative;
 	background: #1E1F25;
 	-webkit-transition: ease 0.2s;
@@ -516,7 +680,9 @@ H6
 { width: 100%; }
 .resume .item div#image
 {
-	bottom: 3vw;
+	width: 100%;
+	height:100%;
+	bottom: 5vh;
 	position: relative;
 	-webkit-transition: ease 0.2s;
 	-moz-transition: ease 0.2s;
@@ -529,9 +695,13 @@ H6
 	bottom: 0;
 }
 .resume .item div#image img
-{ max-width: none; }
+{
+	min-width: 100%;
+	object-fit: cover;
+	min-height:100%;
+}
 
-.colors
+.colors, .colorbar
 {
 	padding: 0;
 	width: 100%;
@@ -542,13 +712,11 @@ H6
 	-o-transition: ease 0.15s;
 	transition: ease 0.15s;
 }
-.colors .item
+.colors .item, .colorbar .item
 {
-	width: 16.66%;
+	width: 16.6667%;
 	width: calc(100%/6);
-	height: 40px;
 	float: left;
-	overflow: hidden;
 	text-align: center;
 	display: inline-block;
 	-webkit-transition: ease 0.15s;
@@ -556,7 +724,9 @@ H6
 	-o-transition: ease 0.15s;
 	transition: ease 0.15s;
 }
-.colors .item p
+.colorbar .item
+{ height: 40px; }
+.colors .item p, .colorbar .item p
 {
 	bottom: 0;
 	padding: 0;
@@ -564,7 +734,6 @@ H6
 	width: 100%;
 	line-height: 2rem;
 	max-height: 3.5rem;
-	overflow: hidden;
 	font-weight: bold;
 	text-transform: uppercase;
 	border-color: #333; border-style: solid; box-sizing: border-box;
@@ -572,32 +741,32 @@ H6
 input
 { display:none; }
 input:checked ~ .colors .item p
-{
-	bottom: 0;
-}
+{ bottom: 0; }
 input:checked ~ .colors .item
-{ height: 120px; }
+{ padding-bottom: 0px; }
 
-.colors .left p
+.colors .left p, .colorbar .left p
 { border-width: 0 1px 0 0; }
-.colors .middle p
+.colors .middle p, .colorbar .middle p
 { border-width: 0 1px 0; }
-.colors .right p
+.colors .right p, .colorbar .right p
 { border-width: 0 0 0 1px; }
 
-.colors .item div
+.colors .item div, .colorbar .item div
 {
 	padding: 0;
 	height: 0;
 	bottom: -40px;
 	position: relative;
-	background: #1E1F25; color: #9BF;
+	background: #1E1F25; color: #2676D5;
 	-webkit-transition: ease 0.15s;
 	-moz-transition: ease 0.15s;
 	-o-transition: ease 0.15s;
 	transition: ease 0.15s;
 }
-.colors .item:hover div
+.colors .item div
+{ top: 0; }
+.colorbar .item:hover div
 {
 	height: 28px;
 	bottom: 0;
@@ -607,25 +776,33 @@ input:checked ~ .colors .item div
 {
 	height: 56px;
 	padding: 12px 0;
-	bottom: -40px;
+	top: 0px;
 }
 
-.colors #C060606
+/*controls whether or not colorbar class items still have hover effect when hex codes are visible*/
+/*input:checked ~ .colorbar .item div
+{
+	padding: 0;
+	height: 0;
+	bottom: -40px;
+}/**/
+
+.colorbar #C060606
 { background: #060606; }
 
-.colors #C151416
+.colorbar #C151416
 { background: #151416; }
 
-.colors #C1E1F25
+.colorbar #C1E1F25
 { background: #1E1F25; }
 
-.colors #C333
+.colorbar #C333
 { background: #333; }
 
-.colors #C9BF
-{ background: #9BF; }
+.colorbar #C2676d5
+{ background: #2676d5; }
 
-.colors #CFFF
+.colorbar #CFFF
 { background: #FFF; }
 
 .icons
