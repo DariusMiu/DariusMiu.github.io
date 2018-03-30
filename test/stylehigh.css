@@ -19,8 +19,8 @@
 img
 { max-width: 100%; }
 
-div, a, iframe, iframe document
-{ z-index: 10 !important; }
+div, a
+{ z-index: 10; }
 
 a
 { text-decoration: none; }
@@ -287,9 +287,7 @@ body, html
 }
 
 .content
-{
-	padding: 25vh 200px 25px;
-}
+{ padding: 25vh 10vw 25px; }
 
 .container
 {
@@ -989,6 +987,8 @@ input:checked ~ .colors .item div
 		position: relative;
 		display: inline-block;
 	}
+	.cf
+	{ background-image: url(images/cf2.png); }
 }
 @media screen and (max-height:35rem)
 {
