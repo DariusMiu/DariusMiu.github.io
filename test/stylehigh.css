@@ -128,27 +128,6 @@ body, html
 	position: absolute;
 }
 
-.reficon
-{
-	margin: -25px 25px -25px -25px;
-	overflow: hidden;
-	width: 25vw;
-	height: 25vw;
-	float: left;
-	image-rendering: -webkit-optimize-contrast;
-	image-rendering: -webkit-crisp-edges;
-	image-rendering: -moz-crisp-edges;
-	image-rendering: -o-crisp-edges;
-	image-rendering: pixelated;
-	background-position: top;
-	background-repeat: no-repeat;
-	background-image: url(images/jamie.gif);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
 .refart .item
 {
 	width: 49%;
@@ -487,6 +466,27 @@ p.download
 	padding: 0.5rem 0 0.2rem 0.2rem;
 }
 
+.reficon
+{
+	margin: -25px 25px -25px -25px;
+	overflow: hidden;
+	width: 25vw;
+	height: 25vw;
+	float: left;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: -webkit-crisp-edges;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: pixelated;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-image: url(images/jamie.gif);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 .irbisgame
 {
 	margin: 0;
@@ -500,6 +500,36 @@ p.download
 	left:50%;
 	transform: translateX(-50%);
 	position: relative;
+}
+.irbisgame div
+{
+	bottom: 0;
+	position:absolute;
+	height: 100%;
+	width: inherit;
+	max-height: 10vw;
+	/*max-height: calc(12.5vw - 5rem - 25px);*/
+}
+.irbisgame div div
+{
+	height: inherit;
+	padding: 0;
+	margin: 0 0 -30px;
+	width: 100%;
+	max-width: 49%;
+	display: inline-block;
+	position: relative;
+	background-position: top;
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: -webkit-crisp-edges;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: pixelated;
 }
 .irbisgame p
 {
