@@ -143,7 +143,7 @@ body, html
 .chart
 {
 	text-align: center;
-	margin-top: 25px;
+	margin-top: 3em;
 }
 .chart iframe
 {
@@ -167,6 +167,24 @@ body, html
 {
 	border-color: #2676d5;
 	background-color: #151416;
+}
+.donatebutton
+{
+	position: relative;
+	top: 1.5em;
+	background-color: #151416;
+	border-radius: 2px;
+	padding: 0.5em 1em;
+	border: 1px solid #333;
+}
+.donatebutton:hover
+{
+	border-color: #2676d5;
+}
+.donatebutton img
+{
+	margin-bottom: -0.125em;
+	height: 1em;
 }
 
 .spacer
