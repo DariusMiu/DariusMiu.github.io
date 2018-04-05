@@ -54,6 +54,8 @@ a:hover span.noHoverText, a span.hoverText
 
 body, html
 {
+	position: relative;
+	z-index: -5;
 	margin: 0;
 	padding: 0;
 	color: #fff;
@@ -168,7 +170,11 @@ body, html
 	border-color: #2676d5;
 	background-color: #151416;
 }
-.donatebutton
+div.donatebutton
+{
+	text-align: center;
+}
+.donatebutton a
 {
 	position: relative;
 	top: 1.5em;
@@ -177,11 +183,11 @@ body, html
 	padding: 0.5em 1em;
 	border: 1px solid #333;
 }
-.donatebutton:hover
+.donatebutton a:hover
 {
 	border-color: #2676d5;
 }
-.donatebutton img
+.donatebutton a img
 {
 	margin-bottom: -0.125em;
 	height: 1em;
@@ -205,15 +211,17 @@ body, html
 .fullscreenheader
 {
 	margin: 0;
+	position: absolute;
 	background-attachment: fixed;
 	height:100%;
 	width: 100%;
 	overflow: hidden;
-	z-index: 0;
+	z-index: -2;
 }
 .fullscreenheader video, .fullscreenheader img
 {
-	position: relative;
+	position: fixed;
+	z-index: -2;
 	margin: 0;
 	padding: 0;
 	min-height:100vh;
@@ -519,7 +527,7 @@ p.download
 	transform: translateX(-50%);
 	position: relative;
 }
-.irbisgame div
+.gifs
 {
 	bottom: 0;
 	position:absolute;
@@ -528,7 +536,7 @@ p.download
 	max-height: 10vw;
 	/*max-height: calc(12.5vw - 5rem - 25px);*/
 }
-.irbisgame div div
+.gifs div
 {
 	height: inherit;
 	padding: 0;
