@@ -1058,15 +1058,15 @@ input:checked ~ .colors .item div
 	}
 	.cf
 	{ background-image: url(images/cf2.png); }
-	div.donatebutton
+	.donatebutton
 	{
 		font-size: 2rem;
-		margin: 0 0 2em;
+		top: 1em;
 	}
-	.donatebutton a
-	{ top: 1em; }
 	.centerlogo div
 	{ display: none; }
+	.chart
+	{ margin-top: 4em; }
 }
 @media screen and (max-height:35rem)
 {
