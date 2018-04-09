@@ -75,11 +75,9 @@ body, html
 	min-height: 10vh;
 	max-width: 20vw;
 }
-.centerlogo div.donatebutton
-{ margin-top: -2em; }
-.centerlogo a
-{ opacity: 0.3; }
-.centerlogo a:hover
+.centerlogo .donatebutton
+{ opacity: 0.3; top: 1em; }
+.centerlogo .donatebutton:hover
 { opacity: 1; }
 
 .cf
@@ -189,12 +187,7 @@ body, html
 	border-color: #2676d5;
 	background-color: #151416;
 }
-div.donatebutton
-{
-	text-align: center;
-	margin: 0;
-}
-.donatebutton a
+.donatebutton
 {
 	position: relative;
 	top: 1.5em;
@@ -203,11 +196,11 @@ div.donatebutton
 	padding: 0.5em 1em;
 	border: 1px solid #333;
 }
-.donatebutton a:hover
+.donatebutton:hover
 {
 	border-color: #2676d5;
 }
-.donatebutton a img
+.donatebutton img
 {
 	margin-bottom: -0.125em;
 	height: 1em;
@@ -738,6 +731,7 @@ H6
 }
 .resume .item:hover div#overlay
 {
+	color: #fff;
 	bottom: 0;
 	height: 0;
 	margin: 0;
