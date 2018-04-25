@@ -5,13 +5,13 @@
 }
 @font-face
 {
-	font-family: 'Vera';
+	font-family: 'Bera';
 	font-weight: normal;
 	src: url('design/fonts/Vera.ttf');
 }
 @font-face
 {
-	font-family: 'Vera';
+	font-family: 'Bera';
 	font-weight: bold;
 	src: url('design/fonts/VeraBd.ttf');
 }
@@ -43,14 +43,10 @@ a:hover
 	transition: ease 0.15s;
 }
 
-a span.noHoverText, a:hover span.hoverText
-{
-	display: inline-block;
-}
-a:hover span.noHoverText, a span.hoverText
-{
-	display: none;
-}
+span.noHoverText, a:hover span.hoverText, h5:hover span.hoverText
+{ display: inline-block; }
+a:hover span.noHoverText, span.hoverText, h5:hover span.noHoverText
+{ display: none; }
 
 body, html
 {
@@ -59,7 +55,7 @@ body, html
 	margin: 0;
 	padding: 0;
 	color: #fff;
-	font-family: Vera, Arial, sans-serif;
+	font-family: Bera, Arial, sans-serif;
 	background-color: #060606;
 }
 
@@ -910,8 +906,8 @@ input:checked ~ .colors .item div
 	float: left;
 	display: inline-block;
 }
-.fonts .vera
-{ font-family: Vera; }
+.fonts .bera
+{ font-family: Bera; }
 .fonts .darius
 { font-family: Darius; letter-spacing: 0.1em; text-transform: uppercase; }
 
