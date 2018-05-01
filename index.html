@@ -13,7 +13,7 @@ ga('send', 'pageview');
 		<link rel='icon' type='image/png' href='favicons/favicon64.png'  sizes='64x64'><!--
 		<link rel='icon' type='image/png' href='favicons/favicon128.png' sizes='128x128'>
 		<link rel='icon' type='image/png' href='favicons/favicon256.png' sizes='256x256'><!---->
-		<link rel='stylesheet' href='stylelite.css'>
+		<link rel='stylesheet' href='styleriot.css'>
 		<meta property='og:title' content='Irbis - Liquid Nitrogen'/>
 		<meta  name='description' content='Irbis: A 2D boss rush game by Liquid Nitrogen'/>
 		<meta property='og:description' content='Irbis: A 2D boss rush game by Liquid Nitrogen'/>
@@ -115,15 +115,15 @@ While multiple difficulties are planned (easy, medium, hard, and insane - being 
 			<div class='content'>
 				<div class='container'>
 					<div class='reficon'></div>
-					<div class='irbisgame' style='width: calc(100% - 25vw)'>
+					<div class='irbisgame' style='position: static; width: calc(100% - 25vw)'>
 					<h5 class='gametitle'>Jamie</h5>
 					<p>
 He's the main character.
 					</p>
 					<br>
 					<div class='gifs'>
-					<div class='' style='background-image: url(images/jamierun.gif)'></div>
-					<div class='' style='background-image: url(images/jamieattack.gif)'></div>
+					<div style='background-image: url(images/jamierun.gif)'></div>
+					<div style='background-image: url(images/jamieattack.gif)'></div>
 					</div>
 					</div>
 				</div>
@@ -151,13 +151,13 @@ He's the main character.
 				<div class='resume' style='height: 40vh'>
 					<div class='item shadow' id='hover' style='width: calc(50% - 12.5px)'>
 						<a href='irbis'>
-							<div id='image'  ><img src='images/irbis-art/snepAnimateposes.png'></div>
+							<div id='image'  ><img src='images/snepAnimateposes.png'></div>
 							<div id='overlay'><p class='centerY'>Animation Poses</p></div>
 						</a>
 					</div>
 					<div class='item shadow' id='hover' style='width: calc(50% - 12.5px); margin-left: 25px'>
 						<a href='irbis'>
-							<div id='image'  ><img src='images/irbis-art/snepp.png'></div>
+							<div id='image'  ><img src='images/snepp.png'></div>
 							<div id='overlay'><p class='centerY'>Original Concept Art</p></div>
 						</a>
 					</div>
@@ -169,7 +169,7 @@ He's the main character.
 			<div class='content'>
 				<div class='container'>
 					<div class='irbisgame'>
-						<img src='images/patreon.svg'>
+						<img src='images/patreon-header.svg'>
 						<br>
 						<a href='https://www.patreon.com/Ln2'><h5 class='gametitle'>Funding</h5></a>
 						<p>
@@ -180,11 +180,21 @@ This is where patreon comes in. With patreon, I'll be able to afford the assets 
 Pledging also comes with certain perks including early developement builds and Discord access, along with whatever else I can think of. Check out the <a href='https://www.patreon.com/Ln2'>patreon page</a> for more info.
 						</p>
 					</div>
-					<div style='text-align: center;'><a class='donatebutton shadow' id='hover' href='https://www.patreon.com/Ln2'><img src='images/patreon-logo.svg'> donate</a></div>
+					<div style='text-align: center;'><a class='donatebutton shadow' id='hover' href='https://www.patreon.com/Ln2'><img src='images/patreon.svg'> donate</a></div>
 					<div class='chart'>
 					<iframe class='shadow' width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTCY9XbOEhTYvw32wVJWAOg_8L9gZLkVwB_kVPyo3JGsktW9eJPOOzTlN526aPkVJKI-eaJeC9E7moJ/pubchart?oid=522751558&amp;format=interactive"></iframe>
-					<a class='shadow' id='hover' href='https://docs.google.com/spreadsheets/d/1zp-zkMVmhCKMmgodcMhhADXi8hhKuyXsriW0Nzi8HZg/'>spreadsheet</a>
+					<!--<a class='shadow' id='hover' href='https://docs.google.com/spreadsheets/d/1zp-zkMVmhCKMmgodcMhhADXi8hhKuyXsriW0Nzi8HZg/'>spreadsheet</a>-->
 					</div>
+					<div class='irbisgame' style='top: 25px'><h5><span class='noHoverText'>Patrons</span><span class='hoverText'>Thank You!</span></h5></div>
+					<div style='text-align: center;' class='patrons'>
+					<a class='shadow' id='hover' href='https://twitter.com/homphs/'><img src='images/twitter.svg'> kieran</a>
+					<a class='shadow' id='hover' href='https://www.furaffinity.net/user/pulex'><img src='images/furaffinity.png'> Pulex</a>
+					<a class='shadow' id='hover' href='https://twitter.com/Ventain'><img src='images/twitter.svg'> Ventain</a>
+					<a class='shadow' id='hover' href='https://twitter.com/serephita'><img src='images/twitter.svg'> Serephita</a>
+					<a class='shadow' id='hover' href='https://twitter.com/miirage'><img src='images/twitter.svg'> Mirage</a>
+					<a class='shadow' id='hover' href='https://www.furaffinity.net/user/nelly/'><img src='images/furaffinity.png'> Nelly</a>
+					</div>
+					<div style='height: 18px;'></div>
 				</div>
 			</div>
 		</div>
@@ -207,7 +217,7 @@ Feel free to clone, download, modify, and use the code under this license. Howev
 		<div class='spacer'></div>
 		<div class='fullscreen'><a name='download'></a>
 			<div class='content'>
-				<a href='irbis/Irbis v0.2.0.13 windows.zip' class='container' id='hover' style='text-align: center;'>
+				<a href='irbis/Irbis v0.2.0.15 windows.zip' class='container' id='hover' style='text-align: center;'>
 					<img src='images/Irbis.svg' style='width: 50%;'>
 					<br><br><br><br>
 					<span class='centertext download'>Download the<br>latest build</span>
