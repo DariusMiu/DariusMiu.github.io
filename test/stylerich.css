@@ -19,7 +19,7 @@
 img
 { max-width: 100%; }
 
-div, a
+div, a, p
 { z-index: 10; }
 
 a
@@ -215,7 +215,72 @@ body, html
 	width: 100%;
 	background: #151416;
 	position: relative;
+	text-align: center;
 }
+.comment
+{
+	position: relative;
+}
+.comment p
+{
+	position: relative;
+	margin: 0 150px;
+	font-size: 2rem;
+	font-weight: bold;
+}
+.comment a
+{
+	position: absolute;
+	right: 25px;
+	font-size: 1.5rem;
+	font-weight: normal;
+	text-align: right;
+}
+.spacer #leftquote
+{
+	height: 100px;
+	width: 125px;
+	left: 25px;
+	top: calc(10vh - 50px);
+	position: absolute;
+	z-index: 5;
+	opacity: 1;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: -webkit-crisp-edges;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: pixelated;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-image: url(images/leftquote.png);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.spacer #rightquote
+{
+	height: 100px;
+	width: 125px;
+	right: 25px;
+	top: calc(10vh - 50px);
+	position: absolute;
+	z-index: 5;
+	opacity: 1;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: -webkit-crisp-edges;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: pixelated;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-image: url(images/rightquote.png);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 .fullscreen
 {
 	margin: 0;
