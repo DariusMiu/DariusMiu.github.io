@@ -642,7 +642,7 @@ p.download
 {
 	margin: 0;
 	display: block;
-	padding: 0 0 0 1rem;
+	padding: 0;
 }
 .irbisgame a
 { font-weight: bold; }
@@ -654,9 +654,9 @@ p.download
 }
 .irbisgame h3, .irbisgame h4, .irbisgame h5
 {
-	margin: 0 0 0.5rem 0.3rem;
+	margin: 0 -5px 0.5rem;
 	border-bottom: 1px solid #fff;
-	padding: 0.5rem 0 0.2rem 0.2rem;
+	padding: 0.5rem 0 0.2rem 1.5rem;
 }
 
 .tiny
