@@ -27,6 +27,7 @@ a
 a:link
 {
 	color: #fff;
+	font-weight: bold;
 	-webkit-transition: ease 0.15s;
 	-moz-transition: ease 0.15s;
 	-o-transition: ease 0.15s;
@@ -183,7 +184,7 @@ body, html
 	border-color: #2676d5;
 	background-color: #151416;
 }
-.donatebutton, .patrons a
+a.donatebutton, .patrons a
 {
 	position: relative;
 	top: 1.5em;
@@ -192,16 +193,12 @@ body, html
 	padding: 0.5em 1em;
 	border: 1px solid #333;
 	display: inline-block;
-	
+	font-weight: normal;
 }
 .patrons a
-{
-	margin: 0.4em 0.2em;
-}
+{ margin: 0.4em 0.2em; }
 .donatebutton:hover, .patrons a:hover
-{
-	border-color: #2676d5;
-}
+{ border-color: #2676d5; }
 .donatebutton img, .patrons a img
 {
 	margin-bottom: -0.125em;
@@ -218,9 +215,7 @@ body, html
 	text-align: center;
 }
 .comment
-{
-	position: relative;
-}
+{ position: relative; }
 .comment p
 {
 	position: relative;
