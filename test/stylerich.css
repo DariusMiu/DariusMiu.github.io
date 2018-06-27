@@ -157,10 +157,7 @@ body, html
 }
 
 .chart
-{
-	text-align: center;
-	margin-top: 3em;
-}
+{ text-align: center; }
 .chart iframe
 {
 	border: 1px solid #333;
@@ -187,7 +184,7 @@ body, html
 a.donatebutton, .patrons a
 {
 	position: relative;
-	top: 1.5em;
+	margin: 1.5rem 0;
 	background-color: #151416;
 	border-radius: 2px;
 	padding: 0.5em 1em;
@@ -195,8 +192,10 @@ a.donatebutton, .patrons a
 	display: inline-block;
 	font-weight: normal;
 }
+.patrons
+{ margin-top: 1em; }
 .patrons a
-{ margin: 0.4em 0.2em; }
+{ margin: 0.8em 0.2em 0; }
 .donatebutton:hover, .patrons a:hover
 { border-color: #2676d5; }
 .donatebutton img, .patrons a img
@@ -1122,14 +1121,11 @@ input:checked ~ .colors .item div
 	.cf
 	{ background-image: url(images/cf2.png); }
 	.donatebutton
-	{
-		font-size: 3rem;
-		top: 1em;
-	}
+	{ font-size: 3rem; }
+	a.donatebutton
+	{ margin: 0.5em 0; }
 	.centerlogo div
 	{ display: none; }
-	.chart
-	{ margin-top: 4em; }
 }
 @media screen and (max-height:35rem)
 {
