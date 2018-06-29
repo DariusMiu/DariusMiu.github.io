@@ -23,22 +23,6 @@
 		<style>
 		.content
 		{ padding-bottom: 25vh; }
-		.cf
-		{
-			margin: 0;
-			z-index: 1;
-			width: 100vw;
-			height: 200vh;
-			position: fixed;
-			overflow: visible;
-			background-repeat: repeat;
-			background-position: center;
-			background-image: url(images/cf.png);
-		}
-		@media screen and (max-width:62rem)
-		{	.cf
-			{ background-image: url(images/cf2.png); }
-		}
 		.fullscreenheader
 		{
 			margin: 0;
@@ -63,6 +47,22 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 			overflow: hidden;
+		}
+		.cf
+		{
+			margin: 0;
+			z-index: 1;
+			width: 100vw;
+			height: 200vh;
+			position: fixed;
+			overflow: visible;
+			background-repeat: repeat;
+			background-position: center;
+			background-image: url(images/cf.png);
+		}
+		@media screen and (max-width:62rem)
+		{	.cf
+			{ background-image: url(images/cf2.png); }
 		}
 		</style>
 	</head>
