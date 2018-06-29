@@ -115,7 +115,7 @@ body, html
 .coloritem p
 { z-index: 150 }
 
-div.image:hover
+div.image:hover, input:checked ~ .image
 {
 	margin: -1px 0 0 -1px;
 	border: 1px solid #2676d5;
@@ -123,7 +123,9 @@ div.image:hover
 	/*z-index: 11;*/
 }
 
-div.image:hover .coloritem
+input
+{ display:none; }
+div.image:hover .coloritem, input:checked ~ .coloritem
 { display: inline-block; }
 
 
