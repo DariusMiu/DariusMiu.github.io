@@ -1,0 +1,107 @@
+@font-face
+{
+	font-family: 'Darius';
+	src: url('design/fonts/Darius.ttf');
+}
+@font-face
+{
+	font-family: 'Bera';
+	font-weight: normal;
+	src: url('design/fonts/Vera.ttf');
+}
+@font-face
+{
+	font-family: 'Bera';
+	font-weight: bold;
+	src: url('design/fonts/VeraBd.ttf');
+}
+
+/*img
+{ max-width: 100%; }*/
+
+div, a, p
+{ z-index: 10; }
+
+a
+{ text-decoration: none; }
+a:link
+{
+	color: #fff;
+	font-weight: bold;
+	-webkit-transition: ease 0.15s;
+	-moz-transition: ease 0.15s;
+	-o-transition: ease 0.15s;
+	transition: ease 0.15s;
+}
+a:visited
+{ color: inherit; }
+a:hover
+{
+	color: #2676D5;
+	-webkit-transition: ease 0.15s;
+	-moz-transition: ease 0.15s;
+	-o-transition: ease 0.15s;
+	transition: ease 0.15s;
+}
+
+body, html
+{
+	position: relative;
+	z-index: -5;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: Bera, Arial, sans-serif;
+	font-size: 1px;
+	background-color: #060606;
+}
+
+.image
+{
+	font-size: 1px;
+	position: absolute;
+	opacity: 1;
+	overflow: visible;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-image: url(images/rightquote.png);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

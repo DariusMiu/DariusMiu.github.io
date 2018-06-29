@@ -13,7 +13,7 @@
 		<link rel='icon' type='image/png' href='favicons/favicon64.png'  sizes='64x64'><!--
 		<link rel='icon' type='image/png' href='favicons/favicon128.png' sizes='128x128'>
 		<link rel='icon' type='image/png' href='favicons/favicon256.png' sizes='256x256'><!---->
-		<link rel='stylesheet' href='stylerich.css'>
+		<link rel='stylesheet' href='stylerice.css'>
 		<meta property='og:title' content='Irbis - Liquid Nitrogen'/>
 		<meta  name='description' content='Irbis: A 2D boss rush game by Liquid Nitrogen'/>
 		<meta property='og:description' content='Irbis: A 2D boss rush game by Liquid Nitrogen'/>
@@ -34,6 +34,10 @@
 			background-repeat: repeat;
 			background-position: center;
 			background-image: url(images/cf.png);
+		}
+		@media screen and (max-width:62rem)
+		{	.cf
+			{ background-image: url(images/cf2.png); }
 		}
 		.fullscreenheader
 		{
@@ -70,9 +74,9 @@
 	 ########## ########################################$>>,        
 	 ########## ###########################################>>,      
 	 ########## ##############################################>     
-	 ########## ###############################################&    
-	 ########## #######                   '"*%##################i   
-	 ########## #######                         "*%##############&  
+	 ########## ###############################################$    
+	 ########## #######                   '"*%##################&   
+	 ########## #######                         "*%##############$  
 	 ########## #######                            '%#############; 
 	 ########## #######                              *############# 
 	 ########## #######           _,<<>>,_            $############ 
@@ -242,10 +246,14 @@ Feel free to clone, download, modify, and use the code under this license. Howev
 		<div class='spacer'></div>
 		<div class='fullscreen'><a name='download'></a>
 			<div class='content'>
-				<a href='irbis/Irbis v0.2.1.1 windows.zip' class='container' id='hover' style='text-align: center;'>
-					<img src='images/Irbis.svg' style='width: 50%;'>
-					<br><br><br><br>
-					<span class='centertext download'>Download the<br>latest build</span>
+				<a href='irbis/Irbis v0.2.1.1 windows.zip' class='container' id='hover'>
+					<div class='irbisgame'>
+						<img src='images/Irbis.svg' style='width: 30vmin; width: 30vmax;'>
+						<br><br>
+						<div style='width: 100%;text-align: center;'>
+							<span class='centertext download' style='text-align: center;'>Download the latest build</span>
+						</div>
+					</div>
 				</a>
 			</div>
 		</div>
