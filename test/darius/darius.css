@@ -99,17 +99,14 @@ body, html
 .coloritem
 {
 	display: none;
-	position: fixed;
-	margin: 1.5rem 0;
+	position: absolute;
+	margin: 5px;
 	background-color: #151416;
 	border-radius: 2px;
 	padding: 0.5em 1em;
 	border: 1px solid #2676d5;
 	font-weight: normal;
 	z-index: 150;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 .coloritem p
@@ -127,6 +124,14 @@ input
 { display:none; }
 div.image:hover .coloritem, input:checked ~ .coloritem
 { display: inline-block; }
+input:checked ~ .coloritem
+{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 
 
 
