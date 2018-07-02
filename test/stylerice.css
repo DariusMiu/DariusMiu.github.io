@@ -67,14 +67,25 @@ body, html
 	text-align: center;
 	text-shadow: 0 0 5px black;
 }
-.centerlogo img
+.centerlogo .logo, .centerlogo img 
 {
 	min-height: 10vh;
+	width: 100vw;
 	max-width: 20vw;
 	max-width: 20vmax;
 }
+.centerlogo .logo
+{
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-image: url(images/Irbis.svg);
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
 .centerlogo .donatebutton
-{ opacity: 0.3; top: 1em; }
+{ opacity: 0.3; }
 .centerlogo .donatebutton:hover
 { opacity: 1; }
 
