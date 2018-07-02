@@ -64,13 +64,14 @@ body, html
 	position: relative;
 	left: 50%;
 	transform: translateX(-50%);
+	overflow: hidden;
 }
 
-.image, .base
+.image
 {
 	/*font-size: 1px;*/
 	position: absolute;
-	z-index: 1;
+	z-index: 5;
 	overflow: visible;
 	background-position: left top;
 	background-repeat: no-repeat;
@@ -80,6 +81,9 @@ body, html
 	-o-background-size: cover;
 	background-size: cover;
 }
+
+.base
+{ z-index: 1 !important; }
 
 .lines
 {
@@ -106,31 +110,35 @@ body, html
 	padding: 0.5em 1em;
 	border: 1px solid #2676d5;
 	font-weight: normal;
-	z-index: 150;
+	/*text-transform: uppercase;*/
 }
-
-.coloritem p
-{ z-index: 150 }
 
 div.image:hover, input:checked ~ .image
 {
 	margin: -1px 0 0 -1px;
+	padding: 0;
 	border: 1px solid #2676d5;
+	border-radius: 2px;
 	background-color: #151416;
-	/*z-index: 11;*/
+	/*z-index: 9;*/
 }
 
 input
 { display:none; }
 div.image:hover .coloritem, input:checked ~ .coloritem
 { display: inline-block; }
+/*div.image div.coloritem:hover
+{ z-index: 5; }*/
+div.image:hover .right
+{ left: 0; }
 input:checked ~ .coloritem
 {
 	position: fixed;
 	top: 50%;
-	left: 50%;
+	left: 50% !important;
 	transform: translate(-50%, -50%);
 }
+
 
 
 
