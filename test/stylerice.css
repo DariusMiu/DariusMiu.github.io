@@ -172,7 +172,7 @@ body, html
 { text-align: center; }
 .chart iframe
 {
-	border: 1px solid #333;
+	border: 1px solid #2D333A;
 	border-radius: 2px;
 }
 .chart a
@@ -185,7 +185,7 @@ body, html
 	background-color: #151416BB;
 	border-radius: 2px;
 	padding: 5px;
-	border: 1px solid #333;
+	border: 1px solid #2D333A;
 	margin: 0 0 35px;
 }
 .chart a:hover
@@ -200,7 +200,7 @@ a.donatebutton, .patrons a
 	background-color: #151416;
 	border-radius: 2px;
 	padding: 0.5em 1em;
-	border: 1px solid #333;
+	border: 1px solid #2D333A;
 	display: inline-block;
 	font-weight: normal;
 }
@@ -414,7 +414,7 @@ a.donatebutton, .patrons a
 {
 	width: calc(50% - 62.5px);
 	float: right;
-	background: #333;
+	background: #2D333A;
 }
 .container#hover p
 { color: #FFF; }
@@ -498,7 +498,7 @@ p.download
 .footer #right
 { float: right; text-align: right; min-width: 20%;}
 .footer p, .footer a, .footer a:visited
-{ color: #333; }
+{ color: #2D333A; }
 .footer a:hover
 { color: #2676D5; }
 
@@ -879,7 +879,7 @@ H6
 	max-height: 3.5rem;
 	font-weight: bold;
 	text-transform: uppercase;
-	border-color: #333; border-style: solid; box-sizing: border-box;
+	border-color: #2D333A; border-style: solid; box-sizing: border-box;
 }
 input
 { display:none; }
@@ -939,8 +939,8 @@ input:checked ~ .colors .item div
 .colorbar #C1E1F25
 { background: #1E1F25; }
 
-.colorbar #C333
-{ background: #333; }
+.colorbar #C2D333A
+{ background: #2D333A; }
 
 .colorbar #C2676d5
 { background: #2676d5; }

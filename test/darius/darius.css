@@ -202,6 +202,6 @@ a:hover span.noHoverText, span.hoverText, h5:hover span.noHoverText
 .footer #right
 { float: right; text-align: right; min-width: 20%;}
 .footer p, .footer a, .footer a:visited
-{ color: #333; }
+{ color: #2D333A; }
 .footer a:hover
 { color: #2676D5; }
