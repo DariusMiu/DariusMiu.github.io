@@ -74,23 +74,34 @@
 		}
 		div.projects div
 		{
-			padding:  0.5rem;
+			padding:  0.5em;
 			float:left;
 		}
 		div.links
 		{
-			font-style:italic;
 			font-size:0.9em;
 			display: inline-block;
 		}
 		div.links div
-		{
-			float: left;
-			margin-left: 25px;
-		}
+		{float: left; }
+		div.links div.margin
+		{ margin-left: 25px; }
 		
 		.serif
 		{ font-family: 'Crete Round', serif; }
+		
+		.moduletitle
+		{
+			font-size: 1.1em;
+			padding-top: 0.1em;
+			padding-bottom: 0.1em;
+		}
+		
+		.italic
+		{ font-style:italic; }
+		
+		.bold
+		{ font-weight:bold; }
 		
 		/*br
 		{ line-height: 25px; }*/
@@ -104,15 +115,15 @@
 			<div class='container' style='text-align: center;'>
 				<p class='centertext download'>Résumé</p>
 				<br>
-				<div class='container' style='position: relative; width: 80%; width: calc(100% - 50px); max-width: 1000px; margin: 0; float: initial; text-align: left;'>
+				<div class='container' style='position: relative; width: 80%; width: calc(100% - 50px); max-width: 900px; margin: 0; float: initial; text-align: left;'>
 					<div style='display: inline-block; width: 100%;'>
 						<img src='../images/icon.png' style='width: 100px; border: 5px solid #1E1F25; float: left; margin-bottom: 25px;'>
 						<div style='text-align:right; float:right; bottom: 0;'>
-							<p style='font-weight:bold; font-style:italic; font-size: 1.2rem;'>JONATHAN "DARIUS" MIU</p>
-							<div class='links'>
+							<p style='font-weight:bold; font-size: 1.2rem;' class='italic'>JONATHAN "DARIUS" MIU</p>
+							<div class='links' style='font-style:italic;'>
 								<div>Website: <a href='https://ln2.co'>Ln2.co</a></div>
-								<div>Twitter: <a href='https://twitter.com/DarMiu'>@DarMiu</a></div>
-								<div>Email: <a href='mailto:Darius@Ln2.co'>Darius@Ln2.co</a></div>
+								<div class='margin'>Twitter: <a href='https://twitter.com/DarMiu'>@DarMiu</a></div>
+								<div class='margin'>Email: <a href='mailto:Darius@Ln2.co'>Darius@Ln2.co</a></div>
 							</div>
 						</div>
 						<br>
@@ -127,10 +138,13 @@
 						<table id='blue' class='grey'>
 							<tr>
 								<td>
-									College: Southern Polytechnic State University
+									<span class='italic'>College</span> - Southern Polytechnic State University
 								</td>
 								<td>
-									Major: Computer Science   Minor: Game Design
+									<div class='links'>
+										<div><span class='italic'>Major</span> - Computer Science</a></div>
+										<div class='margin'><span class='italic'>Minor</span> - Game Design</div>
+									</div>
 								</td>
 							</tr>
 						</table>
@@ -204,7 +218,7 @@
 						
 						<br>
 						
-						<div id='blue' class='grey indent serif'>
+						<div id='blue' class='grey indent serif moduletitle'>
 							Game Development
 						</div>
 												
@@ -218,7 +232,7 @@
 							<a href='../card/portfolio#fugitive'>Fugitive</a> - Board game where each player's role changes every turn.
 						</div>
 												
-						<div id='blue' class='grey indent serif'>
+						<div id='blue' class='grey indent serif moduletitle'>
 							Software Development
 						</div>
 												
@@ -228,7 +242,7 @@
 							<a href='https://github.com/DariusMiu/Lua-Compiler-Project'>Lua Compiler</a> -
 						</div>
 						
-						<div id='blue' class='grey indent serif'>
+						<div id='blue' class='grey indent serif moduletitle'>
 							Web Development
 						</div>
 												
@@ -238,7 +252,7 @@
 							<a href='../'>Ln2.co</a> - Personal website, made entirely from scratch with HTML and CSS.
 						</div>
 
-						<div id='blue' class='grey indent serif'>
+						<div id='blue' class='grey indent serif moduletitle'>
 							Project Links
 						</div>
 						
