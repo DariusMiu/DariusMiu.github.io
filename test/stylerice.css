@@ -7,14 +7,45 @@
 {
 	font-family: 'Bera';
 	font-weight: normal;
+	font-style: normal;
 	src: url('design/fonts/Vera.ttf');
 }
 @font-face
 {
 	font-family: 'Bera';
 	font-weight: bold;
+	font-style: normal;
 	src: url('design/fonts/VeraBd.ttf');
 }
+@font-face
+{
+	font-family: 'Bera';
+	font-weight: normal;
+	font-style: italic;
+	src: url('design/fonts/VeraIt.ttf');
+}
+@font-face
+{
+	font-family: 'Bera';
+	font-weight: bold;
+	font-style: italic;
+	src: url('design/fonts/VeraBI.ttf');
+}
+@font-face
+{
+	font-family: 'Bera';
+	font-weight: normal;
+	font-style: oblique;
+	src: url('design/fonts/VeraIt.ttf');
+}
+@font-face
+{
+	font-family: 'Bera';
+	font-weight: bold;
+	font-style: oblique;
+	src: url('design/fonts/VeraBI.ttf');
+}
+
 
 img
 { max-width: 100%; }
