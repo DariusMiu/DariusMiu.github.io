@@ -57,8 +57,23 @@ body, html
 	padding: 0;
 	color: #fff;
 	font-family: Bera, Arial, Helvetica, sans-serif;
-	background-color: #060606;
 }
+body
+{ background-color: #151416; }
+html
+{ background-color: #060606; }
+
+::-webkit-scrollbar
+{ width: 6px; }
+::-webkit-scrollbar-track
+{ background-color: #151416; }
+::-webkit-scrollbar-thumb
+{
+	background: #2D333A;
+	border-radius: 2px;
+}
+/*::-webkit-scrollbar-thumb:hover
+{ background: #2D333A; }/**/
 
 .centerlogo
 {
@@ -879,7 +894,12 @@ H6
 	max-height: 3.5rem;
 	font-weight: bold;
 	text-transform: uppercase;
-	border-color: #2D333A; border-style: solid; box-sizing: border-box;
+	border-color: #2D333A;
+	border-style: solid;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
 }
 input
 { display:none; }
