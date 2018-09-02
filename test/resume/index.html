@@ -72,19 +72,20 @@
 			display:inline-block;
 			padding-top: 0.5em;
 		}
-		div.projects div
+		div.projects div span
+		{ padding:  0.5em; }
+		div.projects div div
 		{
+			display: inline-block;
 			padding:  0.5em;
-			float:left;
 		}
+		
 		div.links
 		{
 			font-size:0.9em;
 			display: inline-block;
 		}
-		div.links div
-		{float: left; }
-		div.links div.margin
+		div.links span.margin
 		{ margin-left: 25px; }
 		
 		.serif
@@ -121,9 +122,9 @@
 						<div style='text-align:right; float:right; bottom: 0;'>
 							<p style='font-weight:bold; font-size: 1.2rem;' class='italic'>JONATHAN "DARIUS" MIU</p>
 							<div class='links' style='font-style:italic;'>
-								<div>Website: <a href='https://ln2.co'>Ln2.co</a></div>
-								<div class='margin'>Twitter: <a href='https://twitter.com/DarMiu'>@DarMiu</a></div>
-								<div class='margin'>Email: <a href='mailto:Darius@Ln2.co'>Darius@Ln2.co</a></div>
+								<span>Website: <a href='https://ln2.co'>Ln2.co</a></span>
+								<span class='margin'>Twitter: <a href='https://twitter.com/DarMiu'>@DarMiu</a></span>
+								<span class='margin'>Email: <a href='mailto:Darius@Ln2.co'>Darius@Ln2.co</a></span>
 							</div>
 						</div>
 						<br>
@@ -257,32 +258,37 @@
 						</div>
 						
 						<div class='projects'>
-							<div style='text-align: right; width: 150px;'>
-								Website
+							<div>
+								<div style='text-align: right; width: 150px;'>
+									Website
+								</div>
+								<span style='text-align: left; border: 0; border-left: 1px dashed #fff;'>
+									<a href='../'>Ln2.co</a>
+								</span>
 							</div>
-							<div style='text-align: left; border: 0; border-left: 1px dashed #fff;'>
-								<a href='../'>Ln2.co</a>
+							<div>
+								<div style='text-align: right; width: 150px;'>
+									Game Portfolio
+								</div>
+								<span style='text-align: left; border: 0; border-left: 1px dashed #fff;'>
+									<a href='../card/portfolio'>Ln2.co/portfolio</a>
+								</span>
 							</div>
-							<br>
-							<div style='text-align: right; width: 150px;'>
-								Game Portfolio
+							<div>
+								<div style='text-align: right; width: 150px;'>
+									Graphic Design
+								</div>
+								<span style='text-align: left; border: 0; border-left: 1px dashed #fff;'>
+									<a href='https://www.behance.net/DariusMiu'>behance.net/DariusMiu</a>
+								</span>
 							</div>
-							<div style='text-align: left; border: 0; border-left: 1px dashed #fff;'>
-								<a href='../card/portfolio'>Ln2.co/portfolio</a>
-							</div>
-							<br>
-							<div style='text-align: right; width: 150px;'>
-								Graphic Design
-							</div>
-							<div style='text-align: left; border: 0; border-left: 1px dashed #fff;'>
-								<a href='https://www.behance.net/DariusMiu'>behance.net/DariusMiu</a>
-							</div>
-							<br>
-							<div style='text-align: right; width: 150px;'>
-								GitHub
-							</div>
-							<div style='text-align: left; border: 0; border-left: 1px dashed #fff;'>
-									<a href='https://github.com/DariusMiu'>github.com/DariusMiu</a>
+							<div>
+								<div style='text-align: right; width: 150px;'>
+									GitHub
+								</div>
+								<span style='text-align: left; border: 0; border-left: 1px dashed #fff;'>
+										<a href='https://github.com/DariusMiu'>github.com/DariusMiu</a>
+								</span>
 							</div>
 						</div>
 					</div>
