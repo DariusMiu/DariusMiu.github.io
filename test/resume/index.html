@@ -78,10 +78,7 @@
 		{ padding:  0.5em; }
 		
 		div.links
-		{
-			font-size:0.9em;
-			display: inline-block;
-		}
+		{ font-size:0.9em; }
 		div.links span.margin
 		{ margin-left: 25px; }
 		
@@ -93,6 +90,17 @@
 			font-size: 1.1em;
 			padding-top: 0.1em;
 			padding-bottom: 0.1em;
+		}
+		
+		.logo
+		{
+			width: 100px;
+			height: 100px;
+			display: inline-block;
+			float: left;
+			border: 5px solid #1E1F25;
+			margin-bottom: 25px;
+			background-image:url(../images/icon.png);
 		}
 		
 		.italic
@@ -114,179 +122,180 @@
 				<p class='centertext download'>Résumé</p>
 				<br>
 				<div class='container' style='position: relative; width: 80%; width: calc(100% - 50px); max-width: 900px; margin: 0; float: initial; text-align: left;'>
-					<div style='display: inline-block; width: 100%;'>
-						<img src='../images/icon.png' style='width: 100px; border: 5px solid #1E1F25; float: left; margin-bottom: 25px;'>
-						<div style='text-align:right; float:right; bottom: 0;'>
-							<p style='font-weight:bold; font-size: 1.2rem;' class='italic'>JONATHAN "DARIUS" MIU</p>
+					<div style='width: 100%; text-align:right;'>
+						<!--<img src='../images/icon.png' style='width: 100px; border: 5px solid #1E1F25; margin-bottom: 25px; left:0; position: relative;'>-->
+						<div class='logo'></div>
+						<div>
+							<span style='font-weight:bold; font-size: 1.2rem;' class='italic'>JONATHAN "DARIUS" MIU</span>
 							<div class='links' style='font-style:italic;'>
 								<span>Website: <a href='https://ln2.co'>Ln2.co</a></span>
 								<span class='margin'>Twitter: <a href='https://twitter.com/DarMiu'>@DarMiu</a></span>
 								<span class='margin'>Email: <a href='mailto:Darius@Ln2.co'>Darius@Ln2.co</a></span>
 							</div>
 						</div>
-						<br>
-						<br>
-						<table id='blue'>
-							<tr style='background-color: #003D5C;'>
-								<td class='indent serif'>
-									Education
-								</td>
-							</tr>
-						</table>
-						<table id='blue' class='grey'>
-							<tr>
-								<td>
-									College: Southern Polytechnic State University
-								</td>
-								<td>
-									<div class='links'>
-										<div>Major: Computer Science</a></div> 
-										<div class='margin'>Minor: Game Design</div>
-									</div>
-								</td>
-							</tr>
-						</table>
+					</div>
 
-						<br>
+					<br>
+					<table id='blue'>
+						<tr style='background-color: #003D5C;'>
+							<td class='indent serif'>
+								Education
+							</td>
+						</tr>
+					</table>
+					<table id='blue' class='grey'>
+						<tr>
+							<td>
+								College: Southern Polytechnic State University
+							</td>
+							<td>
+								<div class='links'>
+									<div>Major: Computer Science</a></div> 
+									<div class='margin'>Minor: Game Design</div>
+								</div>
+							</td>
+						</tr>
+					</table>
 
-						<table id='green'>
-							<tr style='background-color: #005c1a;'>
-								<td class='indent serif'>
-									Software Proficiency
-								</td>
-							<tr>
-						</table>
-						<table id='green' class='grey'>
-							<tr>
-								<td>
-									Photoshop*
-								</td>
-								<td>
-									Premiere*
-								</td>
-								<td>
-									After Effects*
-								</td>
-								<td>
-									OBS
-								</td>
-								<td>
-									Wordpress
-								</td>
-								<td>
-									Visual Studio
-								</td>
-							</tr>
-						</table>
-						<p style='text-align:left; padding:0; margin:0; font-size:0.6em; float:left;'>*Adobe</p>
-						<br>
+					<br>
 
-						<table id='green'>
-							<tr style='background-color: #005c1a;'>
-								<td class='indent serif'>
-									Programming and Scripting Languages
-								</td>
-							</tr>
-						</table>
-						<table id='green' class='grey'>
-							<tr>
-								<td>
-									HTML
-								</td>
-								<td>
-									CSS
-								</td>
-								<td>
-									BASIC
-								</td>
-								<td>
-									Java
-								</td>
-								<td>
-									C#
-								</td>
-								<td>
-									C++
-								</td>
-								<td>
-									Python
-								</td>
-							</tr>
-						</table>
-						
-						<br>
-						
-						<div id='blue' class='grey indent serif moduletitle'>
-							Game Development
-						</div>
-												
-						<div class='indent module'>
-							<a href='https://github.com/DariusMiu/Irbis'>Irbis</a> - I have been working on Irbis for nearly seven months now. I skipped taking an internship in 2017 to pursue creating my own game and Irbis is the result. It is a 2D boss rush game made in Monogame and inspired by Metroid, World of Warcraft, and The Witcher 3. If you only look at one thing I have made, I hope it is this. (2017)
-							<br><br>
-							<a href='../card/portfolio#catburglary'>Cat Burglary</a> - Cat Burglary is a sillier game, where the main characters are cats attempting to steal back the fruits of their life of crime from their traitorous partner. A cooperative puzzle game was a new and interesting challenge to work on. I had a role in creating just about all of the scripts used in the game. (2016)
-							<br><br>
-							<a href='../card/portfolio#vimentis'>Vi Mentis</a> - My very first project working on a digital game, Vi Mentis is a proof of concept for a puzzle game where the player can rotate the world around themselves. I did much of the scripting in this game, and even taught myself C# to do so. (2015)
-							<br><br>
-							<a href='../card/portfolio#fugitive'>Fugitive</a> - This game was designed for four or more people to play, and was based around the idea that every turn the player should be doing something different. There are three roles: fugitive, detective and searchers, with the roles rotating around the table. The winner is the searcher who finds the fugitive! (2014)
-						</div>
-												
-						<div id='blue' class='grey indent serif moduletitle'>
-							Software Development
-						</div>
-												
-						<div class='indent module'>
-							<a href='https://github.com/DariusMiu/hourly-photo-telegram-bot'>Snep Bot</a> - A constant work in progress, and one of my favorite projects I have worked on. I love Snow Leopards, so I made a bot to post Snow Leopard photos on Telegram every 3 hours, on the hour. The bot was written in Python, which I also taught myself. The code is open source and available on <a href='https://github.com/DariusMiu/hourly-photo-telegram-bot'>GitHub</a>.
-							<br><br>
-							<a href='https://github.com/DariusMiu/Lua-Compiler-Project'>Lua Compiler</a> -
-						</div>
-						
-						<div id='blue' class='grey indent serif moduletitle'>
-							Web Development
-						</div>
-												
-						<div class='indent module'>
-							<a href='https://pulex.cc'>Pulex.cc</a> - Designed and built this website from the ground up for a friend. It was a short project done over a single weekend in an attempt to save my friend some money on hosting costs.
-							<br><br>
-							<a href='../'>Ln2.co</a> - Personal website, made entirely from scratch with HTML and CSS.
-						</div>
+					<table id='green'>
+						<tr style='background-color: #005c1a;'>
+							<td class='indent serif'>
+								Software Proficiency
+							</td>
+						<tr>
+					</table>
+					<table id='green' class='grey'>
+						<tr>
+							<td>
+								Photoshop*
+							</td>
+							<td>
+								Premiere*
+							</td>
+							<td>
+								After Effects*
+							</td>
+							<td>
+								OBS
+							</td>
+							<td>
+								Wordpress
+							</td>
+							<td>
+								Visual Studio
+							</td>
+						</tr>
+					</table>
+					<p style='text-align:left; padding:0; margin:0; font-size:0.6em; float:left;'>*Adobe</p>
+					<br>
 
-						<div id='blue' class='grey indent serif moduletitle'>
-							Project Links
+					<table id='green'>
+						<tr style='background-color: #005c1a;'>
+							<td class='indent serif'>
+								Programming and Scripting Languages
+							</td>
+						</tr>
+					</table>
+					<table id='green' class='grey'>
+						<tr>
+							<td>
+								HTML
+							</td>
+							<td>
+								CSS
+							</td>
+							<td>
+								BASIC
+							</td>
+							<td>
+								Java
+							</td>
+							<td>
+								C#
+							</td>
+							<td>
+								C++
+							</td>
+							<td>
+								Python
+							</td>
+						</tr>
+					</table>
+					
+					<br>
+					
+					<div id='blue' class='grey indent serif moduletitle'>
+						Game Development
+					</div>
+											
+					<div class='indent module'>
+						<a href='https://github.com/DariusMiu/Irbis'>Irbis</a> - I have been working on Irbis for nearly seven months now. I skipped taking an internship in 2017 to pursue creating my own game and Irbis is the result. It is a 2D boss rush game made in Monogame and inspired by Metroid, World of Warcraft, and The Witcher 3. If you only look at one thing I have made, I hope it is this. (2017)
+						<br><br>
+						<a href='../card/portfolio#catburglary'>Cat Burglary</a> - Cat Burglary is a sillier game, where the main characters are cats attempting to steal back the fruits of their life of crime from their traitorous partner. A cooperative puzzle game was a new and interesting challenge to work on. I had a role in creating just about all of the scripts used in the game. (2016)
+						<br><br>
+						<a href='../card/portfolio#vimentis'>Vi Mentis</a> - My very first project working on a digital game, Vi Mentis is a proof of concept for a puzzle game where the player can rotate the world around themselves. I did much of the scripting in this game, and even taught myself C# to do so. (2015)
+						<br><br>
+						<a href='../card/portfolio#fugitive'>Fugitive</a> - This game was designed for four or more people to play, and was based around the idea that every turn the player should be doing something different. There are three roles: fugitive, detective and searchers, with the roles rotating around the table. The winner is the searcher who finds the fugitive! (2014)
+					</div>
+											
+					<div id='blue' class='grey indent serif moduletitle'>
+						Software Development
+					</div>
+											
+					<div class='indent module'>
+						<a href='https://github.com/DariusMiu/hourly-photo-telegram-bot'>Snep Bot</a> - A constant work in progress, and one of my favorite projects I have worked on. I love Snow Leopards, so I made a bot to post Snow Leopard photos on Telegram every 3 hours, on the hour. The bot was written in Python, which I also taught myself. The code is open source and available on <a href='https://github.com/DariusMiu/hourly-photo-telegram-bot'>GitHub</a>.
+						<br><br>
+						<a href='https://github.com/DariusMiu/Lua-Compiler-Project'>Lua Compiler</a> -
+					</div>
+					
+					<div id='blue' class='grey indent serif moduletitle'>
+						Web Development
+					</div>
+											
+					<div class='indent module'>
+						<a href='https://pulex.cc'>Pulex.cc</a> - Designed and built this website from the ground up for a friend. It was a short project done over a single weekend in an attempt to save my friend some money on hosting costs.
+						<br><br>
+						<a href='../'>Ln2.co</a> - Personal website, made entirely from scratch with HTML and CSS.
+					</div>
+
+					<div id='blue' class='grey indent serif moduletitle'>
+						Project Links
+					</div>
+					
+					<div class='projects'>
+						<div>
+							<span style='text-align: right; width: 150px;'>
+								Website
+							</span>
+							<span style='text-align: left; border-left: 1px dashed #fff;'>
+								<a href='../'>Ln2.co</a>
+							</span>
 						</div>
-						
-						<div class='projects'>
-							<div>
-								<span style='text-align: right; width: 150px;'>
-									Website
-								</span>
-								<span style='text-align: left; border-left: 1px dashed #fff;'>
-									<a href='../'>Ln2.co</a>
-								</span>
-							</div>
-							<div>
-								<span style='text-align: right; width: 150px;'>
-									Game Portfolio
-								</span>
-								<span style='text-align: left; border-left: 1px dashed #fff;'>
-									<a href='../card/portfolio'>Ln2.co/portfolio</a>
-								</span>
-							</div>
-							<div>
-								<span style='text-align: right; width: 150px;'>
-									Graphic Design
-								</span>
-								<span style='text-align: left; border-left: 1px dashed #fff;'>
-									<a href='https://www.behance.net/DariusMiu'>behance.net/DariusMiu</a>
-								</span>
-							</div>
-							<div>
-								<span style='text-align: right; width: 150px;'>
-									GitHub
-								</span>
-								<span style='text-align: left; border-left: 1px dashed #fff;'>
-									<a href='https://github.com/DariusMiu'>github.com/DariusMiu</a>
-								</span>
-							</div>
+						<div>
+							<span style='text-align: right; width: 150px;'>
+								Game Portfolio
+							</span>
+							<span style='text-align: left; border-left: 1px dashed #fff;'>
+								<a href='../card/portfolio'>Ln2.co/portfolio</a>
+							</span>
+						</div>
+						<div>
+							<span style='text-align: right; width: 150px;'>
+								Graphic Design
+							</span>
+							<span style='text-align: left; border-left: 1px dashed #fff;'>
+								<a href='https://www.behance.net/DariusMiu'>behance.net/DariusMiu</a>
+							</span>
+						</div>
+						<div>
+							<span style='text-align: right; width: 150px;'>
+								GitHub
+							</span>
+							<span style='text-align: left; border-left: 1px dashed #fff;'>
+								<a href='https://github.com/DariusMiu'>github.com/DariusMiu</a>
+							</span>
 						</div>
 					</div>
 				</div>
