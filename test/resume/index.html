@@ -66,15 +66,27 @@
 			padding-top: 0.5em;
 		}
 		
-		div.projects
+		.projects
 		{
-			border:0px;
-			display:inline-block;
 			padding-top: 0.5em;
 		}
-		div.projects div span
+		.projects div span
+		{
+			width: 48%;
+			width: calc(50% - 32.5px);
+			display: inline-block;
+			padding: 5px;
+		}
+		.projects div .left
+		{ text-align: right; }
+		.projects div .right
+		{
+			text-align: left;
+			border-left: 1px dashed #fff;
+		}
+		.projects div span
 		{ padding:  0.5em; }
-		div.projects div div
+		.projects div div
 		{ padding:  0.5em; }
 		
 		div.links
@@ -123,8 +135,8 @@
 				<br>
 				<div class='container' style='position: relative; width: 80%; width: calc(100% - 50px); max-width: 900px; margin: 0; float: initial; text-align: left;'>
 					<div style='width: 100%; text-align:right;'>
-						<!--<img src='../images/icon.png' style='width: 100px; border: 5px solid #1E1F25; margin-bottom: 25px; left:0; position: relative;'>-->
-						<div class='logo'></div>
+						<img src='../images/icon.png' style='width: 100px; border: 5px solid #1E1F25; margin-bottom: 25px; float: left;'>
+						<!--<div class='logo'></div>-->
 						<div>
 							<span style='font-weight:bold; font-size: 1.2rem;' class='italic'>JONATHAN "DARIUS" MIU</span>
 							<div class='links' style='font-style:italic;'>
@@ -150,8 +162,8 @@
 							</td>
 							<td>
 								<div class='links'>
-									<div>Major: Computer Science</a></div> 
-									<div class='margin'>Minor: Game Design</div>
+									<span>Major: Computer Science</a></span> 
+									<span class='margin'>Minor: Game Design</span>
 								</div>
 							</td>
 						</tr>
@@ -266,36 +278,36 @@
 					
 					<div class='projects'>
 						<div>
-							<span style='text-align: right; width: 150px;'>
+							<span class='left'>
 								Website
 							</span>
-							<span style='text-align: left; border-left: 1px dashed #fff;'>
+							<span class='right'>
 								<a href='../'>Ln2.co</a>
-							</span>
+							</span>						
 						</div>
 						<div>
-							<span style='text-align: right; width: 150px;'>
+							<span class='left'>
 								Game Portfolio
 							</span>
-							<span style='text-align: left; border-left: 1px dashed #fff;'>
+							<span class='right'>
 								<a href='../card/portfolio'>Ln2.co/portfolio</a>
-							</span>
+							</span>						
 						</div>
 						<div>
-							<span style='text-align: right; width: 150px;'>
+							<span class='left'>
 								Graphic Design
 							</span>
-							<span style='text-align: left; border-left: 1px dashed #fff;'>
+							<span class='right'>
 								<a href='https://www.behance.net/DariusMiu'>behance.net/DariusMiu</a>
-							</span>
+							</span>						
 						</div>
 						<div>
-							<span style='text-align: right; width: 150px;'>
+							<span class='left'>
 								GitHub
 							</span>
-							<span style='text-align: left; border-left: 1px dashed #fff;'>
+							<span class='right'>
 								<a href='https://github.com/DariusMiu'>github.com/DariusMiu</a>
-							</span>
+							</span>						
 						</div>
 					</div>
 				</div>

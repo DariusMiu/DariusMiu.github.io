@@ -444,13 +444,13 @@ a.donatebutton, .patrons a
 }
 .container p
 { margin: 1em 0 0; }
-.container .right
+.container.right
 {
 	width: 49%;
 	width: calc(50% - 62.5px);
 	float: right;
 }
-.container .left
+.container.left
 {
 	width: 49%;
 	width: calc(50% - 62.5px);
