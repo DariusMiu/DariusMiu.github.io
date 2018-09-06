@@ -489,7 +489,7 @@ p.misctext
 	text-transform: uppercase;
 }
 p.download
-{ margin: 0.2em 0 0; }
+{ margin: 0.2em 0; }
 
 .shadow
 { box-shadow: 0 2px 3px 1px rgba(0,0,0,0.5); }
@@ -536,7 +536,7 @@ p.download
 .footer span
 { font-weight: bold; }
 .footer img
-{ margin: -0.1875rem 0.125rem; max-width: 1.25em; width: 1.25em; }
+{ margin: -0.1875rem 0.125rem; max-width: 1rem; width: 1rem; }
 .footer #left
 { margin-left: 1.125rem; float: left; text-align: left; }
 .footer #right
