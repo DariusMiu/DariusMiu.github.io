@@ -802,10 +802,10 @@ H6
 	margin: 0;
 	top: 0;
 	right:0;
-	position: fixed;
+	position: absolute;
 	overflow: hidden;
-	width: 12.5em;
-	height: 12.5em;
+	width: 100vw;
+	height: 100vh;
 }
 .resumelink div
 {
@@ -821,7 +821,7 @@ H6
 {
 	top: 4.5em;
 	right: -7.1em;
-	position: fixed;
+	position: absolute;
 	padding: .75em 6.25em;
 	background-color: #003D5C;
 	white-space: nowrap;
