@@ -21,6 +21,8 @@
 		<meta name='theme-color' content='#1E1F25'>
 		<title>Résumé</title>
 		<style>
+		span
+		{ display: inline-block }
 		table
 		{
 			width: 100%;
@@ -68,26 +70,27 @@
 		
 		.projects
 		{
+			border:0px;
+			display:inline-block;
 			padding-top: 0.5em;
 		}
-		.projects div span
+		.projects div
 		{
-			width: 48%;
-			width: calc(50% - 32.5px);
-			display: inline-block;
-			padding: 5px;
+			padding:  0.5em;
+			float:left;
 		}
-		.projects div .left
-		{ text-align: right; }
-		.projects div .right
+		.projects div.right
 		{
 			text-align: left;
-			border-left: 1px dashed #fff;
+			border: 0;
+			border-left:
+			1px dashed #fff;
 		}
-		.projects div span
-		{ padding:  0.5em; }
-		.projects div div
-		{ padding:  0.5em; }
+		.projects div.left
+		{
+			text-align: right;
+			width: 150px;
+		}
 		
 		div.links
 		{ font-size:0.9em; }
@@ -128,15 +131,17 @@
 	</head>
 
 	<body>
-		<div class='background headerimage'></div>
+		<div class='cf'></div>
+		<!--<div class='background headerimage'></div>-->
+		<div class='fullscreen background'><a name='funding'></a>
 		<div class='content'>
 			<div class='container' style='text-align: center;'>
 				<p class='centertext download'>Résumé</p>
 				<br>
 				<div class='container' style='position: relative; width: 80%; width: calc(100% - 50px); max-width: 900px; margin: 0; float: initial; text-align: left;'>
 					<div style='width: 100%; text-align:left;'>
-						<div style='float:left; margin-bottom: 25px;'>
-							<span style='font-weight:bold; font-size: 1.2rem;' class='italic'>JONATHAN "DARIUS" MIU</span>
+						<div style='float:left; margin: 40px 0 25px;'>
+							<span style='font-weight:bold; font-size: 1.2em;' class='italic'>JONATHAN "DARIUS" MIU</span>
 							<div class='links' style='font-style:italic;'>
 								<span class='margin'>Website: <a href='https://ln2.co'>Ln2.co</a></span>
 								<span class='margin'>Twitter: <a href='https://twitter.com/DarMiu'>@DarMiu</a></span>
@@ -199,7 +204,7 @@
 							</td>
 						</tr>
 					</table>
-					<p style='text-align:left; padding:0; margin:0; font-size:0.6em; float:left;'>*Adobe</p>
+					<p style='text-align:left; padding:0; margin:0; font-size:0.6rem; float:left;'>*Adobe</p>
 					<br>
 
 					<table id='green'>
@@ -275,42 +280,38 @@
 						Project Links
 					</div>
 					
-					<div class='projects'>
-						<div>
-							<span class='left'>
+						<div class='projects'>
+							<div class='left'>
 								Website
-							</span>
-							<span class='right'>
+							</div>
+							<div class='right'>
 								<a href='../'>Ln2.co</a>
-							</span>						
-						</div>
-						<div>
-							<span class='left'>
+							</div>
+							<br>
+							<div class='left'>
 								Game Portfolio
-							</span>
-							<span class='right'>
+							</div>
+							<div class='right'>
 								<a href='../card/portfolio'>Ln2.co/portfolio</a>
-							</span>						
-						</div>
-						<div>
-							<span class='left'>
+							</div>
+							<br>
+							<div class='left'>
 								Graphic Design
-							</span>
-							<span class='right'>
+							</div>
+							<div class='right'>
 								<a href='https://www.behance.net/DariusMiu'>behance.net/DariusMiu</a>
-							</span>						
-						</div>
-						<div>
-							<span class='left'>
+							</div>
+							<br>
+							<div class='left'>
 								GitHub
-							</span>
-							<span class='right'>
-								<a href='https://github.com/DariusMiu'>github.com/DariusMiu</a>
-							</span>						
+							</div>
+							<div class='right'>
+									<a href='https://github.com/DariusMiu'>github.com/DariusMiu</a>
+							</div>
 						</div>
-					</div>
 				</div>
 			</div>
+		</div>
 		</div>
 	</body>
 	<div class='footer'>

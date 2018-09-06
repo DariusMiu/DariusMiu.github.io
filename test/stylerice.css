@@ -1192,6 +1192,8 @@ input:checked ~ .colors .item div
 }
 @media screen and (max-width:62rem)
 {
+	html, body
+	{ font-size: 1.5rem; }
 	.content
 	{ padding: 25vh 1vw 50px; }
 	.gamedownload
