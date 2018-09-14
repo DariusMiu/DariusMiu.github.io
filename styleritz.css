@@ -95,16 +95,49 @@ html
 { background-color: #060606; }
 
 ::-webkit-scrollbar
-{ width: 6px; }
+{ width: 10px; }
 ::-webkit-scrollbar-track
 { background-color: #151416; }
 ::-webkit-scrollbar-thumb
 {
 	background: #2D333A;
-	border-radius: 2px;
+	border-radius: 4px;
+	border: 2px solid #151416;
 }
 /*::-webkit-scrollbar-thumb:hover
 { background: #2D333A; }/**/
+
+.pixelated
+{
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: -webkit-crisp-edges;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: -o-crisp-edges;
+	image-rendering: pixelated;
+}
+
+.version
+{
+	margin: -50px 0 0 10px;
+	z-index: -1;
+	position: fixed;
+	border: 2px solid #dfe3ec;
+}
+.version img
+{
+	height: 20px;
+	margin: 6px 4px 0 6px;
+}
+.version span
+{
+	color: #1b1c20;
+	padding: 6px 10px;
+	background-color: #dfe3ec;
+	position: relative;
+	bottom: 5px;
+	font-weight: bold;
+	font-size: 1rem;
+}
 
 .centerlogo
 {
