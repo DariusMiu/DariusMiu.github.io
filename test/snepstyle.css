@@ -59,20 +59,18 @@ a:link
 {
 	color: #fff;
 	font-weight: bold;
-	-webkit-transition: ease 0.15s;
-	-moz-transition: ease 0.15s;
-	-o-transition: ease 0.15s;
-	transition: ease 0.15s;
 }
 a:visited
 { color: inherit; }
 a:hover
+{ color: #2676D5; }
+
+#hover, #hover span, a, :link, :hover
 {
-	color: #2676D5;
 	-webkit-transition: ease 0.15s;
 	-moz-transition: ease 0.15s;
 	-o-transition: ease 0.15s;
-	transition: ease 0.15s;
+	transition: ease 0.15s;	
 }
 
 span.noHoverText, a:hover span.hoverText, h5:hover span.hoverText
@@ -111,8 +109,6 @@ html
 { background: #003D5C; }
 ::-webkit-scrollbar-corner
 { background-color: #060606; }
-/*::-webkit-scrollbar-thumb:hover
-{ background: #2D333A; }/**/
 
 .pixelated
 {
@@ -538,14 +534,6 @@ p.download
 { box-shadow: 0 2px 3px 1px rgba(0,0,0,0.5); }
 .shadowdiv#hover div:hover
 { box-shadow: 0 0 10px 3px rgba(0,0,0,0.7); }
-
-#hover, #hover span, a, :link, :hover
-{
-	-webkit-transition: ease 0.15s;
-	-moz-transition: ease 0.15s;
-	-o-transition: ease 0.15s;
-	transition: ease 0.15s;	
-}
 
 .containerplain
 {
