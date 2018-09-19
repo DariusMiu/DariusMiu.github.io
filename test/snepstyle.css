@@ -873,8 +873,6 @@ H6
 }
 .resume .item
 {
-	width: 100%;
-	height:100%;
 	float: left;
 	overflow: hidden;
 	border-radius: 2px;
@@ -887,7 +885,6 @@ H6
 }
 .resume .item div 
 {
-	width: 100%;
 	-webkit-transition: 0.2s ease;
 	-moz-transition: 0.2s ease;
 	-o-transition: 0.2s ease;
@@ -926,8 +923,6 @@ H6
 { height: 100%; }
 .resume .item div#image
 {
-	width: 100%;
-	height:100%;
 	bottom: 5vh;
 	position: relative;
 	-webkit-transition: ease 0.2s;
@@ -940,7 +935,7 @@ H6
 	margin: 0;
 	bottom: 0;
 }
-.resume .item div#image img
+.resume .item div img
 {
 	min-width: 100%;
 	object-fit: cover;
