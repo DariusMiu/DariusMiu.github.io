@@ -13,7 +13,7 @@
 		<link rel='icon' type='image/png' href='../favicons/favicon64.png'  sizes='64x64'><!--
 		<link rel='icon' type='image/png' href='../favicons/favicon128.png' sizes='128x128'>
 		<link rel='icon' type='image/png' href='../favicons/favicon256.png' sizes='256x256'>-->
-		<link rel='stylesheet' href='../styleritz.css'>
+		<link rel='stylesheet' href='../snepstyle.css'>
 		<meta property='og:title' content="Darius's Résumé"/>
 		<!--<meta name='description' content='Online résumé'/>
 		<meta property='og:description' content='Online résumé'/><!---->
@@ -123,9 +123,16 @@
 		
 		.bold
 		{ font-weight:bold; }
-		
-		/*br
-		{ line-height: 25px; }*/
+		.examples
+		{
+			width: 100%;
+		}
+		.item
+		{
+			width: 32%;
+			width: calc((100% - 50px) / 3);
+			height: 40vh;
+		}
 		</style>
 		<link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet"> 
 	</head>
@@ -165,8 +172,8 @@
 							</td>
 							<td>
 								<div class='links'>
-									<span>Major: Computer Science</a></span> 
-									<span class='margin'>Minor: Game Design</span>
+									<span class='margin'>Major: Computer Science</a></span> 
+									<span>Minor: Game Design</span>
 								</div>
 							</td>
 						</tr>
@@ -308,6 +315,44 @@
 									<a href='https://github.com/DariusMiu'>github.com/DariusMiu</a>
 							</div>
 						</div>
+				</div>
+			</div>
+			<div class='resume'>
+				<div class='item shadow' id='hover'>
+					<a href='https://www.behance.net/DariusMiu' target='_blank'>
+						<div id='image'>
+							<img src='ryker25.gif'>
+						</div>
+						<div id='overlay'>
+							<p class='centerY'>
+								Graphic Design
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class='item shadow' id='hover' style='margin: 0 25px;'>
+					<a href='https://Ln2.co' target='_blank'>
+						<div id='image'>
+							<img src='../images/preview.png'>
+						</div>
+						<div id='overlay'>
+							<p class='centerY'>
+								Irbis
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class='item shadow' id='hover'>
+					<a href='https://github.com/DariusMiu' target='_blank'>
+						<div id='image'>
+							<img src='github.jpg'>
+						</div>
+						<div id='overlay'>
+							<p class='centerY'>
+								GitHub
+							</p>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>
