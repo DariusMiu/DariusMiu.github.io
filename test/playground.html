@@ -19,6 +19,25 @@ ga('send', 'pageview');
 		<style>
 		html, body
 		{ color: #111518; }
+		
+		::-webkit-scrollbar
+		{
+			width: 12px;
+			height:12px;
+		}
+		::-webkit-scrollbar-track
+		{ background-color: #BDC2CA; }
+		::-webkit-scrollbar-thumb
+		{
+			background: #575757;
+			border-radius: 4px;
+			border: 2px solid #BDC2CA;
+		}
+		::-webkit-scrollbar-thumb:hover
+		{ background: #2676D5; }
+		::-webkit-scrollbar-corner
+		{ background-color: #E0E4E8; }
+		
 		a.donatebutton, .patrons a, .patrons span
 		{
 			position: relative;
@@ -83,14 +102,14 @@ ga('send', 'pageview');
 		{ background: #575757; }
 		
 		.container
-		{ background: #E0E4E8; }
+		{ background: #BDC2CA; }
 		.container.b2
 		{ background: #C9C4BE; }
 		.container.b5
 		{ background: #BDC2CA; }
 		
 		.container .container
-		{ background: #E0E4E8; }
+		{ background: #A5A29D; }
 		.container.b2 .container
 		{ background: #A5A29D; }
 		.container.b5 .container
@@ -142,20 +161,33 @@ ga('send', 'pageview');
 				<br>
 				mow
 			</div>
+			
+			<div class='container'>
+				<p class='misctext'>sample text</p>
+				<div class='container'>
+					<p class='misctext'>nested sample</p>
+					butts
+				</div>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				mow
+			</div>
 
+			<div style='font-size: 3rem'>
 			<div style='text-align: center;' class='patrons bg1'>
-				<span class='shadow' id='hover' style='color: #111518'>test text [b1c1]</span>
-				<span class='shadow' id='hover' style='color: #1f1b1a'>test text [b1c2]</span>
-				<span class='shadow' id='hover' style='color: #212123'>test text [b1c3]</span>
-				<span class='shadow' id='hover' style='color: #282627'>test text [b1c4]</span>
-				<span class='shadow' id='hover' style='color: #2f2e2c'>test text [b1c5]</span>
+				<span class='shadow' id='hover' style='color: #111518; border-width: 2px'>test text [b1c1]</span>
+				<span class='shadow' id='hover' style='color: #1f1b1a; border-width: 2px'>test text [b1c2]</span>
 			</div>
 			<div style='text-align: center; margin-top: 0' class='patrons bg2'>
-				<span class='shadow' id='hover' style='color: #111518'>bold text [b2c1]</span>
-				<span class='shadow' id='hover' style='color: #1f1b1a'>bold text [b2c2]</span>
-				<span class='shadow' id='hover' style='color: #212123'>bold text [b2c3]</span>
-				<span class='shadow' id='hover' style='color: #282627'>bold text [b2c4]</span>
-				<span class='shadow' id='hover' style='color: #2f2e2c'>bold text [b2c5]</span>
+				<span class='shadow' id='hover' style='color: #111518; border-width: 2px'>bold text [b2c1]</span>
+				<span class='shadow' id='hover' style='color: #1f1b1a; border-width: 2px'>bold text [b2c2]</span>
+			</div>
 			</div>
 			<div class='containerplain shadow' id='hover'>
 				<input id='check' type='checkbox'>				
