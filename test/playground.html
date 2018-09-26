@@ -81,11 +81,49 @@ ga('send', 'pageview');
 		{ background: #BDC2CA; }
 		.colors #B5, div#B5.item div
 		{ background: #575757; }
+		
+		.container
+		{ background: #E0E4E8; }
+		.container.b2
+		{ background: #C9C4BE; }
+		.container.b5
+		{ background: #BDC2CA; }
+		
+		.container .container
+		{ background: #E0E4E8; }
+		.container.b2 .container
+		{ background: #A5A29D; }
+		.container.b5 .container
+		{ background: #A2A3A5; }
+		.container#hover p
+		{ color: #FFF; }
+		.container:hover#hover span
+		{ color: #2676D5; }
+		
+		.containerplain
+		{
+		}
+
 		</style>
 	</head>
 
 	<body style='min-height: calc(100vh - 3.125rem);'>
 		<div style='background-color: #E0E4E8;' class='content'>
+			<div class='container b2 left'>
+				<p class='misctext'>sample text</p>
+				<div class='container'>
+					<p class='misctext'>nested sample</p>
+					butts
+				</div>
+			</div>
+			<div class='container b5 right'>
+				<p class='misctext'>sample text</p>
+				<div class='container'>
+					<p class='misctext'>nested sample</p>
+					butts
+				</div>
+			</div>
+
 			<div style='text-align: center;' class='patrons bg1'>
 				<span class='shadow' id='hover' style='color: #111518'>test text [b1c1]</span>
 				<span class='shadow' id='hover' style='color: #1f1b1a'>test text [b1c2]</span>
