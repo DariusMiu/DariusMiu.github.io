@@ -1,4 +1,4 @@
-<html style='background-color: white;'>
+<html>
 	<head>
 <!-- Google Analytics -->
 <script>
@@ -16,12 +16,120 @@ ga('send', 'pageview');
 		<link rel='stylesheet' href='snepstyle.css'>
 		<meta name="theme-color" content="#1E1F25">
 		<title>playground</title>
+		<style>
+		html, body
+		{ color: #111518; }
+		a.donatebutton, .patrons a, .patrons span
+		{
+			position: relative;
+			margin: 1.5rem 2.5px;
+			border-radius: 2px;
+			padding: 0.5em 1em;
+			border: 1px solid #575757;
+			display: inline-block;
+		}
+		.bg1 span
+		{
+			font-weight: normal;
+			background: #E0E4E8;
+		}
+		.bg2 span
+		{
+			font-weight: bold;
+			background: #C9C4BE;
+		}
+		.patrons
+		{ margin-top: 0; }
+		.patrons a
+		{ margin: 0.8em 0.2em 0; }
+		.patrons.r1 span
+		{ border: 1px solid #575757; }
+		.patrons.r2 span
+		{ border: 1px solid #37383c; }
+		.donatebutton:hover, .patrons a:hover, .patrons span:hover
+		{
+			border-color: #2676D5;
+			color: #2676D5 !important;
+		}
+		.colors .item, .colorbar .item
+		{
+			width: 25%;
+			width: calc(100%/4);
+		}
+		.colors .item p, .colorbar .item p
+		{ border-color: #575757; }
+		.colors .item div, .colorbar .item div
+		{ color: #111518; }
+		.colorbar #B1
+		{ background: #c9c4be; }
+		.colorbar #B2
+		{ background: #a5a29d; }
+		.colorbar #B3
+		{ background: #a2a3a5; }
+		.colorbar #B4
+		{ background: #bdc2ca; }
+		.colorbar #B5
+		{ background: #575757; }
+		
+		.colors #B1, div#B1.item div
+		{ background: #C9C4BE; }
+		.colors #B2, div#B2.item div
+		{ background: #A5A29D; }
+		.colors #B3, div#B3.item div
+		{ background: #A2A3A5; }
+		.colors #B4, div#B4.item div
+		{ background: #BDC2CA; }
+		.colors #B5, div#B5.item div
+		{ background: #575757; }
+		</style>
 	</head>
 
-	<body style='background-color: white;'>
-	<div class ='center' style='position: relative; text-align: center;'>
-		<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I&#39;ve started a patreon to help fund the art and animations going into my game. I&#39;ve gotten so much done, but Irbis needs more than what I can provide alone, and I hope you can help.<br>(RTs would be appreciated &lt;3)<a href="https://t.co/b3pI3YjTTu">https://t.co/b3pI3YjTTu</a><a href="https://t.co/NRPduR2iKO">https://t.co/NRPduR2iKO</a>#funding <a href="https://t.co/igBnh49IB9">pic.twitter.com/igBnh49IB9</a></p>&mdash; Darius (@DarMiu) <a href="https://twitter.com/DarMiu/status/983769329660411904?ref_src=twsrc%5Etfw">April 17, 2018</a></blockquote>
-		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<body style='min-height: calc(100vh - 3.125rem);'>
+		<div style='background-color: #E0E4E8;' class='content'>
+			<div style='text-align: center;' class='patrons bg1'>
+				<span class='shadow' id='hover' style='color: #111518'>test text [b1c1]</span>
+				<span class='shadow' id='hover' style='color: #1f1b1a'>test text [b1c2]</span>
+				<span class='shadow' id='hover' style='color: #212123'>test text [b1c3]</span>
+				<span class='shadow' id='hover' style='color: #282627'>test text [b1c4]</span>
+				<span class='shadow' id='hover' style='color: #2f2e2c'>test text [b1c5]</span>
+			</div>
+			<div style='text-align: center; margin-top: 0' class='patrons bg2'>
+				<span class='shadow' id='hover' style='color: #111518'>bold text [b2c1]</span>
+				<span class='shadow' id='hover' style='color: #1f1b1a'>bold text [b2c2]</span>
+				<span class='shadow' id='hover' style='color: #212123'>bold text [b2c3]</span>
+				<span class='shadow' id='hover' style='color: #282627'>bold text [b2c4]</span>
+				<span class='shadow' id='hover' style='color: #2f2e2c'>bold text [b2c5]</span>
+			</div>
+			<div class='containerplain shadow' id='hover'>
+				<input id='check' type='checkbox'>				
+				<label for='check' class='colorbar'>
+					<div class='item left'   id='B1'><div><p>bold text [b2]</p></div></div>
+					<div class='item middle' id='B2'><div><p>bold text [b3]</p></div></div>
+					<div class='item middle' id='B3'><div><p>bold text [b4]</p></div></div>
+					<div class='item right'  id='B4'><div><p>bold text [b5]</p></div></div>
+				</label>
+				<div for='check' class='colors'>
+					<div class='item left'   id='B1'><div><p>#C9C4BE<br>rgb(pending)</p></div></div>
+					<div class='item middle' id='B2'><div><p>#A5A29D<br>rgb(pending)</p></div></div>
+					<div class='item middle' id='B3'><div><p>#A2A3A5<br>rgb(pending)</p></div></div>
+					<div class='item right'  id='B4'><div><p>#BDC2CA<br>rgb(pending)</p></div></div>
+				</div>
+			</div>
+			<div style='text-align: center;' class='patrons r1 bg2'>
+				<span class='shadow' id='hover' style=''>thickness 1 [r1b2]</span>
+				<span class='shadow' id='hover' style='border-width: 2px'>thickness 2 [r1b2]</span>
+			</div>
+			<div style='text-align: center;' class='patrons r2 bg2'>
+				<span class='shadow' id='hover' style=''>thickness 1 [r2b2]</span>
+				<span class='shadow' id='hover' style='border-width: 2px'>thickness 2 [r2b2]</span>
+			</div>
+
+
+		</div>
+	<div class='footer'>
+		<div id='left' ><p>Design by <a href='design'><span class='noHoverText'><img src='images/logo.png'>Ln2</span><span class='hoverText'><img src='images/logo.gif'>Ln2</span></a>.</p></div>
+		<div><p>Built by <a href='https://www.google.com/search?tbm=isch&amp;q=snow+leopard'>sneps</a>.</p></div>
+		<div id='right'><p>Hosted on <a href='https://github.com/DariusMiu/DariusMiu.github.io'>GitHub</a>.</p></div>
 	</div>
 	</body>
 </html>
