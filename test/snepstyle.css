@@ -277,10 +277,10 @@ html
 	border-color: #2676d5;
 	background-color: #151416;
 }
-a.donatebutton, .patrons a
+.donatebutton, .patrons a
 {
 	position: relative;
-	margin: 1.5rem 0;
+	margin: 0.8em 0.2em 0;
 	background-color: #151416;
 	border-radius: 2px;
 	padding: 0.5em 1em;
@@ -288,8 +288,13 @@ a.donatebutton, .patrons a
 	display: inline-block;
 	font-weight: normal;
 }
+.donatebutton
+{ margin: 1.5rem 0; }
 .patrons
-{ margin-top: 1em; }
+{
+	margin-top: 1em;
+	text-align: center;
+}
 .patrons a
 { margin: 0.8em 0.2em 0; }
 .donatebutton:hover, .patrons a:hover

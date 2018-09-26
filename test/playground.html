@@ -34,16 +34,34 @@ ga('send', 'pageview');
 			border: 2px solid #BDC2CA;
 		}
 		::-webkit-scrollbar-thumb:hover
-		{ background: #2676D5; }
+		{ background: #003D5C; }
 		::-webkit-scrollbar-corner
 		{ background-color: #E0E4E8; }
+		
+		a
+		{ text-decoration: none; }
+		a:link
+		{
+			color: #111518;
+			font-weight: bold;
+		}
+		a:visited
+		{ color: inherit; }
+		a:hover
+		{ color: #2676D5; }
+		a.container
+		{ font-weight: normal; }
+		
+		a.container span
+		{ font-weight: bold; }
 		
 		a.donatebutton, .patrons a, .patrons span
 		{
 			position: relative;
-			margin: 1.5rem 2.5px;
 			border-radius: 2px;
+			margin: 0.8em 0.2em 0;
 			padding: 0.5em 1em;
+			background: #E0E4E8;
 			border: 1px solid #575757;
 			display: inline-block;
 		}
@@ -119,82 +137,39 @@ ga('send', 'pageview');
 		.container.b5 .container
 		{ background: #A2A3A5; }
 		.container#hover p
-		{ color: #FFF; }
+		{ color: #111518; }
 		.container:hover#hover span
 		{ color: #2676D5; }
 		
-		.containerplain
-		{
-		}
-
+		
+		.content
+		{ padding-bottom: 25px; }
+		
+		.cardexample
+		{ background: #E0E4E8; }
+		
+		.footer
+		{ background: #C3C3C4; }
+		.footer div p, div.footer div p a
+		{ color: #575757; }
 		</style>
 	</head>
 
 	<body style='min-height: calc(100vh - 3.125rem);'>
 		<div class='background headerimage' style='background-image: url(images/snep.jpg)'></div>
-		<div style='background-color: #E0E4E8;' class='content'>			
+		<div style='background-color: #E0E4E8; min-height: calc(75% - 3.125rem - 50px);' class='content'>			
 			<div class='container'>
-				<p class='misctext'>sample text</p>
+				<p class='misctext'>sample card</p>
 				<div class='container'>
-					<p class='misctext'>nested sample</p>
-					butts
+					<p class='misctext'>nested card</p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</div>
 				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				mow
-			</div>
-			
-			<div class='container b2 left'>
-				<p class='misctext'>sample text</p>
-				<div class='container'>
-					<p class='misctext'>nested sample</p>
-					butts
+				Color scheme has been derived from over a dozen different photos of snow leopard.
+				<div class='patrons'>
+				<a class='shadow' id='hover'>sample button</a>
+				<a class='shadow' id='hover' style='font-weight:bold'>bold button</a>
 				</div>
-				this one is tan-er
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				mow
-			</div>
-			<div class='container b5 right'>
-				<p class='misctext'>sample text</p>
-				<div class='container'>
-					<p class='misctext'>nested sample</p>
-					butts
-				</div>
-				this one is greyer
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				mow
-			</div>
-
-
-			<div style='font-size: 3rem'>
-			<div style='text-align: center;' class='patrons bg1'>
-				<span class='shadow' id='hover' style='color: #111518; border-width: 2px'>test text [b1c1]</span>
-				<span class='shadow' id='hover' style='color: #1f1b1a; border-width: 2px'>test text [b1c2]</span>
-			</div>
-			<div style='text-align: center; margin-top: 0' class='patrons bg2'>
-				<span class='shadow' id='hover' style='color: #111518; border-width: 2px'>bold text [b2c1]</span>
-				<span class='shadow' id='hover' style='color: #1f1b1a; border-width: 2px'>bold text [b2c2]</span>
-			</div>
 			</div>
 			<div class='containerplain shadow' id='hover'>
 				<input id='check' type='checkbox'>				
@@ -215,17 +190,51 @@ ga('send', 'pageview');
 					<div class='item right'  id='B6'><div><p>#111518<br>rgb(pending)</p></div></div>
 				</div>
 			</div>
-			<div style='text-align: center;' class='patrons r1 bg2'>
-				<span class='shadow' id='hover' style=''>thickness 1 [r1b2]</span>
-				<span class='shadow' id='hover' style='border-width: 2px'>thickness 2 [r1b2]</span>
+				<div class='container fonts'>
+				<p class='misctext'>Fonts</p>
+				<div class=''>
+					<div class='vera'  ><a href='https://www.gnome.org/fonts/' target='_blank'>Body text: Bitstream Vera</a></div>
+					<div class='darius'><a href='design/font' target='_blank'>Titles: Darius</a></div>
+				</div>
 			</div>
-			<div style='text-align: center;' class='patrons r2 bg2'>
-				<span class='shadow' id='hover' style=''>thickness 1 [r2b2]</span>
-				<span class='shadow' id='hover' style='border-width: 2px'>thickness 2 [r2b2]</span>
+			<a href='https://material.io/guidelines/components/cards.html' class='container guidelines' id='hover'>
+				<p class='misctext'>Guidelines</p>
+				<div >
+					<p>This page follows Google's <span id='hover'>Material Design</span> philosophy on card design and layout</p>
+				</div>
+			</a>
+			<div class='container specifications'>
+				<p class='misctext'>Specifications</p>
+				<div class='cardexample'>
+				<!--don't use this class, it's been created as a visual guide. if you want my card code, use class='container'-->
+					<p class='null' id='left'>padding: 25px;</p>
+					<p class='null' id='right'>border-radius: 2px;</p>
+					<div style='background: #A5A29D;'>
+						<p class='misctext'>Standard Card</p>
+						<p style='text-align: left;'>
+							background: #C3C3C4; /*nested background: #A5A29D;*/<br>
+							color: #111518;<br>
+							overflow: hidden;<br>
+							margin: 0 0 25px;<br>
+							position: relative;<br>
+							display: inline-block;<br>
+							box-shadow: 0 2px 3px 1px rgba(0,0,0,0.5);
+						</p>
+					</div>
+				</div>
+				<a class='container right' id='hover'>
+					<p class='misctext'>Sample Card Link</p>
+					<p>Sample descriptive text describing what this what go towards. Sample <span id='hover'>key phrase</span> indicating exactly where the link leads.</p>
+					<p style='text-align: left;'>
+						class='container' id='hover'<br><br>
+						On hover:<br>
+						span color: <span id='hover'>#2676D5</span>;<br>
+						box-shadow: 0 0 10px 3px rgba(0,0,0,0.7);
+					</p>
+				</a>
+				<p style='display: inline-block; margin: 0; width: 100%;'>Notice, as well, that the spacing between the cards is always 25px, regardless of direction</p>
 			</div>
-
-
-		</div>
+	</div>
 	
 	<div class='footer'>
 		<div id='left' ><p>Design by <a href='design'><span class='noHoverText'><img src='images/logo.png'>Ln2</span><span class='hoverText'><img src='images/logo.gif'>Ln2</span></a>.</p></div>
