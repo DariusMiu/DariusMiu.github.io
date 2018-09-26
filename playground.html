@@ -1,4 +1,4 @@
-<html style='background-color: white;'>
+<html>
 	<head>
 <!-- Google Analytics -->
 <script>
@@ -16,12 +16,231 @@ ga('send', 'pageview');
 		<link rel='stylesheet' href='snepstyle.css'>
 		<meta name="theme-color" content="#1E1F25">
 		<title>playground</title>
+		<style>
+		html, body
+		{ color: #111518; }
+		
+		::-webkit-scrollbar
+		{
+			width: 12px;
+			height:12px;
+		}
+		::-webkit-scrollbar-track
+		{ background-color: #BDC2CA; }
+		::-webkit-scrollbar-thumb
+		{
+			background: #575757;
+			border-radius: 4px;
+			border: 2px solid #BDC2CA;
+		}
+		::-webkit-scrollbar-thumb:hover
+		{ background: #003D5C; }
+		::-webkit-scrollbar-corner
+		{ background-color: #E0E4E8; }
+		
+		a
+		{ text-decoration: none; }
+		a:link
+		{
+			color: #111518;
+			font-weight: bold;
+		}
+		a:visited
+		{ color: inherit; }
+		a:hover
+		{ color: #2676D5; }
+		a.container
+		{ font-weight: normal; }
+		
+		a.container span
+		{ font-weight: bold; }
+		
+		a.donatebutton, .patrons a, .patrons span
+		{
+			position: relative;
+			border-radius: 2px;
+			margin: 0.8em 0.2em 0;
+			padding: 0.5em 1em;
+			background: #E0E4E8;
+			border: 1px solid #575757;
+			display: inline-block;
+		}
+		.bg1 span
+		{
+			font-weight: normal;
+			background: #E0E4E8;
+		}
+		.bg2 span
+		{
+			font-weight: bold;
+			background: #C3C3C4;
+		}
+		.patrons
+		{ margin-top: 0; }
+		.patrons a
+		{ margin: 0.8em 0.2em 0; }
+		.patrons.r1 span
+		{ border: 1px solid #575757; }
+		.patrons.r2 span
+		{ border: 1px solid #37383c; }
+		.donatebutton:hover, .patrons a:hover, .patrons span:hover
+		{
+			border-color: #2676D5;
+			color: #2676D5 !important;
+		}
+		.colors .item, .colorbar .item
+		{
+			width: 16.666%;
+			width: calc(100%/6);
+		}
+		.colors .item p, .colorbar .item p
+		{ border-color: #575757; }
+		.colors .item div, .colorbar .item div
+		{ color: #111518; }
+		.colorbar #B1
+		{ background: #E0E4E8; }
+		.colorbar #B2
+		{ background: #C3C3C4; }
+		.colorbar #B3
+		{ background: #A5A29D; }
+		.colorbar #B4
+		{ background: #575757; }
+		.colorbar #B5
+		{ background: #2676D5; }
+		.colorbar #B6
+		{ background: #111518; }
+		
+		.colors #B1, div#B1.item div
+		{ background: #C3C3C4; }
+		.colors #B2, div#B2.item div
+		{ background: #C3C3C4; }
+		.colors #B3, div#B3.item div
+		{ background: #C3C3C4; }
+		.colors #B4, div#B4.item div
+		{ background: #C3C3C4; }
+		.colors #B5, div#B5.item div
+		{ background: #C3C3C4; }
+		.colors #B6, div#B6.item div
+		{ background: #C3C3C4; }
+		
+		.container
+		{ background: #C3C3C4; }
+		.container.b2
+		{ background: #C9C4BE; }
+		.container.b5
+		{ background: #BDC2CA; }
+		
+		.container .container
+		{ background: #A5A29D; }
+		.container.b2 .container
+		{ background: #A5A29D; }
+		.container.b5 .container
+		{ background: #A2A3A5; }
+		.container#hover p
+		{ color: #111518; }
+		.container:hover#hover span
+		{ color: #2676D5; }
+		
+		
+		.content
+		{ padding-bottom: 25px; }
+		
+		.cardexample
+		{ background: #E0E4E8; }
+		
+		.footer
+		{ background: #C3C3C4; }
+		.footer div p, div.footer div p a
+		{ color: #575757; }
+		</style>
 	</head>
 
-	<body style='background-color: white;'>
-	<div class ='center' style='position: relative; text-align: center;'>
-		<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I&#39;ve started a patreon to help fund the art and animations going into my game. I&#39;ve gotten so much done, but Irbis needs more than what I can provide alone, and I hope you can help.<br>(RTs would be appreciated &lt;3)<a href="https://t.co/b3pI3YjTTu">https://t.co/b3pI3YjTTu</a><a href="https://t.co/NRPduR2iKO">https://t.co/NRPduR2iKO</a>#funding <a href="https://t.co/igBnh49IB9">pic.twitter.com/igBnh49IB9</a></p>&mdash; Darius (@DarMiu) <a href="https://twitter.com/DarMiu/status/983769329660411904?ref_src=twsrc%5Etfw">April 17, 2018</a></blockquote>
-		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<body style='min-height: calc(100vh - 3.125rem);'>
+		<div class='background headerimage' style='background-image: url(images/snep.jpg)'></div>
+		<div style='background-color: #E0E4E8; min-height: calc(75% - 3.125rem - 50px);' class='content'>			
+			<div class='container'>
+				<p class='misctext'>sample card</p>
+				<div class='container'>
+					<p class='misctext'>nested card</p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+				<br>
+				<div class='patrons' style='text-align: center;'>
+				Color scheme has been derived from over a dozen different photos of snow leopards.
+				<br>
+				<a class='shadow' id='hover'>sample button</a>
+				<a class='shadow' id='hover' style='font-weight:bold'>bold button</a>
+				</div>
+			</div>
+			<div class='containerplain shadow' id='hover'>
+				<input id='check' type='checkbox'>				
+				<label for='check' class='colorbar'>
+					<div class='item left'   id='B1'><div><p>background</p></div></div>
+					<div class='item middle' id='B2'><div><p>containers</p></div></div>
+					<div class='item middle' id='B3'><div><p>nested</p></div></div>
+					<div class='item middle' id='B4'><div><p>accents</p></div></div>
+					<div class='item middle' id='B5'><div><p>hover</p></div></div>
+					<div class='item right'  id='B6'><div><p>text</p></div></div>
+				</label>
+				<div for='check' class='colors'>
+					<div class='item left'   id='B1'><div><p>#E0E4E8<br>rgb(pending)</p></div></div>
+					<div class='item middle' id='B2'><div><p>#C3C3C4<br>rgb(pending)</p></div></div>
+					<div class='item middle' id='B3'><div><p>#A5A29D<br>rgb(pending)</p></div></div>
+					<div class='item middle' id='B4'><div><p>#575757<br>rgb(pending)</p></div></div>
+					<div class='item middle' id='B5'><div><p>#2676D5<br>rgb(pending)</p></div></div>
+					<div class='item right'  id='B6'><div><p>#111518<br>rgb(pending)</p></div></div>
+				</div>
+			</div>
+				<div class='container fonts'>
+				<p class='misctext'>Fonts</p>
+				<div class=''>
+					<div class='vera'  ><a href='https://www.gnome.org/fonts/' target='_blank'>Body text: Bitstream Vera</a></div>
+					<div class='darius'><a href='design/font' target='_blank'>Titles: Darius</a></div>
+				</div>
+			</div>
+			<a href='https://material.io/guidelines/components/cards.html' class='container guidelines' id='hover'>
+				<p class='misctext'>Guidelines</p>
+				<div >
+					<p>This page follows Google's <span id='hover'>Material Design</span> philosophy on card design and layout</p>
+				</div>
+			</a>
+			<div class='container specifications'>
+				<p class='misctext'>Specifications</p>
+				<div class='cardexample'>
+				<!--don't use this class, it's been created as a visual guide. if you want my card code, use class='container'-->
+					<p class='null' id='left'>padding: 25px;</p>
+					<p class='null' id='right'>border-radius: 2px;</p>
+					<div style='background: #A5A29D;'>
+						<p class='misctext'>Standard Card</p>
+						<p style='text-align: left;'>
+							background: #C3C3C4; /*nested background: #A5A29D;*/<br>
+							color: #111518;<br>
+							overflow: hidden;<br>
+							margin: 0 0 25px;<br>
+							position: relative;<br>
+							display: inline-block;<br>
+							box-shadow: 0 2px 3px 1px rgba(0,0,0,0.5);
+						</p>
+					</div>
+				</div>
+				<a class='container right' id='hover'>
+					<p class='misctext'>Sample Card Link</p>
+					<p>Sample descriptive text describing what this what go towards. Sample <span id='hover'>key phrase</span> indicating exactly where the link leads.</p>
+					<p style='text-align: left;'>
+						class='container' id='hover'<br><br>
+						On hover:<br>
+						span color: <span id='hover'>#2676D5</span>;<br>
+						box-shadow: 0 0 10px 3px rgba(0,0,0,0.7);
+					</p>
+				</a>
+				<p style='display: inline-block; margin: 0; width: 100%;'>Notice, as well, that the spacing between the cards is always 25px, regardless of direction</p>
+			</div>
+	</div>
+	
+	<div class='footer'>
+		<div id='left' ><p>Design by <a href='design'><span class='noHoverText'><img src='images/logo.png'>Ln2</span><span class='hoverText'><img src='images/logo.gif'>Ln2</span></a>.</p></div>
+		<div><p>Built by <a href='https://www.google.com/search?tbm=isch&amp;q=snow+leopard'>sneps</a>.</p></div>
+		<div id='right'><p>Hosted on <a href='https://github.com/DariusMiu/DariusMiu.github.io'>GitHub</a>.</p></div>
 	</div>
 	</body>
 </html>
