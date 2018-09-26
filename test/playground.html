@@ -55,7 +55,7 @@ ga('send', 'pageview');
 		.bg2 span
 		{
 			font-weight: bold;
-			background: #C9C4BE;
+			background: #C3C3C4;
 		}
 		.patrons
 		{ margin-top: 0; }
@@ -72,37 +72,41 @@ ga('send', 'pageview');
 		}
 		.colors .item, .colorbar .item
 		{
-			width: 25%;
-			width: calc(100%/4);
+			width: 16.666%;
+			width: calc(100%/6);
 		}
 		.colors .item p, .colorbar .item p
 		{ border-color: #575757; }
 		.colors .item div, .colorbar .item div
 		{ color: #111518; }
 		.colorbar #B1
-		{ background: #c9c4be; }
+		{ background: #E0E4E8; }
 		.colorbar #B2
-		{ background: #a5a29d; }
+		{ background: #C3C3C4; }
 		.colorbar #B3
-		{ background: #a2a3a5; }
+		{ background: #A5A29D; }
 		.colorbar #B4
-		{ background: #bdc2ca; }
-		.colorbar #B5
 		{ background: #575757; }
+		.colorbar #B5
+		{ background: #2676D5; }
+		.colorbar #B6
+		{ background: #111518; }
 		
 		.colors #B1, div#B1.item div
-		{ background: #C9C4BE; }
+		{ background: #C3C3C4; }
 		.colors #B2, div#B2.item div
-		{ background: #A5A29D; }
+		{ background: #C3C3C4; }
 		.colors #B3, div#B3.item div
-		{ background: #A2A3A5; }
+		{ background: #C3C3C4; }
 		.colors #B4, div#B4.item div
-		{ background: #BDC2CA; }
+		{ background: #C3C3C4; }
 		.colors #B5, div#B5.item div
-		{ background: #575757; }
+		{ background: #C3C3C4; }
+		.colors #B6, div#B6.item div
+		{ background: #C3C3C4; }
 		
 		.container
-		{ background: #BDC2CA; }
+		{ background: #C3C3C4; }
 		.container.b2
 		{ background: #C9C4BE; }
 		.container.b5
@@ -128,40 +132,7 @@ ga('send', 'pageview');
 
 	<body style='min-height: calc(100vh - 3.125rem);'>
 		<div class='background headerimage' style='background-image: url(images/snep.jpg)'></div>
-		<div style='background-color: #E0E4E8;' class='content'>
-			<div class='container b2 left'>
-				<p class='misctext'>sample text</p>
-				<div class='container'>
-					<p class='misctext'>nested sample</p>
-					butts
-				</div>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				mow
-			</div>
-			<div class='container b5 right'>
-				<p class='misctext'>sample text</p>
-				<div class='container'>
-					<p class='misctext'>nested sample</p>
-					butts
-				</div>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				mow
-			</div>
-			
+		<div style='background-color: #E0E4E8;' class='content'>			
 			<div class='container'>
 				<p class='misctext'>sample text</p>
 				<div class='container'>
@@ -178,6 +149,42 @@ ga('send', 'pageview');
 				<br>
 				mow
 			</div>
+			
+			<div class='container b2 left'>
+				<p class='misctext'>sample text</p>
+				<div class='container'>
+					<p class='misctext'>nested sample</p>
+					butts
+				</div>
+				this one is tan-er
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				mow
+			</div>
+			<div class='container b5 right'>
+				<p class='misctext'>sample text</p>
+				<div class='container'>
+					<p class='misctext'>nested sample</p>
+					butts
+				</div>
+				this one is greyer
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				mow
+			</div>
+
 
 			<div style='font-size: 3rem'>
 			<div style='text-align: center;' class='patrons bg1'>
@@ -192,16 +199,20 @@ ga('send', 'pageview');
 			<div class='containerplain shadow' id='hover'>
 				<input id='check' type='checkbox'>				
 				<label for='check' class='colorbar'>
-					<div class='item left'   id='B1'><div><p>bold text [b2]</p></div></div>
-					<div class='item middle' id='B2'><div><p>bold text [b3]</p></div></div>
-					<div class='item middle' id='B3'><div><p>bold text [b4]</p></div></div>
-					<div class='item right'  id='B4'><div><p>bold text [b5]</p></div></div>
+					<div class='item left'   id='B1'><div><p>background</p></div></div>
+					<div class='item middle' id='B2'><div><p>container</p></div></div>
+					<div class='item middle' id='B3'><div><p>nested</p></div></div>
+					<div class='item middle' id='B4'><div><p>accents</p></div></div>
+					<div class='item middle' id='B5'><div><p>hover</p></div></div>
+					<div class='item right'  id='B6'><div><p>text</p></div></div>
 				</label>
 				<div for='check' class='colors'>
-					<div class='item left'   id='B1'><div><p>#C9C4BE<br>rgb(pending)</p></div></div>
-					<div class='item middle' id='B2'><div><p>#A5A29D<br>rgb(pending)</p></div></div>
-					<div class='item middle' id='B3'><div><p>#A2A3A5<br>rgb(pending)</p></div></div>
-					<div class='item right'  id='B4'><div><p>#BDC2CA<br>rgb(pending)</p></div></div>
+					<div class='item left'   id='B1'><div><p>#E0E4E8<br>rgb(pending)</p></div></div>
+					<div class='item middle' id='B2'><div><p>#C3C3C4<br>rgb(pending)</p></div></div>
+					<div class='item middle' id='B3'><div><p>#A5A29D<br>rgb(pending)</p></div></div>
+					<div class='item middle' id='B4'><div><p>#575757<br>rgb(pending)</p></div></div>
+					<div class='item middle' id='B5'><div><p>#2676D5<br>rgb(pending)</p></div></div>
+					<div class='item right'  id='B6'><div><p>#111518<br>rgb(pending)</p></div></div>
 				</div>
 			</div>
 			<div style='text-align: center;' class='patrons r1 bg2'>
