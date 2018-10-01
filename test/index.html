@@ -65,6 +65,19 @@
 			{ background-image: url(images/cf2.png); }
 		}
 		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			function downloadJSAtOnload() {
+				var element = document.createElement("script");
+				element.src = "grapher.js";
+				document.body.appendChild(element);
+			}
+			if (window.addEventListener)
+				window.addEventListener("load", downloadJSAtOnload, false);
+			else if (window.attachEvent)
+				window.attachEvent("onload", downloadJSAtOnload);
+			else window.onload = downloadJSAtOnload;
+		</script>
 	</head>
 	
 	<!--
@@ -102,7 +115,7 @@
 	               '"*%############################### ############ 
 
 	-->
-	<body>
+	<body style='overflow-x: hidden'>
 		<div class='cf'></div>
 		<div class='resumelink'>
 			<a href='resume'>
@@ -213,7 +226,7 @@ He's the main character.
 		<div class='spacer'></div>
 		<div class='fullscreen background' style='background-image: url(images/slide3.png)'><a name='funding'></a>
 			<div class='content'>
-				<div class='container'>
+				<div class='container' style='overflow-x:visible'>
 					<div class='irbisgame'>
 						<img src='images/patreon-header.svg'>
 						<br>
