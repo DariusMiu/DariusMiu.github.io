@@ -7,7 +7,7 @@ var requestURL =
 googleSheetsID +
 '/values/Sheet1!A1:K' + rows + '?valueRenderOption=UNFORMATTED_VALUE';
 
-var GoogleAPIkey = 'AIzaSyDQmiqM5WxHRj9WX7bMVi7nvp_AyV-d9MM';
+var GoogleAPIkey = 'AIzaSyDQmiqM5WxHRj9WX7bMVi7nvp_AyV-d9MM'; // AIzaSyDQmiqM5WxHRj9WX7bMVi7nvp_AyV-d9MM
 
 var chartLines = [];
 
@@ -26,12 +26,10 @@ function Graph(cellData)
 	console.log('chart columns:' + columns);
 	
 	var chartData = [];
-	chartData[0] = [0, cellData.values[31][0], columns - 1, ['Concept Art', 'Animations', 'Patreon', 'Total Expenses', 'Net Expenses'], ['#38761D', '#4A86E8', '#FF5900', '#980000', '#9900FF'], ['','dashed','','','dashed']]
+	chartData[0] = [0, cellData.values[31][0], columns - 1, ['Concept Art', 'Animations', 'Patreon', 'Total Expenses', 'Net Expenses'], ['#38761D', '#4A86E8', '#FF5900', '#980000', '#9900FF'], ['','dashed','','','dashed'], ['#2D333A', [250, 500, 750, 1000]]]
 	// format: [min value, max value, number of columns, color of serieses] note: headers are at [x][0]
 	for (i = 1; i <= columns; i++)
-	{
-		chartData[i] = [cellData.values[i][0], cellData.values[i][6], cellData.values[i][7], cellData.values[i][8], cellData.values[i][9], cellData.values[i][10]];
-	}
+	{chartData[i] = [cellData.values[i][0], cellData.values[i][6], cellData.values[i][7], cellData.values[i][8], cellData.values[i][9], cellData.values[i][10]]; }
 	
 	var charts = document.getElementsByClassName('chart');
 	console.log('charts:' + charts.length + ' (expected: 1)');
@@ -109,9 +107,26 @@ function DrawGraph(chartDiv, data)
 	var daterange  = data[data.length-1][0] - data[1][0];
 	var epoch = new Date(1899, 11, 30); // google sheets epoch starts at December 30, 1899
 	console.log('chartWidth:' + chartWidth + ' chartHeight:' + chartHeight);
+	
+	for (i = 0; i < data[0][6][1].length; i++)
+	{
+		var div = document.createElement("div");
+		div.style.background = data[0][6][0];
+		div.style.left = 0;
+		div.style.width = '100%';
+		div.style.bottom = (100 * (data[0][6][1][i] / data[0][1])) + '%';
+		div.className = 'valueline';
+		var value = document.createElement("div");
+		value.className = 'value';
+		value.innerHTML = '$' + data[0][6][1][i];
+		
+		div.appendChild(value);
+		chartDiv.appendChild(div);
+	}
+	
 	for (i = 1; i < data.length; i++)
 	{
-		console.log('date[' + i + ']:' + data[i][0]);
+		chartLines[i-1] = [];
 		for (j = 0; j < data[0][4].length; j++)
 		{
 			index = j+1;
@@ -141,12 +156,14 @@ function DrawGraph(chartDiv, data)
 					divLine.style.borderColor = data[0][4][j];
 					if (data[0][5][j].length > 0)
 					{ divLine.style.borderStyle = data[0][5][j]; }
-					var opposite = (previousValues[j][1] - currentTop) * chartHeight;
-					var adjacent = (currentLeft - previousValues[j][0]) * chartWidth;
-					divLine.style.width = (Math.sqrt(opposite * opposite + adjacent * adjacent)) + 'px';
-					divLine.style.transform = 'rotate(' + (-Math.atan(opposite / adjacent)) + 'rad)';
+					var opposite = (previousValues[j][1] - currentTop);
+					var adjacent = (currentLeft - previousValues[j][0]);
+					var o = opposite * chartHeight;
+					var a = adjacent * chartWidth;
+					divLine.style.width = (Math.sqrt(o * o + a * a)) + 'px';
+					divLine.style.transform = 'rotate(' + (-Math.atan(o / a)) + 'rad)';
 					divLine.className = 'line';
-					chartLines[i-2] = divLine;
+					chartLines[i-2][j] = [divLine, [opposite, adjacent]];
 					chartDiv.appendChild(divLine);
 				}
 				
@@ -165,12 +182,21 @@ $(window).on('resize', function(){
 	if($(this).width() != width){
 		width = $(this).width();
 		
+		var chartDiv = document.getElementsByClassName('chartcontainer')[0];
+		var chartWidth = chartDiv.offsetWidth;
+		var chartHeight= chartDiv.offsetHeight;
 		for (i = 0; i < chartLines.length; i++)
 		{
-			//var opposite = (previousValues[j][1] - currentTop) * chartHeight;
-			//var adjacent = (currentLeft - previousValues[j][0]) * chartWidth;
-			chartLines[i].style.width = 0;
-			//chartLines[i].style.transform = 'rotate(' + (-Math.atan(opposite / adjacent)) + 'rad)';
+			for (j = 0; j < chartLines[i].length; j++)
+			{
+				if (chartLines[i][j] !== undefined)
+				{
+					var o = chartLines[i][j][1][0] * chartHeight;
+					var a = chartLines[i][j][1][1] * chartWidth;
+					chartLines[i][j][0].style.width = (Math.sqrt(o * o + a * a)) + 'px';
+					chartLines[i][j][0].style.transform = 'rotate(' + (-Math.atan(o / a)) + 'rad)';
+				}
+			}
 		}
 	}
 });

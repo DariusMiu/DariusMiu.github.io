@@ -256,7 +256,6 @@ html
 {
 	text-align: center;
 	height: 371px;
-	width: 100%;
 }
 .chart div.chartcontainer
 {
@@ -264,6 +263,24 @@ html
 	height: 100%;
 	overflow: visible;
 	position: relative;
+	/*padding: 5px;
+	border: 1px solid #2D333A;
+	border-radius: 2px;
+	box-shadow: 0 2px 3px 1px rgba(0,0,0,0.5);*/
+}
+.chart div.chartcontainer div.valueline
+{
+	height:0;
+	position: absolute;
+	z-index: 12;
+	border-top: 1px solid #2D333A;
+}
+.chart div.chartcontainer div.valueline div.value
+{
+	position: absolute;
+	z-index: 12;
+	opacity: 0.5;
+	font-size: 0.7em;
 }
 .chart div.chartcontainer div.dot
 {
@@ -292,7 +309,6 @@ html
 	white-space: nowrap;
 	text-align: left;
 }
-
 .chart div.chartcontainer div.dot:hover div.tooltip
 {
 	display: inline-block;
