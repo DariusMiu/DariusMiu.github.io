@@ -270,8 +270,12 @@ html
 }
 .chart div.chartcontainer div.valueline
 {
-	height:0;
+	height: 0;
+	left: 0;
+	width: 100%;
+	width: calc(100% + 15px);
 	position: absolute;
+	margin: 0 -5px 0 -10px;
 	z-index: 12;
 	border-top: 1px solid #2D333A;
 }
@@ -281,6 +285,30 @@ html
 	z-index: 12;
 	opacity: 0.5;
 	font-size: 0.7em;
+	white-space: nowrap;
+}
+.chart div.chartcontainer div.headerline div.header
+{
+	position: absolute;
+	z-index: 12;
+	opacity: 0.5;
+	font-size: 0.7em;
+	white-space: nowrap;
+	bottom: 0;
+	right: 5px;
+	transform-origin: right;
+	transform: rotate(-45deg);
+}
+.chart div.chartcontainer div.headerline
+{
+	width: 0;
+	left: 0;
+	height: 100%;
+	/*height: calc(100% + 15px);*/
+	position: absolute;
+	/*margin: 0 -5px 0 -10px;*/
+	z-index: 12;
+	border-left: 1px solid #2D333A;
 }
 .chart div.chartcontainer div.dot
 {
@@ -289,7 +317,7 @@ html
 	position: absolute;
 	border-radius: 50%;
 	border: 4px solid #0000;
-	transform:translate(-50%,-50%);
+	transform: translate(-50%,-50%);
 	z-index: 20;
 }
 .chart div.chartcontainer div.line
@@ -1309,7 +1337,7 @@ input:checked ~ .colors .item div
 	.cf
 	{ background-image: url(images/cf2.png); }
 	.donatebutton
-	{ font-size: 3rem; }
+	{ font-size: 1.5em; }
 	a.donatebutton
 	{ margin: 0.5em 0; }
 	.centerlogo div
