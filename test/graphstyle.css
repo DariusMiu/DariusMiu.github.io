@@ -279,7 +279,7 @@ html
 	z-index: 12;
 	border-top: 1px solid #2D333A;
 }
-.chart div.chartcontainer div.valueline div.value
+.chart div.chartcontainer div.valueline .value
 {
 	position: absolute;
 	z-index: 12;
@@ -287,15 +287,15 @@ html
 	font-size: 0.7em;
 	white-space: nowrap;
 }
-.chart div.chartcontainer div.headerline div.header
+.chart div.chartcontainer div.headerline .header
 {
 	position: absolute;
 	z-index: 12;
 	opacity: 0.5;
-	font-size: 0.7em;
+	font-size: 0.6em;
 	white-space: nowrap;
 	bottom: 0;
-	right: 5px;
+	right: 4px;
 	transform-origin: right;
 	transform: rotate(-45deg);
 }
@@ -304,9 +304,9 @@ html
 	width: 0;
 	left: 0;
 	height: 100%;
-	/*height: calc(100% + 15px);*/
+	height: calc(100% + 10px);
 	position: absolute;
-	/*margin: 0 -5px 0 -10px;*/
+	margin: -10px 0 0;
 	z-index: 12;
 	border-left: 1px solid #2D333A;
 }
@@ -320,7 +320,30 @@ html
 	transform: translate(-50%,-50%);
 	z-index: 20;
 }
-.chart div.chartcontainer div.line
+.chart div.chartcontainer div.finalvalue
+{
+	position: absolute;
+	z-index: 25;
+	font-size: 0.7em;
+	white-space: nowrap;
+}
+.chart div.chartcontainer div.finalvalue .line
+{
+	position: absolute;
+	top: -0.5px;
+	width: 15px;
+	height: 1px;
+	z-index: 10;
+	right: 4px;
+}
+.chart div.chartcontainer div.finalvalue .value
+{
+	top: -0.6em;
+	position: absolute;
+	right: 20px;
+	opacity: 0.5;
+}
+.chart div.chartcontainer div.plotline
 {
 	position: absolute;
 	height: 0;
@@ -329,7 +352,7 @@ html
 	transform-origin: left;
 	z-index: 15;
 }
-.chart div.chartcontainer div.dot div.tooltip
+.chart div.chartcontainer div.dot .tooltip
 {
 	display: none;
 	position: absolute;
@@ -337,7 +360,7 @@ html
 	white-space: nowrap;
 	text-align: left;
 }
-.chart div.chartcontainer div.dot:hover div.tooltip
+.chart div.chartcontainer div.dot:hover .tooltip
 {
 	display: inline-block;
 	z-index: 100;

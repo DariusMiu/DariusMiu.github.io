@@ -7,7 +7,7 @@ var requestURL =
 googleSheetsID +
 '/values/Sheet1!A1:K' + rows + '?valueRenderOption=UNFORMATTED_VALUE';
 
-var GoogleAPIkey = 'AIzaSyDQmiqM5WxHRj9WX7bMVi7nvp_AyV-d9MM'; // AIzaSyDQmiqM5WxHRj9WX7bMVi7nvp_AyV-d9MM
+var GoogleAPIkey = 'AIzaSyC7gTouzckiIotCX1-Q9epv2Rq6w0t9Nq8'; // AIzaSyDQmiqM5WxHRj9WX7bMVi7nvp_AyV-d9MM
 
 var chartLines = [];
 
@@ -138,6 +138,7 @@ function DrawGraph(chartDiv, data)
 		chartDiv.appendChild(div);
 	}
 
+	var finalvalues = [];
 	
 	for (i = 1; i < data.length; i++)
 	{
@@ -153,12 +154,13 @@ function DrawGraph(chartDiv, data)
 				div.style.background = data[0][4][j];
 				div.style.left = (currentLeft * 100) + '%';
 				div.style.top = (100 * currentTop) + '%';
+				finalvalues[j] = ['$' + (data[i][index].toFixed(2)), currentLeft, currentTop];
 				div.className = 'dot';
 				var tooltip = document.createElement("div");
 				tooltip.className = 'tooltip donatebutton shadow';
 				var date = new Date(epoch.valueOf());
 				date.setDate(epoch.getDate() + data[i][0]);
-				tooltip.innerHTML = GetLongDate(date) + '<br>' + data[0][3][j] + ': $' + (data[i][index].toFixed(2));
+				tooltip.innerHTML = GetLongDate(date) + ', ' + date.getFullYear() + '<br>' + data[0][3][j] + ': $' + (data[i][index].toFixed(2));
 				if (i > data.length / 2)
 				{ tooltip.style.right = '0'; }
 				
@@ -167,7 +169,7 @@ function DrawGraph(chartDiv, data)
 					var divLine = document.createElement("div");
 					//divLine.style.background = data[0][4][j];
 					divLine.style.left = (previousValues[j][0] * 100) + '%';
-					divLine.style.top = (100 * previousValues[j][1]) + '%';
+					divLine.style.top = (previousValues[j][1] * 100) + '%';
 					divLine.style.borderColor = data[0][4][j];
 					if (data[0][5][j].length > 0)
 					{ divLine.style.borderStyle = data[0][5][j]; }
@@ -177,7 +179,7 @@ function DrawGraph(chartDiv, data)
 					var a = adjacent * chartWidth;
 					divLine.style.width = (Math.sqrt(o * o + a * a)) + 'px';
 					divLine.style.transform = 'rotate(' + (-Math.atan(o / a)) + 'rad)';
-					divLine.className = 'line';
+					divLine.className = 'plotline';
 					chartLines[i-2][j] = [divLine, [opposite, adjacent]];
 					chartDiv.appendChild(divLine);
 				}
@@ -188,6 +190,29 @@ function DrawGraph(chartDiv, data)
 			}
 		}
 		
+	}
+	
+	for (i = 0; i < finalvalues.length; i++) // start at 2 to skip the first element cause it looks better
+	{
+		if (finalvalues[i] !== undefined && finalvalues[i] != '')
+		{
+			var div = document.createElement("div");
+			div.style.right = ((1 - finalvalues[i][1]) * 100) + '%';
+			div.style.top = (finalvalues[i][2] * 100) + '%';
+			div.className = 'finalvalue';
+			
+			var divLine = document.createElement("div");
+			divLine.style.background = data[0][6][0];
+			divLine.className = 'line';
+			
+			var value = document.createElement("div");
+			value.innerHTML = finalvalues[i][0];
+			value.className = 'value';
+			
+			div.appendChild(value);
+			div.appendChild(divLine);
+			chartDiv.appendChild(div);
+		}
 	}
 }
 
