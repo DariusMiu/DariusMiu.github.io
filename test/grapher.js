@@ -7,7 +7,7 @@ var requestURL =
 googleSheetsID +
 '/values/Sheet1!A1:K' + rows + '?valueRenderOption=UNFORMATTED_VALUE';
 
-var GoogleAPIkey = 'AIzaSyDQmiqM5WxHRj9WX7bMVi7nvp_AyV-d9MM'; // AIzaSyDQmiqM5WxHRj9WX7bMVi7nvp_AyV-d9MM
+var GoogleAPIkey = 'AIzaSyDuoMH1GVGZbeWGoBEnO9BNum2ZQUnwOgk'; // AIzaSyDQmiqM5WxHRj9WX7bMVi7nvp_AyV-d9MM
 
 var chartLines = [];
 
