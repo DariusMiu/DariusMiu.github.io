@@ -108,20 +108,6 @@ function DrawGraph(chartDiv, data)
 	var epoch = new Date(1899, 11, 30); // google sheets epoch starts at December 30, 1899
 	console.log('chartWidth:' + chartWidth + ' chartHeight:' + chartHeight);
 	
-	for (i = 0; i < data[0][6][1].length; i++)
-	{
-		var div = document.createElement("div");
-		div.style.background = data[0][6][0];
-		div.style.bottom = (100 * (data[0][6][1][i] / data[0][1])) + '%';
-		div.className = 'valueline';
-		var value = document.createElement("div");
-		value.className = 'value';
-		value.innerHTML = '$' + data[0][6][1][i];
-		
-		div.appendChild(value);
-		chartDiv.appendChild(div);
-	}
-	
 	for (i = 2; i < data.length; i++) // start at 2 to skip the first element cause it looks better
 	{
 		var div = document.createElement("div");
@@ -133,6 +119,20 @@ function DrawGraph(chartDiv, data)
 		var date = new Date(epoch.valueOf());
 		date.setDate(epoch.getDate() + data[i][0]);
 		value.innerHTML = GetLongDate(date);
+		
+		div.appendChild(value);
+		chartDiv.appendChild(div);
+	}
+
+	for (i = 0; i < data[0][6][1].length; i++)
+	{
+		var div = document.createElement("div");
+		div.style.background = data[0][6][0];
+		div.style.bottom = (100 * (data[0][6][1][i] / data[0][1])) + '%';
+		div.className = 'valueline';
+		var value = document.createElement("div");
+		value.className = 'value';
+		value.innerHTML = '$' + data[0][6][1][i];
 		
 		div.appendChild(value);
 		chartDiv.appendChild(div);
