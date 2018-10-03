@@ -13,7 +13,7 @@
 		<link rel='icon' type='image/png' href='favicons/favicon64.png'  sizes='64x64'><!--
 		<link rel='icon' type='image/png' href='favicons/favicon128.png' sizes='128x128'>
 		<link rel='icon' type='image/png' href='favicons/favicon256.png' sizes='256x256'><!---->
-		<link rel='stylesheet' href='snepstyle.css'>
+		<link rel='stylesheet' href='graphstyle.css'>
 		<meta property='og:title' content='Irbis - Liquid Nitrogen'/>
 		<meta  name='description' content='Irbis: A 2D boss rush game by Liquid Nitrogen'/>
 		<meta property='og:description' content='Irbis: A 2D boss rush game by Liquid Nitrogen'/>
@@ -65,6 +65,19 @@
 			{ background-image: url(images/cf2.png); }
 		}
 		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			function downloadJSAtOnload() {
+				var element = document.createElement("script");
+				element.src = "grapher.js";
+				document.body.appendChild(element);
+			}
+			if (window.addEventListener)
+				window.addEventListener("load", downloadJSAtOnload, false);
+			else if (window.attachEvent)
+				window.attachEvent("onload", downloadJSAtOnload);
+			else window.onload = downloadJSAtOnload;
+		</script>
 	</head>
 	
 	<!--
@@ -102,7 +115,7 @@
 	               '"*%############################### ############ 
 
 	-->
-	<body>
+	<body style='overflow-x: hidden'>
 		<div class='cf'></div>
 		<div class='resumelink'>
 			<a href='resume'>
@@ -135,7 +148,7 @@
 				<a href='#'>Finn the Human</a>
 			</div><!---->
 		</div>
-		<div class='fullscreen background pixelated' style='background-image: url(images/slide1.png)'><a name='irbis'></a>
+		<div class='fullscreen background' style='background-image: url(images/slide1.png)'><a name='irbis'></a>
 			<div class='content'>
 			<div class='container'>
 				<div class='irbisgame' style='margin:0; padding:0'>
@@ -177,7 +190,7 @@ While multiple difficulties are planned (easy, medium, hard, and insane - being 
 				<a href='#'>Jake the Dog</a>
 			</div><!---->
 		</div>
-		<div class='fullscreen background pixelated' style='background-image: url(images/slide2.png)'><a name='jamie'></a>
+		<div class='fullscreen background' style='background-image: url(images/slide2.png)'><a name='jamie'></a>
 			<div class='content'>
 				<div class='container'>
 					<div class='reficon'></div>
