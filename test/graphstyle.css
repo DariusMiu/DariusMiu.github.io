@@ -286,6 +286,7 @@ html
 	opacity: 0.5;
 	font-size: 0.7em;
 	white-space: nowrap;
+	bottom: 1px;
 }
 .chart div.chartcontainer div.headerline .header
 {
@@ -1336,6 +1337,8 @@ input:checked ~ .colors .item div
 {
 	html, body
 	{ font-size: 1.5rem; }
+	.chart div.chartcontainer
+	{ font-size: 0.75rem; }
 	.content
 	{ padding: 25vh 1vw 25px; }
 	.gamedownload
