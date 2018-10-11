@@ -442,9 +442,9 @@ html
 	font-size: 1.5rem;
 	text-align: right;
 }
-.spacer #leftquote
+.spacer #leftquote, .leftquote
 {
-	height: 100px;
+	height: 50%;
 	width: 125px;
 	left: 25px;
 	top: calc(10vh - 50px);
@@ -464,7 +464,7 @@ html
 	-o-background-size: cover;
 	background-size: cover;
 }
-.spacer #rightquote
+.spacer #rightquote, .rightquote
 {
 	height: 100px;
 	width: 125px;
