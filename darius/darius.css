@@ -1,0 +1,207 @@
+@font-face
+{
+	font-family: 'Darius';
+	src: url('design/fonts/Darius.ttf');
+}
+@font-face
+{
+	font-family: 'Bera';
+	font-weight: normal;
+	src: url('design/fonts/Vera.ttf');
+}
+@font-face
+{
+	font-family: 'Bera';
+	font-weight: bold;
+	src: url('design/fonts/VeraBd.ttf');
+}
+
+/*img
+{ max-width: 100%; }*/
+
+div, a, p
+{
+	z-index: 5;
+	padding: 0;
+	margin: 0;
+}
+
+a
+{ text-decoration: none; }
+a:link
+{
+	color: #fff;
+	font-weight: bold;
+	-webkit-transition: ease 0.15s;
+	-moz-transition: ease 0.15s;
+	-o-transition: ease 0.15s;
+	transition: ease 0.15s;
+}
+a:visited
+{ color: inherit; }
+a:hover
+{
+	color: #2676D5;
+	-webkit-transition: ease 0.15s;
+	-moz-transition: ease 0.15s;
+	-o-transition: ease 0.15s;
+	transition: ease 0.15s;
+}
+
+body, html
+{
+	position: relative;
+	z-index: -5;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: Bera, Arial, sans-serif;
+	background-color: #1E1F25;
+}
+
+.ref
+{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	overflow: hidden;
+}
+
+.image
+{
+	/*font-size: 1px;*/
+	position: absolute;
+	z-index: 5;
+	overflow: visible;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-image: url(images/rightquote.png);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.base
+{ z-index: 1 !important; }
+
+.lines
+{
+	pointer-events: none;
+	z-index: 10;
+	position: absolute;
+	overflow: visible;
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-image: url(images/rightquote.png);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.coloritem
+{
+	display: none;
+	position: absolute;
+	margin: 5px;
+	background-color: #151416;
+	border-radius: 2px;
+	padding: 0.5em 1em;
+	border: 1px solid #2676d5;
+	font-weight: normal;
+	/*text-transform: uppercase;*/
+}
+
+div.image:hover, input:checked ~ .image
+{
+	margin: -1px 0 0 -1px;
+	padding: 0;
+	border: 1px solid #2676d5;
+	border-radius: 2px;
+	background-color: #151416;
+	/*z-index: 9;*/
+}
+
+input
+{ display:none; }
+div.image:hover .coloritem, input:checked ~ .coloritem
+{ display: inline-block; }
+/*div.image div.coloritem:hover
+{ z-index: 5; }*/
+div.image:hover .right
+{ left: 0; }
+input:checked ~ .coloritem
+{
+	position: fixed;
+	top: 50%;
+	left: 50% !important;
+	transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+span.noHoverText, a:hover span.hoverText, h5:hover span.hoverText
+{ display: inline-block; }
+a:hover span.noHoverText, span.hoverText, h5:hover span.noHoverText
+{ display: none; }
+
+.footer
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height:50px;
+	font-size: 0.8rem;
+	position: relative;
+	text-align: center;
+	background: #060606;
+	overflow: hidden;
+}
+.footer div
+{ margin: 18px 18px 0; display: inline-block; }
+.footer p
+{ margin: 0; }
+.footer span
+{ font-weight: bold; }
+.footer img
+{ margin: -3 2; }
+.footer #left
+{ float: left; text-align: left; min-width: 20%;}
+.footer #right
+{ float: right; text-align: right; min-width: 20%;}
+.footer p, .footer a, .footer a:visited
+{ color: #2D333A; }
+.footer a:hover
+{ color: #2676D5; }

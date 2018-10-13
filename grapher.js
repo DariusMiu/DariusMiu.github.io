@@ -16,17 +16,15 @@ $.getJSON(requestURL + '&key=' + GoogleAPIkey, function(data){ Graph(data); });
 
 function Graph(cellData)
 {
-	console.log(cellData);
 	var columns = 0; // how many rows actually contain data?
 	for (i = 1; i <= rows - 3; i++) // start at one because 1 contains headers, and rows - 2 due to totals being at the bottom (and it being a zero indexed array, row 1 = [0]
 	{
 		if (cellData.values[i].length > 0)
 		{ columns = i; }
 	}
-	console.log('chart columns:' + columns);
 	
 	var chartData = [];
-	chartData[0] = [0, cellData.values[31][9], columns - 1, ['Concept Art', 'Animations', 'Patreon', 'Total Expenses', 'Net Expenses'], ['#38761D', '#4A86E8', '#FF5900', '#980000', '#9900FF'], ['','dashed','','','dashed'], ['#2D333A', [250, 500, 750, 1000]]]
+	chartData[0] = [0, cellData.values[31][9], columns - 1, ['Concept Art', 'Animations', 'Patreon', 'Total Expenses', 'Net Expenses'], ['#38761D', '#4A86E8', '#FF5900', '#980000', '#9900FF'], ['dashed','dashed','','','dashed'], ['#2D333A', [250, 500, 750, 1000]]]
 	// format: [min value, max value, number of columns, color of serieses] note: headers are at [x][0]
 	for (i = 1; i <= columns; i++)
 	{ chartData[i] = [cellData.values[i][0], cellData.values[i][6], cellData.values[i][7], cellData.values[i][8], cellData.values[i][9], cellData.values[i][10]]; }
@@ -95,7 +93,6 @@ function DrawGraph(chartDiv, data)
 	div.className = 'chartcontainer';
 	chartDiv.appendChild(div);
 	chartDiv = chartDiv.childNodes[0];
-	console.log(data);
 	
 	var previousValues = []
 	
@@ -106,7 +103,6 @@ function DrawGraph(chartDiv, data)
 	var chartHeight= chartDiv.offsetHeight;
 	var daterange  = data[data.length-1][0] - data[1][0];
 	var epoch = new Date(1899, 11, 30); // google sheets epoch starts at December 30, 1899
-	console.log('chartWidth:' + chartWidth + ' chartHeight:' + chartHeight);
 	
 	for (i = 2; i < data.length; i++) // start at 2 to skip the first element cause it looks better
 	{

@@ -286,6 +286,7 @@ html
 	opacity: 0.5;
 	font-size: 0.7em;
 	white-space: nowrap;
+	bottom: 1px;
 }
 .chart div.chartcontainer div.headerline .header
 {
@@ -441,9 +442,9 @@ html
 	font-size: 1.5rem;
 	text-align: right;
 }
-.spacer #leftquote
+.spacer #leftquote, .leftquote
 {
-	height: 100px;
+	height: 50%;
 	width: 125px;
 	left: 25px;
 	top: calc(10vh - 50px);
@@ -463,7 +464,7 @@ html
 	-o-background-size: cover;
 	background-size: cover;
 }
-.spacer #rightquote
+.spacer #rightquote, .rightquote
 {
 	height: 100px;
 	width: 125px;
@@ -1336,6 +1337,8 @@ input:checked ~ .colors .item div
 {
 	html, body
 	{ font-size: 1.5rem; }
+	.chart div.chartcontainer
+	{ font-size: 0.75rem; }
 	.content
 	{ padding: 25vh 1vw 25px; }
 	.gamedownload
