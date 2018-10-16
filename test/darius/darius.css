@@ -21,7 +21,6 @@
 
 div, a, p
 {
-	z-index: 5;
 	padding: 0;
 	margin: 0;
 }
@@ -51,7 +50,6 @@ a:hover
 body, html
 {
 	position: relative;
-	z-index: -5;
 	margin: 0;
 	padding: 0;
 	color: #fff;
@@ -71,7 +69,6 @@ body, html
 {
 	/*font-size: 1px;*/
 	position: absolute;
-	z-index: 5;
 	overflow: visible;
 	background-position: left top;
 	background-repeat: no-repeat;
@@ -83,7 +80,7 @@ body, html
 }
 
 .base
-{ z-index: 1 !important; }
+{ }
 
 .lines
 {
@@ -102,6 +99,7 @@ body, html
 
 .coloritem
 {
+	z-index: 15;
 	display: none;
 	position: absolute;
 	margin: 5px;
