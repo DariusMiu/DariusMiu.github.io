@@ -38,9 +38,9 @@ function StartAnimation()
 {
 	startTime = new Date();
 	timer2 = deltaTime = totalTime = 0;
-	totalDuration = 0.8;
-	duration1 = (4/5) * totalDuration;
-	duration2 = (1/5) * totalDuration;
+	totalDuration = 2.5;
+	duration1 = (3/5) * totalDuration;
+	duration2 = (2/5) * totalDuration;
 	setTimeout(run, 0);
 }
 
@@ -60,7 +60,7 @@ function Animate()
 		for (i = 1; i < paths.length; i++)
 		{ paths[i].style.strokeDashoffset = 0; }
 		timer2 += deltaTime;
-		var amount = Ease.easeOutQuad(timer2 / duration2);
+		var amount = Ease.easeOutCubic(timer2 / duration2);
 		paths[0].style.strokeDashoffset = pathLengths[0] - (amount * pathLengths[0]);
 	}
 	startTime = new Date();
