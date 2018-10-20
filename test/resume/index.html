@@ -22,7 +22,7 @@
 		<title>Résumé</title>
 		<style>
 		span
-		{ display: inline-block }
+		{ display: inline-block; }
 		table
 		{
 			width: 100%;
@@ -51,7 +51,6 @@
 		.indent
 		{
 			padding-left: 25px;
-			padding-right: 25px;
 			text-align: left;
 		}
 		
@@ -76,7 +75,7 @@
 		}
 		.projects div
 		{
-			padding:  0.5em;
+			padding: 0.5em;
 			float:left;
 		}
 		.projects div.right
@@ -89,12 +88,12 @@
 		.projects div.left
 		{
 			text-align: right;
-			width: 8.5em;
+			width: 8em;
 		}
 		
 		div.links
 		{ font-size:0.9em; }
-		div.links span.margin
+		.margin
 		{ margin-right: 25px; }
 		
 		.serif
@@ -124,14 +123,17 @@
 		.bold
 		{ font-weight:bold; }
 		.examples
-		{
-			width: 100%;
-		}
+		{ width: 100%; }
 		.item
+		{ height: 100%; }
+		
+		.justathought br
+		{ content: ''; display: block; margin-top: 0.5em; }
+		
+		@media screen and (max-width:62rem)
 		{
-			width: 32%;
-			width: calc((100% - 50px) / 3);
-			height: 40vh;
+			.item
+			{ height: 20vh; }
 		}
 		</style>
 		<link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet"> 
@@ -252,8 +254,8 @@
 						Game Development
 					</div>
 											
-					<div class='indent module'>
-						<a href='https://github.com/DariusMiu/Irbis'>Irbis</a> - I have been working on <span class='italic'>Irbis</span> since May of 2017. It is a 2D boss rush game made in Monogame and inspired by Metroid, World of Warcraft, and The Witcher 3. If you only look at one thing I have made, I hope it is this. (2017 - present)
+					<div class='module'>
+						<a href='https://github.com/DariusMiu/Irbis'>Irbis</a> - I have been working on <i>Irbis</i> since May of 2017. It is a 2D boss rush game made in Monogame and inspired by Metroid, World of Warcraft, and The Witcher 3. If you only look at one thing I have made, I hope it is this. (2017 - present)
 						<br><br>
 						<a href='../card/portfolio#catburglary'>Cat Burglary</a> - Cat Burglary is a sillier game, where the main characters are cats attempting to steal back the fruits of their life of crime from their traitorous partner. A cooperative puzzle game was a new and interesting challenge to work on. I had a role in creating just about all of the scripts used in the game. (2016)
 						<br><br>
@@ -266,7 +268,7 @@
 						Software Development
 					</div>
 											
-					<div class='indent module'>
+					<div class='module'>
 						<a href='https://github.com/DariusMiu/hourly-photo-telegram-bot'>Snep Bot</a> - A constant work in progress, and one of my favorite projects I have worked on. I love Snow Leopards, so I made a bot to post Snow Leopard photos on Telegram every 3 hours, on the hour. The bot was written in Python, which I also taught myself. The code is open source and available on <a href='https://github.com/DariusMiu/hourly-photo-telegram-bot'>GitHub</a>.
 						<br><br>
 						<a href='https://github.com/DariusMiu/Lua-Compiler-Project'>Lua Compiler</a> - One of the more enjoyable school projects that I did recently for my Concepts of Programming Languages course. While this project only covered a small subset of Lua’s keywords and functions, I still immensely enjoyed the challenge and thought process required to get a project like this to work.
@@ -276,7 +278,7 @@
 						Web Development
 					</div>
 											
-					<div class='indent module'>
+					<div class='module'>
 						<a href='https://pulex.cc'>Pulex.cc</a> - Designed and built this website from the ground up for a friend. It was a short project done over a single weekend in an attempt to save my friend some money on hosting costs.
 						<br><br>
 						<a href='../'>Ln2.co</a> - Personal website, made entirely from scratch with HTML and CSS, and just a hint of javascript.
@@ -291,7 +293,7 @@
 								Website
 							</div>
 							<div class='right'>
-								<a href='../'>Ln2.co</a>  -|-  <a href='../design'>Ln2.co/design</a>
+								<a href='../' class='margin'>Ln2.co</a> <a href='../design'>Ln2.co/design</a>
 							</div>
 							<br>
 							<div class='left'>
@@ -317,19 +319,17 @@
 						</div>
 				</div>
 			</div>
-			<div class='container' style='text-align: center;'>
+			<div class='container justathought' style='text-align: center;'>
 				I know some things, but there's even more that I don't know, that I want to learn.
 				<br>
 				I'm constantly trying to learn new things, both by watching others and by making things myself.
 				<br>
 				Should I be hired, I will continue to learn as much as I can - and do the best I can, always.
 			</div><!----->
-			<div class='resume'>
-				<div class='item shadow' id='hover'>
-					<a href='https://www.behance.net/DariusMiu' target='_blank'>
-						<div id='image'>
-							<img src='ryker25.gif'>
-						</div>
+			<div class='cards'>
+				<div class='card'>
+					<a href='https://www.behance.net/DariusMiu' target='_blank' class='item shadow' id='hover'>
+						<div id='image' style='background-image: url(ryker25.gif);'></div>
 						<div id='overlay'>
 							<p class='centerY'>
 								Graphic Design
@@ -337,8 +337,8 @@
 						</div>
 					</a>
 				</div>
-				<div class='item shadow' id='hover' style='margin: 0 25px;'>
-					<a href='https://Ln2.co' target='_blank'>
+				<div class='card' style='margin: 0 25px;'>
+					<a href='https://Ln2.co' target='_blank' class='item shadow' id='hover'>
 						<div id='image'>
 							<img src='../images/preview.png'>
 						</div>
@@ -349,8 +349,8 @@
 						</div>
 					</a>
 				</div>
-				<div class='item shadow' id='hover'>
-					<a href='https://github.com/DariusMiu' target='_blank'>
+				<div class='card'>
+					<a href='https://github.com/DariusMiu' target='_blank' class='item shadow' id='hover'>
 						<div id='image'>
 							<img src='github.jpg'>
 						</div>

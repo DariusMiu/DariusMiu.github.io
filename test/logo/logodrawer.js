@@ -5,9 +5,33 @@ var logo = logos[0];
 //logo.innerHTML = '';
 
 var svg = logo.childNodes;
-var paths = svg[0].childNodes;
-paths = paths[1].childNodes;
-paths = [ paths[1], paths[3], paths[5] ];
+var paths = [];
+{
+	var potentialpaths = svg[0].childNodes;
+	for (i = 0; i < potentialpaths.length; i++)
+	{
+		if (potentialpaths[i].tagName == 'g')
+		{ potentialpaths = potentialpaths[i].childNodes; }
+	}
+	var pathindex = 0;
+	for (i = 0; i < potentialpaths.length; i++)
+	{
+		if (potentialpaths[i].tagName == 'path' || potentialpaths[i].tagName == 'line')
+		{
+			paths[pathindex] = potentialpaths[i];
+			pathindex++;
+		}
+	}
+}
+console.log('paths self-check...');
+if (paths.length != 3)
+{
+	console.log('incorrect number of paths: ' + paths.length + ' (should be 3)');
+	console.log(paths);
+}
+else
+{ console.log('done.'); }
+
 var pathLengths = [];
 
 var run = function() { Animate(); }
