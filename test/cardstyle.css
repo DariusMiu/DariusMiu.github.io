@@ -400,6 +400,7 @@ html
 	border: 1px solid #2D333A;
 	display: inline-block;
 	font-weight: normal;
+	white-space: nowrap;
 }
 .donatebutton
 { margin: 1.5rem 0; }
@@ -996,7 +997,7 @@ H6
 	height: 0;
 	width: 32%;
 	width: calc((100% - 50px) / 3);
-	padding-top: 32%;
+	padding-top: 100%;
 	padding-top: calc((100% - 50px) / 3);
 	display: inline-block;
 	position: relative;
