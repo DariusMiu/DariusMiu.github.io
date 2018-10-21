@@ -1057,7 +1057,7 @@ H6
 	-moz-transition: ease 0.2s;
 	-o-transition: ease 0.2s;
 	transition: ease 0.2s;
-	background: url(bg.jpg);
+	background: url(images/bg.jpg);
 	background-position: center; 
 	background-repeat: no-repeat;
 	background-size: cover;
