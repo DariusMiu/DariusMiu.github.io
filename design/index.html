@@ -13,7 +13,7 @@ ga('send', 'pageview');
 		<link rel='icon' type='image/png' href='../favicons/favicon64.png'  sizes='64x64'>
 		<link rel='icon' type='image/png' href='../favicons/favicon128.png' sizes='128x128'>
 		<link rel='icon' type='image/png' href='../favicons/favicon256.png' sizes='256x256'>
-		<link rel='stylesheet' href='../graphstyle.css'>
+		<link rel='stylesheet' href='../cardstyle.css'>
 		<meta name="theme-color" content="#1E1F25">
 		<title>Design</title>
 	</head>
@@ -105,21 +105,25 @@ ga('send', 'pageview');
 				</a>
 				<p style='display: inline-block; margin: 0; width: 100%;'>Notice, as well, that the spacing between the cards is always 25px, regardless of direction</p>
 			</div>
-			<div class='resume'>
-				<div class='item shadow' id='hover' style='max-width: 32%; height: 40vh'>
-					<a href='#'>
-						<div id='image'  ><img src='../images/Darius Winter Icon.png'></div>
+			<div class='cards'>
+				<div class='card'>
+					<a class='item shadow' id='hover'>
+						<div id='image' style='background-image: url(../images/icon.png)'></div>
 						<div id='overlay'><p class='centerY'>Sample Image Card</p></div>
 					</a>
 				</div>
-				<a href='#' class='item art design shadow' id='hover' style='margin: 0 2%; width: 100%; height: 40vh; max-width: 32%; float: left;'>
-					<img id='hover' src='../images/GDresume.png'>
-					<p id='overlay'>Sample Image</p>
-				</a>
-				<a href='#' class='item art design' id='hover' style='width: 100%; max-width: 32%; float: left; height: 40vh'>
-					<img id='hover' src='../images/Ln2 black.svg'>
-					<p id='overlay'>Sample Image<br>/w Transparency</p>
-				</a>
+				<div class='card' style='margin: 0 25px;'>
+					<a class='item art design shadow' id='hover'>
+						<img id='hover' src='../images/GDresume.png'>
+						<p id='overlay'>Sample Image</p>
+					</a>
+				</div>
+				<div class='card'>
+					<a class='item art design' id='hover'>
+						<img id='hover' src='../images/Ln2 black.svg'>
+						<p id='overlay'>Sample Image<br>/w Transparency</p>
+					</a>
+				</div>
 			</div>			
 		</div>
 	</body>
