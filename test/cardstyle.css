@@ -997,7 +997,7 @@ H6
 	height: 0;
 	width: 32%;
 	width: calc((100% - 50px) / 3);
-	padding-top: 100%;
+	padding-top: 32%;
 	padding-top: calc((100% - 50px) / 3);
 	display: inline-block;
 	position: relative;
