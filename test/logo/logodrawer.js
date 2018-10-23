@@ -24,10 +24,10 @@ var paths = [];
 	}
 }
 console.log('paths self-check...');
-if (paths.length != 3)
+if (paths.length != 4)
 {
-	console.log('incorrect number of paths: ' + paths.length + ' (should be 3)');
-	console.log(paths);
+	console.log('incorrect number of paths:' + paths.length + ' (should be 3)');
+	console.log(potentialpaths);
 }
 else
 { console.log('done.'); }
@@ -37,10 +37,10 @@ var pathLengths = [];
 var run = function() { Animate(); }
 var startTime, deltaTime, totalTime, totalDuration, duration1, duration2, timer2;
 
-SetLogo();
+SetLogo(2.5);
 
 
-function SetLogo()
+function SetLogo(time)
 {
 	for (i = 0; i < paths.length; i++)
 	{
@@ -55,14 +55,14 @@ function SetLogo()
 		paths[i].setAttribute('display', 'inline');
 	}
 	
-	setTimeout(function() { StartAnimation(); }, 500);
+	setTimeout(function() { StartAnimation(time); }, 500);
 }
 
-function StartAnimation()
+function StartAnimation(time)
 {
 	startTime = new Date();
 	timer2 = deltaTime = totalTime = 0;
-	totalDuration = 2.5;
+	totalDuration = time;
 	duration1 = (3/5) * totalDuration;
 	duration2 = (2/5) * totalDuration;
 	setTimeout(run, 0);
@@ -76,7 +76,7 @@ function Animate()
 	if (totalTime <= duration1)
 	{
 		var amount = Ease.easeInCubic(totalTime / duration1);
-		for (i = 1; i < paths.length; i++)
+		for (i = 2; i < paths.length; i++)
 		{ paths[i].style.strokeDashoffset = pathLengths[i] + (amount * pathLengths[i]); }
 	}
 	else
@@ -85,8 +85,10 @@ function Animate()
 		{ paths[i].style.strokeDashoffset = 0; }
 		timer2 += deltaTime;
 		var amount = Ease.easeOutCubic(timer2 / duration2);
-		paths[0].style.strokeDashoffset = pathLengths[0] - (amount * pathLengths[0]);
+		paths[1].style.strokeDashoffset = pathLengths[1] - (amount * pathLengths[1]);
 	}
+	amount = Ease.easeInOutCubic(totalTime / totalDuration);
+	paths[0].style.strokeDashoffset = pathLengths[0] - (amount * pathLengths[0]);
 	startTime = new Date();
 	if (totalTime <= totalDuration)
 	{ setTimeout(run, 0); }
