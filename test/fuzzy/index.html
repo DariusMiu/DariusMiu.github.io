@@ -23,15 +23,15 @@
 		<style>
 		.upload
 		{
-			width: 49%;
-			width: calc(50% - 62.5px);
+			min-width: 49%;
+			min-width: calc(50% - 62.5px);
 			padding: 25px;
 			overflow: hidden;
 			margin: 25px 0;
 			position: relative;
 			border-radius: 2px;
 			border: 2px dashed #2D333A;
-			display: block;
+			display: inline-block;
 			white-space: initial;
 			-webkit-transition: ease 0.15s;
 			-moz-transition: ease 0.15s;
@@ -59,23 +59,22 @@
 		<div class='fullscreen' style='min-height: calc(100vh - 3.125rem)'>
 			<div class='content'>
 				<div class='container'>
-					Upload file 1
+					<p>Upload file 1</p>
 					<a class='donatebutton shadow upload' id='hover'>
 						click or drop here to upload some junk
 					</a>
 					<br>
-					Upload file 2
+					<p>Upload file 2</p>
 					<a class='donatebutton shadow upload' id='hover'>
 						click or drop here to upload some junk
 					</a>
 					<br>
-					Matching Threshold
+					<p>Matching Threshold</p>
 					<div>
-						<input type='text' id='threshold' name='threshold' value='0.9'/>
-						<label for='threshold'></label>
+						<input type='text' id='threshold' name='threshold' value='0.9' class='shadow'/>
 					</div>
 					<br>
-					Select Algorithm
+					<p>Select Algorithm</p>
 					<div>
 						<input type='radio' id='levenshtein' name='algorithm' value='levenshtein' checked />
 						<label for='levenshtein'>Levenshtein distance</label>
