@@ -597,6 +597,7 @@ html
 	border-radius: 2px;
 	background: #1E1F25;
 	display: inline-block;
+	text-shadow: none;
 	box-shadow: 0 2px 3px 1px rgba(0,0,0,0.5);
 	-webkit-transition: ease 0.15s;
 	-moz-transition: ease 0.15s;
@@ -620,16 +621,25 @@ html
 .container .container
 { background: #2D333A; }
 .container#hover p
-{ color: #FFF; }
+{
+	color: #FFF;
+	text-shadow: none;
+}
 .container:hover#hover span
-{ color: #2676D5; }
+{
+	color: #2676D5;
+	text-shadow: 0 0 10px rgba(0,0,0,1);
+}
 .container:hover#hover
 { box-shadow: 0 0 10px 3px rgba(0,0,0,0.7); }
 
 a.container
 { font-weight: normal; }
 a.container span
-{ font-weight: bold; }
+{
+	font-weight: bold;
+	text-shadow: 0 2px 3px rgba(0,0,0,0.75);
+}
 
 .misctext
 {
