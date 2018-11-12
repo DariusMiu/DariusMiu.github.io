@@ -54,7 +54,10 @@ div, a, p
 { z-index: 10; }
 
 a
-{ text-decoration: none; }
+{
+	text-decoration: none;
+	text-shadow: 0 2px 3px rgba(0,0,0,0.75);
+}
 a:link
 {
 	color: #fff;
@@ -63,7 +66,10 @@ a:link
 a:visited
 { color: inherit; }
 a:hover
-{ color: #2676D5; }
+{
+	color: #2676D5; 
+	text-shadow: 0 0 10px rgba(0,0,0,1);
+}
 
 #hover, #hover span, a, :link, :hover
 {
@@ -591,6 +597,7 @@ html
 	border-radius: 2px;
 	background: #1E1F25;
 	display: inline-block;
+	text-shadow: none;
 	box-shadow: 0 2px 3px 1px rgba(0,0,0,0.5);
 	-webkit-transition: ease 0.15s;
 	-moz-transition: ease 0.15s;
@@ -614,16 +621,25 @@ html
 .container .container
 { background: #2D333A; }
 .container#hover p
-{ color: #FFF; }
+{
+	color: #FFF;
+	text-shadow: none;
+}
 .container:hover#hover span
-{ color: #2676D5; }
+{
+	color: #2676D5;
+	text-shadow: 0 0 10px rgba(0,0,0,1);
+}
 .container:hover#hover
 { box-shadow: 0 0 10px 3px rgba(0,0,0,0.7); }
 
 a.container
 { font-weight: normal; }
 a.container span
-{ font-weight: bold; }
+{
+	font-weight: bold;
+	text-shadow: 0 2px 3px rgba(0,0,0,0.75);
+}
 
 .misctext
 {
@@ -802,7 +818,7 @@ p.download
 {
 	padding: 0 25px 25px;
 	width: 30vmin;
-	width: 30vmax;'
+	width: 30vmax;
 	max-width: 80%;
 	left:50%;
 	transform: translateX(-50%);
