@@ -894,6 +894,7 @@ p.download
 	border-radius: 2px;
 	color: black !important;
 	text-transform: uppercase;
+	text-shadow: none;
 }
 .button:link
 {
@@ -903,7 +904,7 @@ p.download
 	transition: ease 0.15s;
 }
 .button:hover
-{ background: #2676D5; }
+{ background: #2676D5; text-shadow: none; }
 
 .centerY
 {
