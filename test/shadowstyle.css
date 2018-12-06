@@ -1272,7 +1272,6 @@ input:checked ~ .colors .item div
 }
 .fonts .bera
 {
-	display: block;
 	font-family: Bera;
 }
 .fonts .darius, .fonts .darius:link
@@ -1420,6 +1419,8 @@ input:checked ~ .colors .item div
 	{ padding: 25vh 1vw 25px; }
 	.gamedownload
 	{ font-size: 1.5rem; }
+	.centertext
+	{ font-size: 2rem; }
 	.container
 	{ margin: 0 0 25px; }
 	.video
@@ -1445,13 +1446,10 @@ input:checked ~ .colors .item div
 	{ margin: 0.5em 0; }
 	.centerlogo div
 	{ display: none; }
+	.misctext, .misctext:link
+	{ font-size: 1.5rem; }
 }
 @media screen and (max-height:35rem)
-{
-	.centertext
-	{ font-size: 2rem; }
-}
-@media screen and (max-width:53rem)
 {
 	.centertext
 	{ font-size: 2rem; }
