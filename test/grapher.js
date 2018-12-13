@@ -24,18 +24,18 @@ function Graph(cellData)
 	}
 	
 	var chartData = [];
-	chartData[0] = [0, cellData.values[31][9], columns - 1, ['Concept Art', 'Animations', 'Patreon', 'Total Expenses', 'Net Expenses'], ['#38761D', '#4A86E8', '#FF5900', '#980000', '#9900FF'], ['dashed','dashed','','','dashed'], ['#2D333A', [250, 500, 750, 1000]]]
-	// format: [min value, max value, number of columns, color of serieses] note: headers are at [x][0]
+	chartData[0] = [0, cellData.values[31][9], columns - 1, ['Concept Art', 'Animations', 'Patreon', 'Total Expenses', 'Net Expenses'], ['#38761D', '#4A86E8', '#FF5900', '#980000', '#9900FF'], ['dashed','dashed','','','dashed'], ['#2D333A', [250, 500, 750, 1000/*, 1250*/]]]
+	// format: [0][min value, max value, number of columns, names of serieses, color of serieses, line style, valueline data] note: headers are at [x][0]
 	for (i = 1; i <= columns; i++)
 	{ chartData[i] = [cellData.values[i][0], cellData.values[i][6], cellData.values[i][7], cellData.values[i][8], cellData.values[i][9], cellData.values[i][10]]; }
 	
 	var charts = document.getElementsByClassName('chart');
 	console.log('charts:' + charts.length + ' (expected: 1)');
 
-	var fundingChart = charts[0];
+	var fundingChart = charts[charts.length - 1];
 	fundingChart.innerHTML = '';
 	
-	DrawGraph(charts[charts.length - 1], chartData);
+	DrawGraph(fundingChart, chartData);
 }
 
 function GetLongDate(date)
@@ -45,40 +45,40 @@ function GetLongDate(date)
 	switch (date.getMonth())
 	{
 		case 0:
-		returnstring += 'Jan';
+		returnstring = 'Jan';
 		break;
 		case 1:
-		returnstring += 'Feb';
+		returnstring = 'Feb';
 		break;
 		case 2:
-		returnstring += 'Mar';
+		returnstring = 'Mar';
 		break;
 		case 3:
-		returnstring += 'Apr';
+		returnstring = 'Apr';
 		break;
 		case 4:
-		returnstring += 'May';
+		returnstring = 'May';
 		break;
 		case 5:
-		returnstring += 'Jun';
+		returnstring = 'Jun';
 		break;
 		case 6:
-		returnstring += 'Jul';
+		returnstring = 'Jul';
 		break;
 		case 7:
-		returnstring += 'Aug';
+		returnstring = 'Aug';
 		break;
 		case 8:
-		returnstring += 'Sep';
+		returnstring = 'Sep';
 		break;
 		case 9:
-		returnstring += 'Oct';
+		returnstring = 'Oct';
 		break;
 		case 10:
-		returnstring += 'Nov';
+		returnstring = 'Nov';
 		break;
 		case 11:
-		returnstring += 'Dec';
+		returnstring = 'Dec';
 		break;
 	}
 	
@@ -99,8 +99,8 @@ function DrawGraph(chartDiv, data)
 	for (i = 0; i <= data[0][4].length; i++)
 	{ previousValues[i] = []; }
 	
-	var chartWidth = chartDiv.offsetWidth;
-	var chartHeight= chartDiv.offsetHeight;
+	var chartWidth  = chartDiv.offsetWidth;
+	var chartHeight = chartDiv.offsetHeight;
 	var daterange  = data[data.length-1][0] - data[1][0];
 	var epoch = new Date(1899, 11, 30); // google sheets epoch starts at December 30, 1899
 	
@@ -146,22 +146,12 @@ function DrawGraph(chartDiv, data)
 			{
 				var currentTop = 1 - ((data[i][index]) / data[0][1]);
 				var currentLeft = (data[i][0] - data[1][0]) / daterange; //(i-1) / data[0][2];
-				var div = document.createElement("div");
-				div.style.background = data[0][4][j];
-				div.style.left = (currentLeft * 100) + '%';
-				div.style.top = (100 * currentTop) + '%';
-				finalvalues[j] = ['$' + (data[i][index].toFixed(2)), currentLeft, currentTop];
-				div.className = 'dot';
-				var tooltip = document.createElement("div");
-				tooltip.className = 'tooltip donatebutton shadow';
-				var date = new Date(epoch.valueOf());
-				date.setDate(epoch.getDate() + data[i][0]);
-				tooltip.innerHTML = GetLongDate(date) + ', ' + date.getFullYear() + '<br>' + data[0][3][j] + ': $' + (data[i][index].toFixed(2));
-				if (i > data.length / 2)
-				{ tooltip.style.right = '0'; }
+				finalvalues[j] = [currentLeft, currentTop, data[0][3][j], '$' + (data[i][index].toFixed(2))];
 				
+				// draw dot for previous node and line to current
 				if (previousValues[j].length > 0)
 				{
+					// line
 					var divLine = document.createElement("div");
 					//divLine.style.background = data[0][4][j];
 					divLine.style.left = (previousValues[j][0] * 100) + '%';
@@ -178,23 +168,38 @@ function DrawGraph(chartDiv, data)
 					divLine.className = 'plotline';
 					chartLines[i-2][j] = [divLine, [opposite, adjacent]];
 					chartDiv.appendChild(divLine);
+
+					// dot
+					var div = document.createElement("div");
+					div.style.background = data[0][4][j];
+					div.style.left = (previousValues[j][0] * 100) + '%';
+					div.style.top = (previousValues[j][1] * 100) + '%';
+					div.className = 'dot';
+					var tooltip = document.createElement("div");
+					tooltip.className = 'tooltip donatebutton shadow';
+					var date = new Date(epoch.valueOf());
+					date.setDate(epoch.getDate() + data[i][0]);
+					tooltip.innerHTML = GetLongDate(date) + ', ' + date.getFullYear() + '<br>' + data[0][3][j] + ': $' + (previousValues[j][2].toFixed(2));
+					if (previousValues[j][0] > 0.5)
+					{ tooltip.style.right = '0'; }	
+					div.appendChild(tooltip);
+					chartDiv.appendChild(div);
 				}
 				
-				div.appendChild(tooltip);
-				chartDiv.appendChild(div);
-				previousValues[j] = [currentLeft, currentTop];
+				previousValues[j] = [currentLeft, currentTop, data[i][index]];
 			}
 		}
 		
 	}
 	
-	for (i = 0; i < finalvalues.length; i++) // start at 2 to skip the first element cause it looks better
+	for (i = 0; i < finalvalues.length; i++)
 	{
+		console.log(finalvalues[i])
 		if (finalvalues[i] !== undefined && finalvalues[i] != '')
 		{
 			var div = document.createElement("div");
-			div.style.right = ((1 - finalvalues[i][1]) * 100) + '%';
-			div.style.top = (finalvalues[i][2] * 100) + '%';
+			div.style.right = ((1 - finalvalues[i][0]) * 100) + '%';
+			div.style.top = (finalvalues[i][1] * 100) + '%';
 			div.className = 'finalvalue';
 			
 			var divLine = document.createElement("div");
@@ -202,12 +207,28 @@ function DrawGraph(chartDiv, data)
 			divLine.className = 'line';
 			
 			var value = document.createElement("div");
-			value.innerHTML = finalvalues[i][0];
+			value.innerHTML = finalvalues[i][3];
 			value.className = 'value';
 			
 			div.appendChild(value);
 			div.appendChild(divLine);
 			chartDiv.appendChild(div);
+
+			// dot
+			var dot = document.createElement("div");
+			dot.style.background = data[0][4][i];
+			dot.style.left = (finalvalues[i][0] * 100) + '%';
+			dot.style.top = (finalvalues[i][1] * 100) + '%';
+			dot.className = 'dot';
+			var tooltip = document.createElement("div");
+			tooltip.className = 'tooltip donatebutton shadow';
+			var date = new Date(epoch.valueOf());
+			date.setDate(epoch.getDate() + data[i][0]);
+			tooltip.innerHTML = GetLongDate(date) + ', ' + date.getFullYear() + '<br>' + finalvalues[i][2] + ': ' + finalvalues[i][3];
+			if (finalvalues[i][0] > 0.5)
+			{ tooltip.style.right = '0'; }	
+			dot.appendChild(tooltip);
+			chartDiv.appendChild(dot);			
 		}
 	}
 }
@@ -219,8 +240,8 @@ $(window).on('resize', function(){
 		width = $(this).width();
 		
 		var chartDiv = document.getElementsByClassName('chartcontainer')[0];
-		var chartWidth = chartDiv.offsetWidth;
-		var chartHeight= chartDiv.offsetHeight;
+		var chartWidth  = chartDiv.offsetWidth;
+		var chartHeight = chartDiv.offsetHeight;
 		for (i = 0; i < chartLines.length; i++)
 		{
 			for (j = 0; j < chartLines[i].length; j++)
@@ -236,26 +257,3 @@ $(window).on('resize', function(){
 		}
 	}
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -261,7 +261,7 @@ html
 .chart
 {
 	text-align: center;
-	height: 371px;
+	height: 400px;
 }
 .chart div.chartcontainer
 {
@@ -282,7 +282,6 @@ html
 	width: calc(100% + 15px);
 	position: absolute;
 	margin: 0 -5px 0 -10px;
-	z-index: 12;
 	border-top: 1px solid #2D333A;
 }
 .chart div.chartcontainer div.valueline .value
@@ -314,7 +313,6 @@ html
 	height: calc(100% + 10px);
 	position: absolute;
 	margin: -10px 0 0;
-	z-index: 12;
 	border-left: 1px solid #2D333A;
 }
 .chart div.chartcontainer div.dot
@@ -330,7 +328,7 @@ html
 .chart div.chartcontainer div.finalvalue
 {
 	position: absolute;
-	z-index: 25;
+	z-index: 15;
 	font-size: 0.7em;
 	white-space: nowrap;
 }
@@ -338,10 +336,10 @@ html
 {
 	position: absolute;
 	top: -0.5px;
-	width: 14px;
+	width: 18px;
 	height: 1px;
 	z-index: 10;
-	right: 4px;
+	right: 0;
 }
 .chart div.chartcontainer div.finalvalue .value
 {
