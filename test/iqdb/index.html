@@ -16,14 +16,14 @@
 				color: #EEE;
 				font-family: Bera, Arial, Helvetica, sans-serif;
 			}
-			body
+			.main
 			{ background-color: #1E1F25; }
 			html
 			{ background-color: #060606; }
 			.interactable
 			{
 				position: relative;
-				margin: 0 25px 25px;
+				margin: 0 0 25px;
 				background-color: #151416;
 				border-radius: 2px;
 				padding: 0.5em 1em;
@@ -85,11 +85,12 @@
 			{
 				width: 800px;
 				max-width: calc(100% - 50px);
+				padding: 25px;
 			}
 			form span
 			{
 				position: relative;
-				left: 50px;
+				left: 25px;
 				z-index: 10;
 				padding: 0 0 2px;
 				display: inline-block;
@@ -98,13 +99,7 @@
 			{
 				text-align: center;
 				width: 100%;
-				padding: 0 25px 25px;
-			}
-			span.spacer
-			{
-				position: relative;
-				height: 25px;
-				display: inline-block;
+				margin: 0;
 			}
 			.centerx
 			{
@@ -112,26 +107,47 @@
 				transform: translateX(-50%);
 				position: relative;
 			}
+			.centery
+			{
+				top: 50%;
+				transform: translateY(-50%);
+				position: relative;
+			}
+			.title
+			{
+				width: 100%;
+				text-align: center;
+				font-size: 4rem;
+				padding: 25px 0 0;
+				margin: 0;
+			}
+			.spacer
+			{
+				height: 15%;
+			}
 		</style>
 	</head>
 	<body>
-		<span class='spacer'></span>
-		<form action="iqdb-xml.php" method="post" enctype="multipart/form-data" class='centerx'>
-			<!--<input type="checkbox" name="service[]" value="0" checked > Service 0<br>-->
-			<!--<input type="checkbox" name="service[]" value="1" checked > Service 1<br>-->
-			<!--<input type="checkbox" name="service[]" value="2" checked > Service 2<br>-->
-			<span>Search via file</span><br>
-			<input type="file" name="file" id="file" size="50" class='interactable upload'><br>
-			<span>...or by url</span><br>
-			<input type='text' id='hover' name='threshold' value='' class='interactable text'><br>
-			<!--<input type="checkbox" name="forcegray"> ignore colors<br>-->
-			<input type="submit" value="submit" accesskey="s" class='interactable centerx'>
-			<p>
-				Supported file types are JPEG, PNG and GIF<br>
-				Maximum file size: 8192 KB<br>
-				Maximum image dimensions: 7500x7500
-				<!--<br>Image database updates every hour - last updated Dec 29 2018 at 0:22 EST			-->
-			</p>
-		</form>
+		<div class='spacer'></div>
+		<div class='main'>
+			<p class='title'>this is a title</p>
+			<form action="iqdb-xml.php" method="post" enctype="multipart/form-data" class='centerx'>
+				<!--<input type="checkbox" name="service[]" value="0" checked > Service 0<br>-->
+				<!--<input type="checkbox" name="service[]" value="1" checked > Service 1<br>-->
+				<!--<input type="checkbox" name="service[]" value="2" checked > Service 2<br>-->
+				<span>Search via file</span><br>
+				<input type="file" name="file" id="file" size="50" class='interactable upload'><br>
+				<span>...or by url</span><br>
+				<input type='text' id='hover' name='threshold' value='' class='interactable text'><br>
+				<!--<input type="checkbox" name="forcegray"> ignore colors<br>-->
+				<input type="submit" value="submit" accesskey="s" class='interactable centerx'>
+				<p>
+					Supported file types are JPEG, PNG and GIF<br>
+					Maximum file size: 8192 KB<br>
+					Maximum image dimensions: 7500x7500
+					<!--<br>Image database updates every hour - last updated Dec 29 2018 at 0:22 EST			-->
+				</p>
+			</form>
+		</div>
 	</body>
 </html>
