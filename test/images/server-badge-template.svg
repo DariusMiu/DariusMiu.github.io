@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90" height="20">
+	<linearGradient id="b" x2="0" y2="100%">
+		<stop offset="0" stop-color="#BBB" stop-opacity=".1"/>
+		<stop offset="1" stop-opacity=".1"/>
+	</linearGradient>
+
+	<mask id="a">
+		<rect width="90" height="20" rx="3" fill="#FFF"/>
+	</mask>
+
+	<g mask="url(#a)">
+		<path fill="#2D333A" d="M0 0 h52 v20 H0 z"/>
+		<path fill="#F29B17" d="M52 0 h38 v20 H52 z"/>S
+		<path fill="url(#b)" d="M0 0 h90 v20 H0 z"/>
+	</g>
+
+	<g fill="#EEEEEE" text-anchor="middle">
+		<g font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11" style="text-shadow: 0.025em 0.05em 0.2em rgba(0,0,0,1);">
+			<text x="71" y="14"></text>
+			<text x="26" y="14">server</text>
+		</g>
+	</g>
+</svg>
